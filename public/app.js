@@ -28,6 +28,10 @@ app.config(['$routeProvider', '$locationProvider', "$httpProvider", function ($r
 		templateUrl: '/pages/about.html'
 	});
 
+	$routeProvider.when('/about', {
+		templateUrl: '/pages/pacientes.html'
+	});
+
 
 	$routeProvider.when('/404', {
 		templateUrl: '/pages/404.html'
