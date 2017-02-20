@@ -1,10 +1,17 @@
 {
-  "name": "angular1example",
+  "name": "podowebangular",
   "version": "1.0.0",
-  "description": "Easy Angular example template",
-  "main": "app.js",
-  "devDependencies": {
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-ui-router": "^1.0.0-alpha.5",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-runtime": "^6.23.0",
+    "body-parser": "^1.16.1",
+    "browserify": "^14.1.0",
     "connect-history-api-fallback": "^1.3.0",
+    "express": "^4.14.1",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-if": "^2.0.2",
@@ -14,21 +21,33 @@
     "gulp-uglify": "^2.0.1",
     "gulp-useref": "^3.1.2",
     "jshint": "^2.9.4",
-    "jshint-stylish": "^2.2.1",
-    "nib": "^1.1.2"
+    "nib": "^1.1.2",
+    "nodemon": "^1.11.0",
+    "parallelshell": "^2.0.0",
+    "uglify": "^0.1.5",
+    "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "uglify": "^0.1.5"
   },
   "scripts": {
-    "test": "mocha"
+    "create": "touch ./server/public/app.js",
+    "build": "browserify -t babelify ./app/app.js -o ./server/public/app.js",
+    "watch": "watchify -t babelify ./app/app.js -o ./server/public/app.js --debug",
+    "postinstall": "npm run create && npm run build",
+    "dev": "nodemon ./server/index.js",
+    "serve": "parallelshell 'npm run dev' 'npm run watch'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/crisovando/PodoWebAngular.git"
   },
-  "author": "Cristian Ovando <fabyriver07@gmail.com>",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/crisovando/PodoWebAngular/issues"
   },
-  "homepage": "https://github.com/crisovando/PodoWebAngular#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/crisovando/PodoWebAngular#readme"
 }
