@@ -11,7 +11,7 @@ const config = require('config');
 app.use(express.static('./public'));
 
 app.all('*', (req, res)=>{
-    res.sendFile(process.cwd()+'/public/index.html');
+    res.sendFile(process.cwd()+'/app/index.html');
 });
 
 server.listen(process.PORT || 4000);
