@@ -12,10 +12,10 @@ const speaker = angular
   .component('speakerItem', SpeakerItemComponent)
   .component('speakerList', SpeakerListComponent)
   .component('speakerDetail', SpeakerDetailComponent)
-  .config(($stateProvider, $urlRouterProvider) => {
+  .config(($stateProvider) => {
     $stateProvider
       .state('speakers', {
-        url: '/',
+        url: '/speakers',
         component: 'speakerList',
         resolve: {
           speakers: SpeakerService => SpeakerService.getSpeakers()
@@ -28,7 +28,6 @@ const speaker = angular
           speaker: (SpeakerService, $stateParams) => SpeakerService.getSpeaker($stateParams.id)
         }
       })
-    $urlRouterProvider.otherwise('/')
   })
   .name
 
