@@ -1,8 +1,10 @@
 // /app/app.component.js
 export const AppComponent = {  
   template: `
-    <ac-header></ac-header>
-    <div ui-view></div>
-    <ac-footer></ac-footer>
+    <div class="wrapper" style="height: auto;">
+      <ac-header class="main-header"></ac-header>
+      <ac-content></ac-content>
+      <ac-footer></ac-footer>
+    </div>
   `
 }
