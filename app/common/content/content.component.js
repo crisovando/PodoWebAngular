@@ -1,7 +1,7 @@
 'use strict';
 
 // /app/common/contentwrapper/contentwrapper.component.js
-export const ContentWrapperComponent = {  
+export const ContentComponent = {  
   template: `
     <div class="content-wrapper" style="min-height: 916px;">
       <section class="content-header">
@@ -19,4 +19,4 @@ export const ContentWrapperComponent = {
       </section>
     </div>
   `
-}
+};

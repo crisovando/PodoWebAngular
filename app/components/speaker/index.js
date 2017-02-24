@@ -1,10 +1,11 @@
-// /app/components/speaker/index.js
-import angular from 'angular'
+'use strict';
 
-import { SpeakerItemComponent } from './speaker-item/speaker-item.component'  
-import { SpeakerListComponent } from './speaker-list/speaker-list.component'  
-import { SpeakerDetailComponent } from './speaker-detail/speaker-detail.component'  
-import SpeakerService from './speaker.service'
+import angular from 'angular';
+
+import { SpeakerItemComponent } from './speaker-item/speaker-item.component';
+import { SpeakerListComponent } from './speaker-list/speaker-list.component'; 
+import { SpeakerDetailComponent } from './speaker-detail/speaker-detail.component';
+import SpeakerService from './speaker.service';
 
 const speaker = angular  
   .module('speakers', [])
@@ -27,8 +28,8 @@ const speaker = angular
         resolve: {
           speaker: (SpeakerService, $stateParams) => SpeakerService.getSpeaker($stateParams.id)
         }
-      })
+      });
   })
-  .name
+  .name;
 
-export default speaker  
+export default speaker;

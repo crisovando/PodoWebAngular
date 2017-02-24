@@ -169,4 +169,4 @@ export const HeaderComponent = {
 	</div>
 </nav>
   `
-}
+};

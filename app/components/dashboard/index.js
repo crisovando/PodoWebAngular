@@ -1,6 +1,8 @@
-import angular from 'angular'
+'use strict';
 
-import { DashboardLastPacientComponent } from './dashboard-lastPacient/dashboard-lastPacient.component'  
+import angular from 'angular';
+
+import { DashboardLastPacientComponent } from './dashboard-lastPacient/dashboard-lastPacient.component';
 
 const dasboard = angular 
   .module('dashboards', [])
@@ -10,9 +12,9 @@ const dasboard = angular
       .state('dashboards', {
         url: '/',
         component: 'dashboardlastPacient'
-      })
-    $urlRouterProvider.otherwise('/')
+      });
+    $urlRouterProvider.otherwise('/');
   })
-  .name
+  .name;
 
 export default dasboard;

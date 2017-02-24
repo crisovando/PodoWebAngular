@@ -1,12 +1,43 @@
 // /app/common/footer/footer.component.js
 export const FooterComponent = {  
   template: `
-    <footer class="main-footer">		
-      <div class="pull-right hidden-xs">		
-        <b>Version</b> 2.3.8		
-      </div>		
-      <strong>Copyright © 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights		
-      reserved.		
-    </footer> 
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">{{ $ctrl.brand }}</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                  <li ng-repeat="item in $ctrl.items" ng-class="{ active: item.isActive }">
+                      <a ng-click="$ctrl.onItemClicked(item)" ng-href="{{ item.href }}">{{ item.label }}</a>
+                  </li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="#"><i class="fa fa-user"></i></a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-envelope"></i></a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-question"></i></a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-bell"></i></a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-sign-out"></i></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
   `
-}
+};

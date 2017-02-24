@@ -1,13 +1,11 @@
 // /app/components/components.js
 'use strict';
 
-import angular from 'angular'
+import angular from 'angular';
 
-import speaker from './speaker'
-import dashboard from './dashboard'
+import speaker from './speaker';
+import dashboard from './dashboard';
 
-const components = angular  
+export const ComponentsModule = angular  
   .module('app.components', [speaker, dashboard])
-  .name
-
-export default components 
+  .name;

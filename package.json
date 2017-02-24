@@ -39,12 +39,15 @@
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^2.4.1",
     "jshint-stylish": "^2.2.1",
-    "uglify": "^0.1.5"
+    "uglify": "^0.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
   },
   "scripts": {
     "create": "touch ./server/public/app.js",
-    "build": "browserify -t babelify ./app/app.js -o ./server/public/app.js",
-    "watch": "watchify -t babelify ./app/app.js -o ./server/public/app.js --debug",
+    "build": "browserify ./app/app.js -o ./server/public/app.js --transform=babelify ",
+    "watch": "watchify -t babelify -t ./app/app.js -o ./server/public/app.js --debug",
     "postinstall": "npm run create && npm run build",
     "dev": "nodemon ./server/index.js",
     "serve": "parallelshell \"npm run dev\" \"npm run watch\""

@@ -39,22 +39,12 @@ let onError = function(err) {
 
 //Busca errores en el js y nos lo muestra por pantalla		
 gulp.task('jshint', () =>{		
-  return gulp.src('./app/scripts/**/*.js')		
+  return gulp.src('./app/**/*.js')		
     .pipe(jshint('.jshintrc'))		
     .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(jshint.reporter('fail'));		
+    .pipe(jshint.reporter('fail'))
+    .pipe(reload({stream:true}));		
 })				
-
-//Pre-procesa los archivos sass
-// gulp.task('build-css', () =>{  
-//     return gulp.src('./app/**/*.scss')
-//         .pipe(sourcemaps.init())
-//         .pipe(sass({ outputStyle: 'compressed' }))
-//         .pipe(cachebust.resources())
-//         .pipe(sourcemaps.write('./maps'))
-//         .pipe(gulp.dest('./server/public/stylesheets/'))
-//         .pipe(connect.reload());
-// });
 
 gulp.task('build-css', function() {
   return gulp.src(bases.app + '**/*.scss')

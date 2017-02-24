@@ -19,4 +19,4 @@ export const SpeakerDetailComponent = {
       </aside>
     </article>
   `
-}
+};
