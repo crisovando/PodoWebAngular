@@ -6,12 +6,12 @@
 
 class SpeakerListController {
   constructor () {
-    this.message = 'Hi ngErs!'
+    this.message = 'Hi ngErs!';
   }
 
   sayHello ({ speakerName }) {
-    window.alert(`Hello ${speakerName}!`)
+    window.alert(`Hello ${speakerName}!`);
   }
 }
 
-export default SpeakerListController
+export default SpeakerListController;

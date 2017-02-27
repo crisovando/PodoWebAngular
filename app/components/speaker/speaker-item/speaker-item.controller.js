@@ -12,8 +12,8 @@ class SpeakerItemController {
       $event: {
         speakerName: this.data.name
       }
-    })
+    });
   }
 }
 
-export default SpeakerItemController
+export default SpeakerItemController;

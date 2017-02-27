@@ -39,7 +39,7 @@ let onError = function(err) {
 
 //Busca errores en el js y nos lo muestra por pantalla		
 gulp.task('jshint', () =>{		
-  return gulp.src('./app/scripts/**/*.js')		
+  return gulp.src('./app/**/*.js')		
     .pipe(jshint('.jshintrc'))		
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(jshint.reporter('fail'));		

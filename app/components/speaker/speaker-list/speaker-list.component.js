@@ -6,7 +6,7 @@
  *            - Data leaves the component through events (outputs)
  */
 
-import controller from './speaker-list.controller'
+import controller from './speaker-list.controller';
 
 export const SpeakerListComponent = {
   bindings: {
@@ -21,4 +21,4 @@ export const SpeakerListComponent = {
       </speaker-item>
     </ul>
   `
-}
+};

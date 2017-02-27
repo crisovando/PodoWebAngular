@@ -1,6 +1,3 @@
-// /app/components/speaker/speaker-item/speaker-item.component.js
-import controller from './speaker-item.controller'
-
 export const SpeakerItemComponent = {  
   bindings: {
     data: '<',
@@ -12,4 +9,4 @@ export const SpeakerItemComponent = {
       <p><a ng-href="#/speakers/{{$ctrl.data.id}}">{{$ctrl.data.talk}}</a></p>
     </li>
   `
-}
+};

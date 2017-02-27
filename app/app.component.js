@@ -2,9 +2,10 @@
 export const AppComponent = {  
   template: `
     <div class="wrapper" style="height: auto;">
-      <ac-header class="main-header"></ac-header>
-      <ac-content></ac-content>
-      <ac-footer></ac-footer>
+      <header class="main-header"></header>
+      <side-menu></side-menu>
+      <content></content>
+      <footer class="main-footer"></footer>
     </div>
   `
-}
+};
