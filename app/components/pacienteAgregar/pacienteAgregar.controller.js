@@ -1,26 +1,38 @@
+const _addPaciente = paciente => {
+  fetch('http://apipodologia.herokuapp.com/service/pacientes', {
+    method: 'post',
+    body: new FormData(paciente)
+  })
+    .then((response) => {
+      if (response.ok)
+        return response.json();
+      else {
+        return response.json()
+          .then(function(err) {
+            throw new Error('There\'s an error upstream and it says ' + err.message);
+          });
+      }
+    })
+    .then((paciente) => {
+      return { paciente: paciente };
+    })
+    .catch(function(error) {
+      console.log('There has been a problem with your fetch operation: ' + error.message);
+    });
+};
+
 class PacientFormController {
   constructor(EventEmitter) {
-      this.EventEmitter = EventEmitter;
+    this.EventEmitter = EventEmitter;
   }
   $onChanges(changes) {
-    if (changes.todo) {
-      this.todo = Object.assign({}, this.todo);
+    if (changes.paciente) {
+      this.paciente = Object.assign({}, this.paciente);
     }
   }
   onSubmit() {
-    if (!this.todo.title) return;
-    // with EventEmitter wrapper
-    this.onAddTodo(
-      this.EventEmitter({
-        todo: this.todo
-      })
-    );
-    // without EventEmitter wrapper
-    /*this.onAddTodo({
-      $event: {
-        todo: this.todo
-      }
-    });*/
+    if (!this.paciente.nombre || !this.paciente.apellido || !this.paciente.dni) return;
+    _addPaciente(this.paciente);
   }
 }
 

@@ -1,47 +1,57 @@
-'use strict';
-
-//import pacienteTemplate from './pacienteAgregar.html'
-
+import controller from './pacienteAgregar.controller';
 const PacienteAgregarComponent = {  
+  controller,
   template: `
     <div class="row">
       <div class="col-md-12">
         <div class="box box-info">
           <div class="box-header with-border">
-            <h3 class="box-title">Horizontal Form</h3>
+            <h3 class="box-title">Alta Paciente</h3>
           </div>
           <!-- /.box-header -->
           <!-- form start -->
           <form name="addPacienteForm" ng-submit="$ctrl.onSubmit();" class="form-horizontal">
             <div class="box-body">
               <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+                <label for="inputName" class="col-sm-2 control-label">Nombre</label>
 
                 <div class="col-sm-10">
-                  <input ng-model="$ctrl.paciente.nombre" type="text" class="form-control" id="inputName3" placeholder="Nombre">
+                  <input ng-model="$ctrl.paciente.nombre" type="text" class="form-control" id="inputName" placeholder="Nombre">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputApellido" class="col-sm-2 control-label">Apellido</label>
+
+                <div class="col-sm-10">
+                  <input ng-model="$ctrl.paciente.apellido" type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputDni" class="col-sm-2 control-label">Dni</label>
+
+                <div class="col-sm-10">
+                  <input ng-model="$ctrl.paciente.dni" type="text" class="form-control" id="inputDni" placeholder="DNI">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputDomicilio" class="col-sm-2 control-label">Domicilio</label>
+                
+                <div class="col-sm-10">
+                  <input ng-model="$ctrl.paciente.domicilio" type="text" class="form-control" id="inputDomicilio" placeholder="Domicilio">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputTelefono" class="col-sm-2 control-label">Telefono</label>
+
+                <div class="col-sm-10">
+                  <input ng-model="$ctrl.paciente.telefono" type="text" class="form-control" id="inputTelefono" placeholder="Telefono">
                 </div>
               </div>
               <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 
                 <div class="col-sm-10">
-                  <input ng-model="$ctrl.paciente.email" type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Remember me
-                    </label>
-                  </div>
+                  <input ng-model="$ctrl.paciente.mail" type="email" class="form-control" id="inputEmail3" placeholder="Email">
                 </div>
               </div>
             </div>

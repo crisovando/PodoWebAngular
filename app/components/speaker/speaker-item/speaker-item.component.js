@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// /app/components/speaker/speaker-item/speaker-item.component.js
 
-=======
->>>>>>> 11101aef433ed96f70b79d6dd13641be713bbfad
 export const SpeakerItemComponent = {  
   bindings: {
     data: '<',

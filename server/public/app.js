@@ -1,1 +1,0 @@
-console.error("Error: ENOENT: no such file or directory, open 'C:\\node\\Podologia\\PodoWebAngular\\.babelrc' while parsing file: C:\\node\\Podologia\\PodoWebAngular\\app\\app.js");

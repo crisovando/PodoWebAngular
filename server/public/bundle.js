@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 95);
+/******/ 	return __webpack_require__(__webpack_require__.s = 96);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1008,7 +1008,7 @@ exports.services = services;
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(80);
+__webpack_require__(81);
 module.exports = angular;
 
 
@@ -1025,17 +1025,17 @@ module.exports = angular;
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(81));
-__export(__webpack_require__(88));
+__export(__webpack_require__(82));
 __export(__webpack_require__(89));
 __export(__webpack_require__(90));
 __export(__webpack_require__(91));
 __export(__webpack_require__(92));
 __export(__webpack_require__(93));
 __export(__webpack_require__(94));
+__export(__webpack_require__(95));
 __export(__webpack_require__(29));
 __export(__webpack_require__(34));
-__export(__webpack_require__(87));
+__export(__webpack_require__(88));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -3170,11 +3170,11 @@ exports.UrlMatcher = UrlMatcher;
 var angular_1 = __webpack_require__(8);
 var ui_router_core_1 = __webpack_require__(5);
 var views_1 = __webpack_require__(21);
-var templateFactory_1 = __webpack_require__(77);
+var templateFactory_1 = __webpack_require__(78);
 var stateProvider_1 = __webpack_require__(28);
-var onEnterExitRetain_1 = __webpack_require__(76);
-var locationServices_1 = __webpack_require__(74);
-var urlRouterProvider_1 = __webpack_require__(78);
+var onEnterExitRetain_1 = __webpack_require__(77);
+var locationServices_1 = __webpack_require__(75);
+var urlRouterProvider_1 = __webpack_require__(79);
 angular_1.ng.module("ui.router.angular1", []);
 var mod_init = angular_1.ng.module('ui.router.init', []);
 var mod_util = angular_1.ng.module('ui.router.util', ['ng', 'ui.router.init']);
@@ -4434,11 +4434,11 @@ exports.Transition = Transition;
 var interface_1 = __webpack_require__(12);
 var transition_1 = __webpack_require__(26);
 var hookRegistry_1 = __webpack_require__(25);
-var resolve_1 = __webpack_require__(84);
-var views_1 = __webpack_require__(86);
-var url_1 = __webpack_require__(85);
-var redirectTo_1 = __webpack_require__(83);
-var onEnterExitRetain_1 = __webpack_require__(82);
+var resolve_1 = __webpack_require__(85);
+var views_1 = __webpack_require__(87);
+var url_1 = __webpack_require__(86);
+var redirectTo_1 = __webpack_require__(84);
+var onEnterExitRetain_1 = __webpack_require__(83);
 var lazyLoad_1 = __webpack_require__(30);
 var transitionEventType_1 = __webpack_require__(41);
 var transitionHook_1 = __webpack_require__(14);
@@ -7603,13 +7603,13 @@ exports.ViewService = ViewService;
 
 "use strict";
 
+// /app/app.component.js
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-// /app/app.component.js
 var AppComponent = exports.AppComponent = {
-  template: "\n    <div class=\"wrapper\" style=\"height: auto;\">\n      <header class=\"main-header\"></header>\n      <side-menu></side-menu>\n      <content></content>\n      <footer class=\"main-footer\"></footer>\n    </div>\n  "
+  template: '\n    <div class="wrapper" style="height: auto;">\n      <header class="main-header"></header>\n      <side-menu></side-menu>\n      <content></content>\n      <footer class="main-footer"></footer>\n    </div>\n  '
 };
 
 /***/ }),
@@ -7656,7 +7656,7 @@ var _angular = __webpack_require__(4);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _speaker = __webpack_require__(65);
+var _speaker = __webpack_require__(66);
 
 var _speaker2 = _interopRequireDefault(_speaker);
 
@@ -7691,11 +7691,11 @@ __export(__webpack_require__(5));
 __export(__webpack_require__(20));
 __export(__webpack_require__(21));
 __export(__webpack_require__(28));
-__webpack_require__(73);
-__webpack_require__(71);
-__webpack_require__(75);
+__webpack_require__(74);
 __webpack_require__(72);
-__webpack_require__(79);
+__webpack_require__(76);
+__webpack_require__(73);
+__webpack_require__(80);
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = "ui.router";
 //# sourceMappingURL=index.js.map
@@ -7859,7 +7859,7 @@ var LastPacientComponent = {
   bindings: {
     dashboard: '<'
   },
-  templateUrl: 'dashboard-lastPacient.html'
+  template: '\n    <div class="box box-danger">\n      <div class="box-header with-border">\n        <h3 class="box-title">Ultimos Pacientes</h3>\n\n        <div class="box-tools pull-right">\n          <span class="label label-danger">8 New Members</span>\n          <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>\n          </button>\n          <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>\n          </button>\n        </div>\n      </div>\n      <!-- /.box-header -->\n      <div class="box-body no-padding">\n        <ul class="users-list clearfix">\n          <li>\n            <img src="img/silueta.jpg" alt="User Image">\n            <a class="users-list-name" href="#">Alexander Pierce</a>\n            <span class="users-list-date">Today</span>\n          </li>\n          <li>\n            <img src="img/silueta.jpg" alt="User Image">\n            <a class="users-list-name" href="#">Norman</a>\n            <span class="users-list-date">Yesterday</span>\n          </li>\n          <li>\n            <img src="img/silueta.jpg" alt="User Image">\n            <a class="users-list-name" href="#">Jane</a>\n            <span class="users-list-date">12 Jan</span>\n          </li>\n          <li>\n            <img src="img/silueta.jpg" alt="User Image">\n            <a class="users-list-name" href="#">John</a>\n            <span class="users-list-date">12 Jan</span>\n          </li>\n          <li>\n            <img src="img/silueta.jpg" alt="User Image">\n            <a class="users-list-name" href="#">Alexander</a>\n            <span class="users-list-date">13 Jan</span>\n          </li>\n          <li>\n            <img src="img/silueta.jpg" alt="User Image">\n            <a class="users-list-name" href="#">Sarah</a>\n            <span class="users-list-date">14 Jan</span>\n          </li>\n          <li>\n            <img src="img/silueta.jpg" alt="User Image">\n            <a class="users-list-name" href="#">Nora</a>\n            <span class="users-list-date">15 Jan</span>\n          </li>\n          <li>\n            <img src="img/silueta.jpg" alt="User Image">\n            <a class="users-list-name" href="#">Nadia</a>\n            <span class="users-list-date">15 Jan</span>\n          </li>\n        </ul>\n        <!-- /.users-list -->\n      </div>\n      <!-- /.box-body -->\n      <div class="box-footer text-center">\n        <a href="javascript:void(0)" class="uppercase">View All Users</a>\n      </div>\n      <!-- /.box-footer -->\n    </div>\n  '
 };
 
 exports.default = LastPacientComponent;
@@ -7985,13 +7985,19 @@ exports.default = pacienteAgregar;
 "use strict";
 
 
-//import pacienteTemplate from './pacienteAgregar.html'
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _pacienteAgregar = __webpack_require__(65);
+
+var _pacienteAgregar2 = _interopRequireDefault(_pacienteAgregar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var PacienteAgregarComponent = {
-  template: '\n    <div class="row">\n      <div class="col-md-12">\n        <div class="box box-info">\n          <div class="box-header with-border">\n            <h3 class="box-title">Horizontal Form</h3>\n          </div>\n          <!-- /.box-header -->\n          <!-- form start -->\n          <form name="addPacienteForm" ng-submit="$ctrl.onSubmit();" class="form-horizontal">\n            <div class="box-body">\n              <div class="form-group">\n                <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.nombre" type="text" class="form-control" id="inputName3" placeholder="Nombre">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.email" type="email" class="form-control" id="inputEmail3" placeholder="Email">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>\n\n                <div class="col-sm-10">\n                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">\n                </div>\n              </div>\n              <div class="form-group">\n                <div class="col-sm-offset-2 col-sm-10">\n                  <div class="checkbox">\n                    <label>\n                      <input type="checkbox"> Remember me\n                    </label>\n                  </div>\n                </div>\n              </div>\n            </div>\n            <!-- /.box-body -->\n            <div class="box-footer">\n              <button type="submit" class="btn btn-default">Cancel</button>\n              <button type="submit" class="btn btn-info pull-right">Guardar</button>\n            </div>\n            <!-- /.box-footer -->\n          </form>\n        </div>\n      </div>\n    </div>\n  '
+  controller: _pacienteAgregar2.default,
+  template: '\n    <div class="row">\n      <div class="col-md-12">\n        <div class="box box-info">\n          <div class="box-header with-border">\n            <h3 class="box-title">Alta Paciente</h3>\n          </div>\n          <!-- /.box-header -->\n          <!-- form start -->\n          <form name="addPacienteForm" ng-submit="$ctrl.onSubmit();" class="form-horizontal">\n            <div class="box-body">\n              <div class="form-group">\n                <label for="inputName" class="col-sm-2 control-label">Nombre</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.nombre" type="text" class="form-control" id="inputName" placeholder="Nombre">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputApellido" class="col-sm-2 control-label">Apellido</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.apellido" type="text" class="form-control" id="inputApellido" placeholder="Apellido">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputDni" class="col-sm-2 control-label">Dni</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.dni" type="text" class="form-control" id="inputDni" placeholder="DNI">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputDomicilio" class="col-sm-2 control-label">Domicilio</label>\n                \n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.domicilio" type="text" class="form-control" id="inputDomicilio" placeholder="Domicilio">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputTelefono" class="col-sm-2 control-label">Telefono</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.telefono" type="text" class="form-control" id="inputTelefono" placeholder="Telefono">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.email" type="email" class="form-control" id="inputEmail3" placeholder="Email">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>\n\n                <div class="col-sm-10">\n                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">\n                </div>\n              </div>\n            </div>\n            <!-- /.box-body -->\n            <div class="box-footer">\n              <button type="submit" class="btn btn-default">Cancel</button>\n              <button type="submit" class="btn btn-info pull-right">Guardar</button>\n            </div>\n            <!-- /.box-footer -->\n          </form>\n        </div>\n      </div>\n    </div>\n  '
 };
 
 exports.default = PacienteAgregarComponent;
@@ -8007,17 +8013,70 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var PacientFormController = function () {
+  function PacientFormController(EventEmitter) {
+    _classCallCheck(this, PacientFormController);
+
+    this.EventEmitter = EventEmitter;
+  }
+
+  _createClass(PacientFormController, [{
+    key: '$onChanges',
+    value: function $onChanges(changes) {
+      if (changes.paciente) {
+        this.paciente = Object.assign({}, this.paciente);
+      }
+    }
+  }, {
+    key: 'onSubmit',
+    value: function onSubmit() {
+      if (!this.todo.title) return;
+      // with EventEmitter wrapper
+      this.onAddPaciente(this.EventEmitter({
+        paciente: this.paciente
+      }));
+      // without EventEmitter wrapper
+      /*this.onAddTodo({
+        $event: {
+          todo: this.todo
+        }
+      });*/
+    }
+  }]);
+
+  return PacientFormController;
+}();
+
+PacientFormController.$inject = ['EventEmitter'];
+
+exports.default = PacientFormController;
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _angular = __webpack_require__(4);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _speakerItem = __webpack_require__(67);
+var _speakerItem = __webpack_require__(68);
 
-var _speakerList = __webpack_require__(68);
+var _speakerList = __webpack_require__(69);
 
-var _speakerDetail = __webpack_require__(66);
+var _speakerDetail = __webpack_require__(67);
 
-var _speaker = __webpack_require__(70);
+var _speaker = __webpack_require__(71);
 
 var _speaker2 = _interopRequireDefault(_speaker);
 
@@ -8046,7 +8105,7 @@ var speaker = _angular2.default.module('speakers', []).service('SpeakerService',
 exports.default = speaker;
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8065,7 +8124,7 @@ var SpeakerDetailComponent = exports.SpeakerDetailComponent = {
 };
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8082,7 +8141,7 @@ var SpeakerItemComponent = exports.SpeakerItemComponent = {
 };
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8093,7 +8152,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SpeakerListComponent = undefined;
 
-var _speakerList = __webpack_require__(69);
+var _speakerList = __webpack_require__(70);
 
 var _speakerList2 = _interopRequireDefault(_speakerList);
 
@@ -8114,7 +8173,7 @@ var SpeakerListComponent = exports.SpeakerListComponent = {
     */
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8156,7 +8215,7 @@ var SpeakerListController = function () {
 exports.default = SpeakerListController;
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8202,7 +8261,7 @@ SpeakerService.$inject = ['$http'];
 exports.default = SpeakerService;
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8736,7 +8795,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateDirectives.js.map
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9139,7 +9198,7 @@ angular_1.ng.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
 //# sourceMappingURL=viewDirective.js.map
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9502,7 +9561,7 @@ var $urlMatcherFactoryProvider;
 //# sourceMappingURL=injectables.js.map
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9582,7 +9641,7 @@ exports.Ng1LocationServices = Ng1LocationServices;
 //# sourceMappingURL=locationServices.js.map
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9631,7 +9690,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateFilters.js.map
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9661,7 +9720,7 @@ exports.getStateHookBuilder = function (hookName) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9853,7 +9912,7 @@ var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {
 //# sourceMappingURL=templateFactory.js.map
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10062,7 +10121,7 @@ exports.UrlRouterProvider = UrlRouterProvider;
 //# sourceMappingURL=urlRouterProvider.js.map
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10090,7 +10149,7 @@ angular_1.ng.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProv
 //# sourceMappingURL=viewScroll.js.map
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports) {
 
 /**
@@ -43229,7 +43288,7 @@ $provide.value("$locale", {
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43249,7 +43308,7 @@ __export(__webpack_require__(9));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43310,7 +43369,7 @@ exports.registerOnEnterHook = function (transitionService) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43352,7 +43411,7 @@ exports.registerRedirectToHook = function (transitionService) {
 //# sourceMappingURL=redirectTo.js.map
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43399,7 +43458,7 @@ exports.registerLazyResolveState = function (transitionService) {
 //# sourceMappingURL=resolve.js.map
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43429,7 +43488,7 @@ exports.registerUpdateUrl = function (transitionService) {
 //# sourceMappingURL=url.js.map
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43481,7 +43540,7 @@ exports.registerActivateViews = function (transitionService) {
 //# sourceMappingURL=views.js.map
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43506,7 +43565,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 //# sourceMappingURL=interface.js.map
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43521,7 +43580,7 @@ __export(__webpack_require__(23));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43535,7 +43594,7 @@ __export(__webpack_require__(17));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43550,7 +43609,7 @@ __export(__webpack_require__(18));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43568,7 +43627,7 @@ __export(__webpack_require__(7));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43599,7 +43658,7 @@ __export(__webpack_require__(27));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43615,7 +43674,7 @@ __export(__webpack_require__(45));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43627,7 +43686,7 @@ __export(__webpack_require__(46));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

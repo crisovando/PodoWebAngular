@@ -36,5 +36,9 @@ module.exports = {
         path: path.join(__dirname, "server/public"),
         filename: "bundle.js"
     },
-    devtool: "source-map"
+    //watch: true,
+    devtool: "source-map",
+    devServer:{
+        contentBase: 'server/public'
+    }
 }
