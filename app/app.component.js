@@ -7,5 +7,5 @@ export const AppComponent = {
       <content></content>
       <footer class="main-footer"></footer>
     </div>
-  `
+  `,
 };

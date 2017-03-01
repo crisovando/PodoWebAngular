@@ -1,5 +1,7 @@
 'use strict';
 
+//import pacienteTemplate from './pacienteAgregar.html'
+
 const PacienteAgregarComponent = {  
   template: `
     <div class="row">
@@ -12,6 +14,13 @@ const PacienteAgregarComponent = {
           <!-- form start -->
           <form name="addPacienteForm" ng-submit="$ctrl.onSubmit();" class="form-horizontal">
             <div class="box-body">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+
+                <div class="col-sm-10">
+                  <input ng-model="$ctrl.paciente.nombre" type="text" class="form-control" id="inputName3" placeholder="Nombre">
+                </div>
+              </div>
               <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
 
@@ -50,4 +59,5 @@ const PacienteAgregarComponent = {
 };
 
 export default PacienteAgregarComponent;
+
 

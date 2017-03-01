@@ -11,7 +11,7 @@ const root = angular
   .module('angularCamp', [
     uiRouter,
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
   ])
   .component('acApp', AppComponent);
 
