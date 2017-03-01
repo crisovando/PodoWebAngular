@@ -1,7 +1,6 @@
 'use strict';
 
 import angular from 'angular';
-
 import { SpeakerItemComponent } from './speaker-item/speaker-item.component';
 import { SpeakerListComponent } from './speaker-list/speaker-list.component'; 
 import { SpeakerDetailComponent } from './speaker-detail/speaker-detail.component';

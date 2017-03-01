@@ -4,8 +4,9 @@ export const AppComponent = {
   template: `
     <div class="wrapper" style="height: auto;">
       <header class="main-header"></header>
+      <side-menu></side-menu>
       <content></content>
-      <footer></footer>
+      <footer class="main-footer"></footer>
     </div>
-  `
+  `,
 };

@@ -1,13 +1,11 @@
 'use strict';
 // /app/components/dashboard/dashboard-lastPacient/dashboard-lastPacient.component.js
 
-export const DashboardLastPacientComponent = {  
+const LastPacientComponent = {  
   bindings: {
     dashboard: '<'
   },
-  template: `
-    <article class="card">
-      
-    </article>
-  `
+  templateUrl: 'dashboard-lastPacient.html'
 };
+
+export default LastPacientComponent;

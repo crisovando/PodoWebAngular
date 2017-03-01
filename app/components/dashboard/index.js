@@ -2,19 +2,22 @@
 
 import angular from 'angular';
 
-import { DashboardLastPacientComponent } from './dashboard-lastPacient/dashboard-lastPacient.component';
+import DashboardComponent from './dashboard.component';
+//import DashBoardService from './dashboard.service';
+import DashboardLastPacient from './dashboard-lastPacient';
 
-const dasboard = angular 
-  .module('dashboards', [])
-  .component('dashboardlastPacient', DashboardLastPacientComponent)
+const dashboard = angular 
+  .module('dashboard', [DashboardLastPacient])
+  .component('dashboard', DashboardComponent)
+  //.service('dashboardService', DashboardService)
   .config(($stateProvider, $urlRouterProvider) => {
     $stateProvider
-      .state('dashboards', {
-        url: '/',
-        component: 'dashboardlastPacient'
+      .state('dashboard', {
+        url: '/dashboard',
+        component: 'dashboard'
       });
     $urlRouterProvider.otherwise('/');
   })
   .name;
 
-export default dasboard;
+export default dashboard;
