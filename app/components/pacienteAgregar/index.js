@@ -1,12 +1,13 @@
 'use strict';
 import angular from 'angular';
-import PacienteAgregarComponent from './pacienteAgregar.component'; 
+import PacienteAgregarComponent from './pacienteAgregar.component';
+import PacienteAgregarService from './pacienteAgregar.service';
 
 
 const pacienteAgregar = angular 
   .module('pacienteAgregar', [])
   .component('pacienteAgregar', PacienteAgregarComponent)
-  .value('EventEmitter', payload => ({ $event: payload}))
+  .service('PacienteAgregarService',PacienteAgregarService)
   .config(($stateProvider, $urlRouterProvider) => {
     $stateProvider
       .state('addPaciente', {

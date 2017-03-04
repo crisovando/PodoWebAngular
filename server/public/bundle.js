@@ -7997,7 +7997,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var PacienteAgregarComponent = {
   controller: _pacienteAgregar2.default,
-  template: '\n    <div class="row">\n      <div class="col-md-12">\n        <div class="box box-info">\n          <div class="box-header with-border">\n            <h3 class="box-title">Alta Paciente</h3>\n          </div>\n          <!-- /.box-header -->\n          <!-- form start -->\n          <form name="addPacienteForm" ng-submit="$ctrl.onSubmit();" class="form-horizontal">\n            <div class="box-body">\n              <div class="form-group">\n                <label for="inputName" class="col-sm-2 control-label">Nombre</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.nombre" type="text" class="form-control" id="inputName" placeholder="Nombre">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputApellido" class="col-sm-2 control-label">Apellido</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.apellido" type="text" class="form-control" id="inputApellido" placeholder="Apellido">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputDni" class="col-sm-2 control-label">Dni</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.dni" type="text" class="form-control" id="inputDni" placeholder="DNI">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputDomicilio" class="col-sm-2 control-label">Domicilio</label>\n                \n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.domicilio" type="text" class="form-control" id="inputDomicilio" placeholder="Domicilio">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputTelefono" class="col-sm-2 control-label">Telefono</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.telefono" type="text" class="form-control" id="inputTelefono" placeholder="Telefono">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.email" type="email" class="form-control" id="inputEmail3" placeholder="Email">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>\n\n                <div class="col-sm-10">\n                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">\n                </div>\n              </div>\n            </div>\n            <!-- /.box-body -->\n            <div class="box-footer">\n              <button type="submit" class="btn btn-default">Cancel</button>\n              <button type="submit" class="btn btn-info pull-right">Guardar</button>\n            </div>\n            <!-- /.box-footer -->\n          </form>\n        </div>\n      </div>\n    </div>\n  '
+  template: '\n    <div class="row">\n      <div class="col-md-12">\n        <div class="box box-info">\n          <div class="box-header with-border">\n            <h3 class="box-title">Alta Paciente</h3>\n          </div>\n          <!-- /.box-header -->\n          <!-- form start -->\n          <form name="addPacienteForm" ng-submit="$ctrl.onSubmit();" class="form-horizontal">\n            <div class="box-body">\n              <div class="form-group">\n                <label for="inputName" class="col-sm-2 control-label">Nombre</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.nombre" type="text" class="form-control" id="inputName" placeholder="Nombre">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputApellido" class="col-sm-2 control-label">Apellido</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.apellido" type="text" class="form-control" id="inputApellido" placeholder="Apellido">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputDni" class="col-sm-2 control-label">Dni</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.dni" type="text" class="form-control" id="inputDni" placeholder="DNI">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputDomicilio" class="col-sm-2 control-label">Domicilio</label>\n                \n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.domicilio" type="text" class="form-control" id="inputDomicilio" placeholder="Domicilio">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputTelefono" class="col-sm-2 control-label">Telefono</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.telefono" type="text" class="form-control" id="inputTelefono" placeholder="Telefono">\n                </div>\n              </div>\n              <div class="form-group">\n                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>\n\n                <div class="col-sm-10">\n                  <input ng-model="$ctrl.paciente.mail" type="email" class="form-control" id="inputEmail3" placeholder="Email">\n                </div>\n              </div>\n            </div>\n            <!-- /.box-body -->\n            <div class="box-footer">\n              <button type="submit" class="btn btn-default">Cancel</button>\n              <button type="submit" class="btn btn-info pull-right">Guardar</button>\n            </div>\n            <!-- /.box-footer -->\n          </form>\n        </div>\n      </div>\n    </div>\n  '
 };
 
 exports.default = PacienteAgregarComponent;
@@ -8017,6 +8017,23 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+var _addPaciente = function _addPaciente(paciente) {
+  fetch('http://apipodologia.herokuapp.com/service/pacientes', {
+    method: 'post',
+    body: new FormData(paciente)
+  }).then(function (response) {
+    if (response.ok) return response.json();else {
+      return response.json().then(function (err) {
+        throw new Error('There\'s an error upstream and it says ' + err.message);
+      });
+    }
+  }).then(function (paciente) {
+    return { paciente: paciente };
+  }).catch(function (error) {
+    console.log('There has been a problem with your fetch operation: ' + error.message);
+  });
+};
+
 var PacientFormController = function () {
   function PacientFormController(EventEmitter) {
     _classCallCheck(this, PacientFormController);
@@ -8034,17 +8051,8 @@ var PacientFormController = function () {
   }, {
     key: 'onSubmit',
     value: function onSubmit() {
-      if (!this.todo.title) return;
-      // with EventEmitter wrapper
-      this.onAddPaciente(this.EventEmitter({
-        paciente: this.paciente
-      }));
-      // without EventEmitter wrapper
-      /*this.onAddTodo({
-        $event: {
-          todo: this.todo
-        }
-      });*/
+      if (!this.paciente.nombre || !this.paciente.apellido || !this.paciente.dni) return;
+      _addPaciente(this.paciente);
     }
   }]);
 
