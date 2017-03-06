@@ -30,7 +30,7 @@ const PacienteAgregarComponent = {
                 <label for="inputDni" class="col-sm-2 control-label">Dni</label>
 
                 <div class="col-sm-10">
-                  <input ng-model="$ctrl.paciente.dni" type="text" class="form-control" id="inputDni" placeholder="DNI">
+                  <input ng-model="$ctrl.paciente.dni" type="number" class="form-control" id="inputDni" placeholder="DNI">
                 </div>
               </div>
               <div class="form-group">
@@ -44,7 +44,7 @@ const PacienteAgregarComponent = {
                 <label for="inputTelefono" class="col-sm-2 control-label">Telefono</label>
 
                 <div class="col-sm-10">
-                  <input ng-model="$ctrl.paciente.telefono" type="text" class="form-control" id="inputTelefono" placeholder="Telefono">
+                  <input ng-model="$ctrl.paciente.telefono" type="number" class="form-control" id="inputTelefono" placeholder="Telefono">
                 </div>
               </div>
               <div class="form-group">

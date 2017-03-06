@@ -1,20 +1,19 @@
-class PacienteAgregarService {
+class PacienteService {
   constructor($q, $http) {
     this.$q = $q;
     this.$http = $http;
   }
 
-  addPaciente( paciente ) {
+  getPacientes() {
     var defered = this.$q.defer();
     var promise = defered.promise;
 
     let req = {
-      method: 'POST',
+      method: 'GET',
       url: 'https://apipodologia.herokuapp.com/service/pacientes',
       headers: {
         'Content-Type': 'application/json'
-      },
-      data: JSON.stringify(paciente)
+      }
     };
 
     this.$http(req)
@@ -28,6 +27,6 @@ class PacienteAgregarService {
   }
 }
 
-PacienteAgregarService.$inject = ['$q','$http'];
+PacienteService.$inject = ['$q','$http'];
 
-export default PacienteAgregarService;
+export default PacienteService;

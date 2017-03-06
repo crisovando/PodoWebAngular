@@ -1,23 +1,22 @@
 'use strict';
 import angular from 'angular';
-
-//import PacienteComponent from './dashboard.component';
-//import DashBoardService from './dashboard.service';
+import PacienteComponent from './dashboard.component';
+import PacienteService from './paciente.service';
 
 
 const dasboard = angular 
-  .module('dashboard', [])
-  //.service('dashboardService', DashboardService)
-  .config(($stateProvider, $urlRouterProvider) => {
+  .module('pacientes', [])
+  .component('PacienteComponent',PacienteComponent)
+  .service('pacienteService', PacienteService)
+  .config(($stateProvider) => {
     $stateProvider
-      .state('dashboard', {
+      .state('getPacientes', {
         url: '/getPacientes',
-        component: 'dashboard',
-        // resolve: {
-        //   dashboardData: DashboardService => DashboardService.getData()
-        // }
+        component: 'PacienteComponent',
+        resolve: {
+          pacientes: PacienteService => PacienteService.getPacientes()
+        }
       });
-    $urlRouterProvider.otherwise('/');
   })
   .name;
 
