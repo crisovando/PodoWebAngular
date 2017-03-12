@@ -20,14 +20,14 @@ module.exports = {
                 }
             },
             {
-                test: /\.html$/,
-                loader: ['ngtemplate-loader?relativeTo=' + (path.resolve(__dirname, './app')) , 'html-loader']
-            },
-            {
                 //IMAGE LOADER
                 test: /\.(jpe?g|png|gif|svg)$/i,
-                loader:'file'
+                loader:'file-loader'
             },
+            {
+                test: /\.html$/,
+                loader: ['ngtemplate-loader?relativeTo=' + (path.resolve(__dirname, './app')),'html-loader']
+            }
         ]
     },
     context: __dirname,

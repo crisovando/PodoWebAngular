@@ -1,23 +1,30 @@
 'use strict';
+
 import angular from 'angular';
-import PacienteComponent from './dashboard.component';
+import { PacientesListComponent } from './pacientes-list/pacientes-list.component';
+import { PacientesDetailComponent } from './pacientes-detail/pacientes-detail.component';
 import PacienteService from './paciente.service';
 
 
-const dasboard = angular 
+const pacientes = angular 
   .module('pacientes', [])
-  .component('PacienteComponent',PacienteComponent)
-  .service('pacienteService', PacienteService)
+  .service('PacienteService', PacienteService)
+  .component('pacientesList', PacientesListComponent)
+  .component('pacienteDetail', PacientesDetailComponent)
   .config(($stateProvider) => {
     $stateProvider
-      .state('getPacientes', {
-        url: '/getPacientes',
-        component: 'PacienteComponent',
+      .state('listarPacientes', {
+        url: '/listarPacientes',
+        component: 'pacientesList',
         resolve: {
-          pacientes: PacienteService => PacienteService.getPacientes()
+          listpacientes: PacienteService => PacienteService.getPacientes()
         }
+      })
+      .state('detailpaciente', {
+        url: '/paciente/:id',
+        component: 'pacienteDetail'
       });
   })
   .name;
 
-export default dasboard;
+export default pacientes;

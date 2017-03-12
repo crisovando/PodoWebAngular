@@ -5,25 +5,16 @@ class PacienteService {
   }
 
   getPacientes() {
-    var defered = this.$q.defer();
-    var promise = defered.promise;
 
     let req = {
       method: 'GET',
       url: 'https://apipodologia.herokuapp.com/service/pacientes',
       headers: {
-        'Content-Type': 'application/json'
+        'Accept': 'application/json'
       }
     };
 
-    this.$http(req)
-        .then(function(data) {
-          defered.resolve(data);
-        },function(err) {
-          defered.reject(err);
-        });
-
-    return promise;
+    return this.$http(req).then(response => response.data);
   }
 }
 
