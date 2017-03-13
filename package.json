@@ -32,8 +32,7 @@
     "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "build": "node node_modules/webpack/bin/webpack.js",
     "test": " [ -f dist/bundle.js ] ",
-    "prod": "NODE_ENV=production node server.js",
-    "postinstall": "webpack -p"
+    "prod": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
