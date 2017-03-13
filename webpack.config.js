@@ -31,13 +31,13 @@ module.exports = {
         ]
     },
     context: __dirname,
-    entry: "./app/app.js",
+    entry: './app/app.js',
     output: {
-        path: path.join(__dirname, "server/public"),
-        filename: "bundle.js"
+        path: path.join(__dirname, 'server/public'),
+        filename: 'bundle.js'
     },
     //watch: true,
-    devtool: "source-map",
+    devtool: 'source-map',
     devServer:{
         contentBase: 'server/public'
     }

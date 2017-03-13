@@ -29,10 +29,11 @@
     "webpack-stream": "^3.1.0"
   },
   "scripts": {
-    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "build": "node node_modules/webpack/bin/webpack.js",
     "test": " [ -f dist/bundle.js ] ",
-    "prod": "NODE_ENV=production node server.js"
+    "start": "node ./server/index.js",
+    "heroku-postbuild": "webpack -p"
   },
   "repository": {
     "type": "git",
