@@ -30,7 +30,7 @@
   },
   "scripts": {
     "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "build": "node node_modules/webpack/bin/webpack.js",
+    "build": "webpack --config ./webpack.prod.config.js --progress --colors",
     "test": " [ -f dist/bundle.js ] ",
     "start": "node ./server/index.js",
     "heroku-postbuild": "webpack -p"
