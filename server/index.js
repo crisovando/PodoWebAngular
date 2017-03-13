@@ -43,4 +43,4 @@ app.get('*', (req, res, next) => {
 });
 
 /** Inicia el servidor */
-app.listen(port, () => console.log('Express running on port ' + port));
+app.listen(process.env.PORT, () => console.log('Express running on port ' + port));
