@@ -6,6 +6,25 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
+const port = normalizePort(process.env.PORT);
+/**
+ * Normalize a port into a number, string, or false.
+ */
+function normalizePort (val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
 
 /** Express configuration */
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -13,15 +32,6 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 /** API routes */
-// Muestra todos los speakers.
-app.get('/api/speakers', (req, res) => {  
-  res.sendFile(path.join(__dirname, 'db', 'speakers.json'));
-});
-
-// Muestra info de un único speaker.
-app.get('/api/speakers/:id', (req, res) => {  
-  res.sendFile(path.join(__dirname, 'db', `${req.params.id}.json`));
-});
 
 // envía el index.html para la SPA.
 app.get('*', (req, res, next) => {  
@@ -33,4 +43,4 @@ app.get('*', (req, res, next) => {
 });
 
 /** Inicia el servidor */
-app.listen(4000, () => console.log('Express running on port 4000'));
+app.listen(port, () => console.log('Express running on port ' + port));
