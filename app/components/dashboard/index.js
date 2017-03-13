@@ -15,6 +15,9 @@ const dashboard = angular
       .state('dashboard', {
         url: '/dashboard',
         component: 'dashboard'
+        // ncyBreadcrumb: {
+        //   label: 'Home'
+        // }
       });
     $urlRouterProvider.otherwise('/');
   })

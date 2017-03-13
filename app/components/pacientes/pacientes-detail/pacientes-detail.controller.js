@@ -1,4 +1,4 @@
-class PacienteDetailController {
+class PacientesDetailController {
   constructor(PacienteService, toastr) {
     this.pacienteAgregarService = PacienteService;
     this.toastr = toastr;
@@ -21,6 +21,6 @@ class PacienteDetailController {
   }
 }
 
-PacienteDetailController.$inject = ['PacienteService','toastr'];
+PacientesDetailController.$inject = ['PacienteService','toastr'];
 
-export default PacienteDetailController;
+export default PacientesDetailController;
