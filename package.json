@@ -33,7 +33,7 @@
     "build": "node node_modules/webpack/bin/webpack.js",
     "test": " [ -f dist/bundle.js ] ",
     "start": "node ./server/index.js",
-    "postinstall": "build"
+    "postinstall": "node node_modules/webpack/bin/webpack.js"
   },
   "repository": {
     "type": "git",
