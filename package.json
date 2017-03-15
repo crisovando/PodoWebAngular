@@ -33,7 +33,7 @@
     "build": "node node_modules/webpack/bin/webpack.js",
     "test": " [ -f dist/bundle.js ] ",
     "start": "node ./server/index.js",
-    "postinstall": "node node_modules/webpack/bin/webpack.js"
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "repository": {
     "type": "git",
