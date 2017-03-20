@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
-const port = normalizePort(process.env.PORT);
+const port = normalizePort(process.env.PORT || 8080);
+
 /**
  * Normalize a port into a number, string, or false.
  */
@@ -42,4 +43,4 @@ app.get('*', (req, res, next) => {
 });
 
 /** Inicia el servidor */
-app.listen(process.env.PORT, () => console.log('Express running on port ' + port));
+app.listen(port, () => console.log('Express running on port ' + port));

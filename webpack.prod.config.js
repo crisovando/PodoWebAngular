@@ -3,6 +3,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/,
+        loader: 'style-loader!css?sourceMap!sass?sourceMap'
+      },
+      {
         test: /\.js$/,
         enforce: 'pre',
         loader: 'eslint-loader',
@@ -26,12 +30,12 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        loader: ['ngtemplate-loader?relativeTo=' + (path.resolve(__dirname, './app')),'html-loader']
+        loader: ['ngtemplate-loader?relativeTo=' + (path.resolve(__dirname, './build/app')),'html-loader']
       }
     ]
   },
   context: __dirname,
-  entry: './app/app.js',
+  entry: './build/app/app.js',
   output: {
     path: path.join(__dirname, 'server/public'),
     filename: 'bundle.js'

@@ -29,7 +29,7 @@
           </thead>
           <tbody>
             <tr ng-repeat="paciente in $ctrl.listpacientes| filter:busqueda track by $index">
-              <td><a ng-href="{{$state.href(paciente, {'id':paciente._id})}}" class="btn btn-sm btn-info btn-flat" >VER</td>
+              <td><a ui-sref="perfilpaciente({id: paciente._id})" class="btn btn-sm btn-info btn-flat" >VER</td>
               <td style="display: none" ng-bind="paciente._id"></td>
               <td ng-bind="paciente.nombre"></td>
               <td ng-bind="paciente.apellido"></td>
