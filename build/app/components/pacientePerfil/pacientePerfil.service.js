@@ -1,26 +1,25 @@
-class PacienteService {
+class PacientePerfilService {
   constructor($resource) {
     this.$resource = $resource;
-    this.urlApiPacientes = 'https://apipodologia.herokuapp.com/service/pacientes';
     this.urlApiPaciente = 'https://apipodologia.herokuapp.com/service/pacientes/:id';
     this.urlApiPacienteHistorial = 'https://apipodologia.herokuapp.com/service/pacientes/:id/historial';
 
     this.api = this.$resource(
-      this.urlApiPacientes,
+      this.urlApiPaciente,
       {},
       {
-        'getPacientes': {
+        'getPaciente': {
           method: 'GET',
-          isArray: true
+          isArray: false
         }
       });
   }
 
-  getPacientes() {
-    return this.api.getPacientes();
+  getPaciente(id) {
+    return this.api.getPaciente({id: id});
   }
 }
 
-PacienteService.$inject = ['$resource'];
+PacientePerfilService.$inject = ['$resource'];
 
-export default PacienteService;
+export default PacientePerfilService;
