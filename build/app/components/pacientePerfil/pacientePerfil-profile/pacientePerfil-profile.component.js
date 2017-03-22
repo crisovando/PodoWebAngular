@@ -2,10 +2,10 @@
 
 import templateUrl from './pacientePerfil-profile.html';
 
-const PacientePerfilProfileComponent = {  
-  bindings: {
+const PacientePerfilProfileComponent = { 
+  bindings:{
     paciente: '<'
-  },
+  }, 
   templateUrl
 };
 

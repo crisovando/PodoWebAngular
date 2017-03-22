@@ -3,8 +3,8 @@
 import templateUrl from './pacientePerfil.html';
 
 const PacientePerfilComponent = {  
-  bindigs:{
-    unpaciente: '<'
+  bindings:{
+    paciente: '<'
   },
   templateUrl
 };
