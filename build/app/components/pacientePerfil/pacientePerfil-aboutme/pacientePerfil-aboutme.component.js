@@ -2,7 +2,10 @@
 
 import templateUrl from './pacientePerfil-aboutme.html';
 
-const PacientePerfilAboutMeComponent = {  
+const PacientePerfilAboutMeComponent = {
+  bindings:{
+    paciente: '<'
+  }, 
   templateUrl
 };
 
