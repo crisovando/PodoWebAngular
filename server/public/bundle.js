@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 117);
+/******/ 	return __webpack_require__(__webpack_require__.s = 129);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -992,7 +992,7 @@ exports.pattern = pattern;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(93);
+__webpack_require__(102);
 module.exports = angular;
 
 
@@ -1025,17 +1025,17 @@ exports.services = services;
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(94));
-__export(__webpack_require__(101));
-__export(__webpack_require__(102));
 __export(__webpack_require__(103));
-__export(__webpack_require__(104));
-__export(__webpack_require__(105));
-__export(__webpack_require__(106));
-__export(__webpack_require__(107));
+__export(__webpack_require__(110));
+__export(__webpack_require__(111));
+__export(__webpack_require__(112));
+__export(__webpack_require__(113));
+__export(__webpack_require__(114));
+__export(__webpack_require__(115));
+__export(__webpack_require__(116));
 __export(__webpack_require__(29));
 __export(__webpack_require__(34));
-__export(__webpack_require__(100));
+__export(__webpack_require__(109));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -3170,11 +3170,11 @@ exports.UrlMatcher = UrlMatcher;
 var angular_1 = __webpack_require__(8);
 var ui_router_core_1 = __webpack_require__(5);
 var views_1 = __webpack_require__(21);
-var templateFactory_1 = __webpack_require__(90);
+var templateFactory_1 = __webpack_require__(99);
 var stateProvider_1 = __webpack_require__(28);
-var onEnterExitRetain_1 = __webpack_require__(89);
-var locationServices_1 = __webpack_require__(87);
-var urlRouterProvider_1 = __webpack_require__(91);
+var onEnterExitRetain_1 = __webpack_require__(98);
+var locationServices_1 = __webpack_require__(96);
+var urlRouterProvider_1 = __webpack_require__(100);
 angular_1.ng.module("ui.router.angular1", []);
 var mod_init = angular_1.ng.module('ui.router.init', []);
 var mod_util = angular_1.ng.module('ui.router.util', ['ng', 'ui.router.init']);
@@ -4434,11 +4434,11 @@ exports.Transition = Transition;
 var interface_1 = __webpack_require__(12);
 var transition_1 = __webpack_require__(26);
 var hookRegistry_1 = __webpack_require__(25);
-var resolve_1 = __webpack_require__(97);
-var views_1 = __webpack_require__(99);
-var url_1 = __webpack_require__(98);
-var redirectTo_1 = __webpack_require__(96);
-var onEnterExitRetain_1 = __webpack_require__(95);
+var resolve_1 = __webpack_require__(106);
+var views_1 = __webpack_require__(108);
+var url_1 = __webpack_require__(107);
+var redirectTo_1 = __webpack_require__(105);
+var onEnterExitRetain_1 = __webpack_require__(104);
 var lazyLoad_1 = __webpack_require__(30);
 var transitionEventType_1 = __webpack_require__(41);
 var transitionHook_1 = __webpack_require__(14);
@@ -7628,13 +7628,13 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _header = __webpack_require__(59);
+var _header = __webpack_require__(60);
 
-var _footer = __webpack_require__(57);
+var _footer = __webpack_require__(58);
 
-var _content = __webpack_require__(55);
+var _content = __webpack_require__(56);
 
-var _sideMenu = __webpack_require__(61);
+var _sideMenu = __webpack_require__(62);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -7656,31 +7656,35 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _speaker = __webpack_require__(75);
+var _speaker = __webpack_require__(83);
 
 var _speaker2 = _interopRequireDefault(_speaker);
 
-var _dashboard = __webpack_require__(65);
+var _dashboard = __webpack_require__(66);
 
 var _dashboard2 = _interopRequireDefault(_dashboard);
 
-var _pacienteAgregar = __webpack_require__(66);
+var _pacienteAgregar = __webpack_require__(67);
 
 var _pacienteAgregar2 = _interopRequireDefault(_pacienteAgregar);
 
-var _pacientes = __webpack_require__(70);
+var _pacientes = __webpack_require__(80);
 
 var _pacientes2 = _interopRequireDefault(_pacientes);
 
+var _pacientePerfil = __webpack_require__(71);
+
+var _pacientePerfil2 = _interopRequireDefault(_pacientePerfil);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ComponentsModule = exports.ComponentsModule = _angular2.default.module('app.components', [_speaker2.default, _dashboard2.default, _pacienteAgregar2.default, _pacientes2.default]).name;
+var ComponentsModule = exports.ComponentsModule = _angular2.default.module('app.components', [_speaker2.default, _dashboard2.default, _pacienteAgregar2.default, _pacientes2.default, _pacientePerfil2.default]).name;
 
 /***/ }),
 /* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(81);
+__webpack_require__(89);
 module.exports = 'ngAnimate';
 
 
@@ -7688,7 +7692,7 @@ module.exports = 'ngAnimate';
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(82);
+__webpack_require__(90);
 module.exports = 'angular-loading-bar';
 
 
@@ -7696,13 +7700,21 @@ module.exports = 'angular-loading-bar';
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(83);
+__webpack_require__(91);
+module.exports = 'ngResource';
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(92);
 module.exports = 'toastr';
 
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7720,17 +7732,17 @@ __export(__webpack_require__(5));
 __export(__webpack_require__(20));
 __export(__webpack_require__(21));
 __export(__webpack_require__(28));
-__webpack_require__(86);
-__webpack_require__(84);
-__webpack_require__(88);
-__webpack_require__(85);
-__webpack_require__(92);
+__webpack_require__(95);
+__webpack_require__(93);
+__webpack_require__(97);
+__webpack_require__(94);
+__webpack_require__(101);
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = "ui.router";
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7741,7 +7753,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ContentComponent = undefined;
 
-var _content = __webpack_require__(108);
+var _content = __webpack_require__(117);
 
 var _content2 = _interopRequireDefault(_content);
 
@@ -7752,7 +7764,7 @@ var ContentComponent = exports.ContentComponent = {
 };
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7767,14 +7779,14 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _content = __webpack_require__(54);
+var _content = __webpack_require__(55);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ContentModule = exports.ContentModule = _angular2.default.module('content', []).component('content', _content.ContentComponent).name;
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7785,7 +7797,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.FooterComponent = undefined;
 
-var _footer = __webpack_require__(109);
+var _footer = __webpack_require__(118);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -7796,7 +7808,7 @@ var FooterComponent = exports.FooterComponent = {
 };
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7811,14 +7823,14 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _footer = __webpack_require__(56);
+var _footer = __webpack_require__(57);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var FooterModule = exports.FooterModule = _angular2.default.module('footer', []).component('footer', _footer.FooterComponent).name;
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7829,7 +7841,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.HeaderComponent = undefined;
 
-var _header = __webpack_require__(110);
+var _header = __webpack_require__(119);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -7843,7 +7855,7 @@ var HeaderComponent = exports.HeaderComponent = {
 };
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7858,14 +7870,14 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _header = __webpack_require__(58);
+var _header = __webpack_require__(59);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var HeaderModule = exports.HeaderModule = _angular2.default.module('header', []).component('header', _header.HeaderComponent).name;
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7876,7 +7888,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SideMenuComponent = undefined;
 
-var _sideMenu = __webpack_require__(111);
+var _sideMenu = __webpack_require__(120);
 
 var _sideMenu2 = _interopRequireDefault(_sideMenu);
 
@@ -7887,7 +7899,7 @@ var SideMenuComponent = exports.SideMenuComponent = {
 };
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7902,14 +7914,14 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _sideMenu = __webpack_require__(60);
+var _sideMenu = __webpack_require__(61);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SideMenuModule = exports.SideMenuModule = _angular2.default.module('sideMenu', []).component('sideMenu', _sideMenu.SideMenuComponent).name;
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7919,7 +7931,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _dashboardLastPacient = __webpack_require__(112);
+var _dashboardLastPacient = __webpack_require__(121);
 
 var _dashboardLastPacient2 = _interopRequireDefault(_dashboardLastPacient);
 
@@ -7935,7 +7947,7 @@ var LastPacientComponent = {
 exports.default = LastPacientComponent;
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7949,7 +7961,7 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _dashboardLastPacient = __webpack_require__(62);
+var _dashboardLastPacient = __webpack_require__(63);
 
 var _dashboardLastPacient2 = _interopRequireDefault(_dashboardLastPacient);
 
@@ -7960,7 +7972,7 @@ var DashboardLastPacient = _angular2.default.module('lastPacient', []).component
 exports.default = DashboardLastPacient;
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7970,7 +7982,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _dashboard = __webpack_require__(113);
+var _dashboard = __webpack_require__(122);
 
 var _dashboard2 = _interopRequireDefault(_dashboard);
 
@@ -7986,7 +7998,7 @@ var DashboardComponent = {
 exports.default = DashboardComponent;
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8000,11 +8012,11 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _dashboard = __webpack_require__(64);
+var _dashboard = __webpack_require__(65);
 
 var _dashboard2 = _interopRequireDefault(_dashboard);
 
-var _dashboardLastPacient = __webpack_require__(63);
+var _dashboardLastPacient = __webpack_require__(64);
 
 var _dashboardLastPacient2 = _interopRequireDefault(_dashboardLastPacient);
 
@@ -8026,7 +8038,7 @@ var dashboard = _angular2.default.module('dashboard', [_dashboardLastPacient2.de
 exports.default = dashboard;
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8040,11 +8052,11 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _pacienteAgregar = __webpack_require__(67);
+var _pacienteAgregar = __webpack_require__(68);
 
 var _pacienteAgregar2 = _interopRequireDefault(_pacienteAgregar);
 
-var _pacienteAgregar3 = __webpack_require__(69);
+var _pacienteAgregar3 = __webpack_require__(70);
 
 var _pacienteAgregar4 = _interopRequireDefault(_pacienteAgregar3);
 
@@ -8061,7 +8073,7 @@ var pacienteAgregar = _angular2.default.module('pacienteAgregar', []).component(
 exports.default = pacienteAgregar;
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8071,11 +8083,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pacienteAgregar = __webpack_require__(68);
+var _pacienteAgregar = __webpack_require__(69);
 
 var _pacienteAgregar2 = _interopRequireDefault(_pacienteAgregar);
 
-var _pacienteAgregar3 = __webpack_require__(114);
+var _pacienteAgregar3 = __webpack_require__(123);
 
 var _pacienteAgregar4 = _interopRequireDefault(_pacienteAgregar3);
 
@@ -8089,7 +8101,7 @@ var PacienteAgregarComponent = {
 exports.default = PacienteAgregarComponent;
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8141,7 +8153,7 @@ PacientFormController.$inject = ['PacienteAgregarService', 'toastr'];
 exports.default = PacientFormController;
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8196,7 +8208,7 @@ PacienteAgregarService.$inject = ['$q', '$http'];
 exports.default = PacienteAgregarService;
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8210,17 +8222,279 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _pacientesList = __webpack_require__(74);
+var _pacientePerfil = __webpack_require__(78);
 
-var _pacientesDetail = __webpack_require__(72);
+var _pacientePerfil2 = _interopRequireDefault(_pacientePerfil);
 
-var _paciente = __webpack_require__(71);
+var _pacientePerfilProfile = __webpack_require__(73);
+
+var _pacientePerfilProfile2 = _interopRequireDefault(_pacientePerfilProfile);
+
+var _pacientePerfilAboutme = __webpack_require__(72);
+
+var _pacientePerfilAboutme2 = _interopRequireDefault(_pacientePerfilAboutme);
+
+var _pacientePerfilTabs = __webpack_require__(74);
+
+var _pacientePerfilTabs2 = _interopRequireDefault(_pacientePerfilTabs);
+
+var _pacientePerfil3 = __webpack_require__(79);
+
+var _pacientePerfil4 = _interopRequireDefault(_pacientePerfil3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var perfilpaciente = _angular2.default.module('perfilpaciente', [_pacientePerfilTabs2.default]).service('PacientePerfilService', _pacientePerfil4.default).component('pacientePerfil', _pacientePerfil2.default).component('podBoxprofile', _pacientePerfilProfile2.default).component('podBoxaboutme', _pacientePerfilAboutme2.default).config(function ($stateProvider) {
+  $stateProvider.state('perfilpaciente', {
+    url: '/perfilpaciente/:id',
+    component: 'pacientePerfil',
+    resolve: {
+      paciente: function paciente(PacientePerfilService, $stateParams) {
+        return PacientePerfilService.getPaciente($stateParams.id);
+      }
+    }
+  });
+}).name;
+
+exports.default = perfilpaciente;
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _pacientePerfilAboutme = __webpack_require__(124);
+
+var _pacientePerfilAboutme2 = _interopRequireDefault(_pacientePerfilAboutme);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var PacientePerfilAboutMeComponent = {
+  bindings: {
+    paciente: '<'
+  },
+  templateUrl: _pacientePerfilAboutme2.default
+};
+
+exports.default = PacientePerfilAboutMeComponent;
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _pacientePerfilProfile = __webpack_require__(125);
+
+var _pacientePerfilProfile2 = _interopRequireDefault(_pacientePerfilProfile);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var PacientePerfilProfileComponent = {
+  bindings: {
+    paciente: '<'
+  },
+  templateUrl: _pacientePerfilProfile2.default
+};
+
+exports.default = PacientePerfilProfileComponent;
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _angular = __webpack_require__(3);
+
+var _angular2 = _interopRequireDefault(_angular);
+
+var _pacientePerfilTabs = __webpack_require__(77);
+
+var _pacientePerfilTabs2 = _interopRequireDefault(_pacientePerfilTabs);
+
+var _pacientePerfilTabsTimeline = __webpack_require__(76);
+
+var _pacientePerfilTabsTimeline2 = _interopRequireDefault(_pacientePerfilTabsTimeline);
+
+var _pacientePerfilTabsSetting = __webpack_require__(75);
+
+var _pacientePerfilTabsSetting2 = _interopRequireDefault(_pacientePerfilTabsSetting);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var pacienteperfiltabs = _angular2.default.module('pacienteperfiltabs', []).component('podPerfilTabs', _pacientePerfilTabs2.default).component('podTimeline', _pacientePerfilTabsTimeline2.default).component('podSetting', _pacientePerfilTabsSetting2.default).name;
+
+exports.default = pacienteperfiltabs;
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+//import templateUrl from './pacientePerfil-tabs.html';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var PacientePerfilTabsSettingComponent = {
+  template: '\n    <form class="form-horizontal">\n                  <div class="form-group">\n                    <label for="inputName" class="col-sm-2 control-label">Name</label>\n\n                    <div class="col-sm-10">\n                      <input type="email" class="form-control" id="inputName" placeholder="Name">\n                    </div>\n                  </div>\n                  <div class="form-group">\n                    <label for="inputEmail" class="col-sm-2 control-label">Email</label>\n\n                    <div class="col-sm-10">\n                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">\n                    </div>\n                  </div>\n                  <div class="form-group">\n                    <label for="inputName" class="col-sm-2 control-label">Name</label>\n\n                    <div class="col-sm-10">\n                      <input type="text" class="form-control" id="inputName" placeholder="Name">\n                    </div>\n                  </div>\n                  <div class="form-group">\n                    <label for="inputExperience" class="col-sm-2 control-label">Experience</label>\n\n                    <div class="col-sm-10">\n                      <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>\n                    </div>\n                  </div>\n                  <div class="form-group">\n                    <label for="inputSkills" class="col-sm-2 control-label">Skills</label>\n\n                    <div class="col-sm-10">\n                      <input type="text" class="form-control" id="inputSkills" placeholder="Skills">\n                    </div>\n                  </div>\n                  <div class="form-group">\n                    <div class="col-sm-offset-2 col-sm-10">\n                      <div class="checkbox">\n                        <label>\n                          <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>\n                        </label>\n                      </div>\n                    </div>\n                  </div>\n                  <div class="form-group">\n                    <div class="col-sm-offset-2 col-sm-10">\n                      <button type="submit" class="btn btn-danger">Submit</button>\n                    </div>\n                  </div>\n                </form>\n  '
+};
+
+exports.default = PacientePerfilTabsSettingComponent;
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+//import templateUrl from './pacientePerfil-tabs-timeline.html';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var PacientePerfilTabsTimelineComponent = {
+  template: '\n    <ul class="timeline timeline-inverse">\n                  <!-- timeline time label -->\n                  <li class="time-label">\n                        <span class="bg-red">\n                          10 Feb. 2014\n                        </span>\n                  </li>\n                  <!-- /.timeline-label -->\n                  <!-- timeline item -->\n                  <li>\n                    <i class="fa fa-envelope bg-blue"></i>\n\n                    <div class="timeline-item">\n                      <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>\n\n                      <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>\n\n                      <div class="timeline-body">\n                        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,\n                        weebly ning heekya handango imeem plugg dopplr jibjab, movity\n                        jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle\n                        quora plaxo ideeli hulu weebly balihoo...\n                      </div>\n                      <div class="timeline-footer">\n                        <a class="btn btn-primary btn-xs">Read more</a>\n                        <a class="btn btn-danger btn-xs">Delete</a>\n                      </div>\n                    </div>\n                  </li>\n                  <!-- END timeline item -->\n                  <!-- timeline item -->\n                  <li>\n                    <i class="fa fa-user bg-aqua"></i>\n\n                    <div class="timeline-item">\n                      <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>\n\n                      <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request\n                      </h3>\n                    </div>\n                  </li>\n                  <!-- END timeline item -->\n                  <!-- timeline item -->\n                  <li>\n                    <i class="fa fa-comments bg-yellow"></i>\n\n                    <div class="timeline-item">\n                      <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>\n\n                      <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>\n\n                      <div class="timeline-body">\n                        Take me to your leader!\n                        Switzerland is small and neutral!\n                        We are more like Germany, ambitious and misunderstood!\n                      </div>\n                      <div class="timeline-footer">\n                        <a class="btn btn-warning btn-flat btn-xs">View comment</a>\n                      </div>\n                    </div>\n                  </li>\n                  <!-- END timeline item -->\n                  <!-- timeline time label -->\n                  <li class="time-label">\n                        <span class="bg-green">\n                          3 Jan. 2014\n                        </span>\n                  </li>\n                  <!-- /.timeline-label -->\n                  <!-- timeline item -->\n                  <li>\n                    <i class="fa fa-camera bg-purple"></i>\n\n                    <div class="timeline-item">\n                      <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>\n\n                      <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>\n\n                      <div class="timeline-body">\n                        <img src="http://placehold.it/150x100" alt="..." class="margin">\n                        <img src="http://placehold.it/150x100" alt="..." class="margin">\n                        <img src="http://placehold.it/150x100" alt="..." class="margin">\n                        <img src="http://placehold.it/150x100" alt="..." class="margin">\n                      </div>\n                    </div>\n                  </li>\n                  <!-- END timeline item -->\n                  <li>\n                    <i class="fa fa-clock-o bg-gray"></i>\n                  </li>\n                </ul>\n  '
+};
+
+exports.default = PacientePerfilTabsTimelineComponent;
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _pacientePerfilTabs = __webpack_require__(126);
+
+var _pacientePerfilTabs2 = _interopRequireDefault(_pacientePerfilTabs);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var PacientePerfilTabsComponent = {
+  templateUrl: _pacientePerfilTabs2.default
+};
+
+exports.default = PacientePerfilTabsComponent;
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _pacientePerfil = __webpack_require__(127);
+
+var _pacientePerfil2 = _interopRequireDefault(_pacientePerfil);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var PacientePerfilComponent = {
+  bindings: {
+    paciente: '<'
+  },
+  templateUrl: _pacientePerfil2.default
+};
+
+exports.default = PacientePerfilComponent;
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var PacientePerfilService = function () {
+  function PacientePerfilService($resource) {
+    _classCallCheck(this, PacientePerfilService);
+
+    this.$resource = $resource;
+    this.urlApiPaciente = 'https://apipodologia.herokuapp.com/service/pacientes/:id';
+    this.urlApiPacienteHistorial = 'https://apipodologia.herokuapp.com/service/pacientes/:id/historial';
+
+    this.api = this.$resource(this.urlApiPaciente, {}, {
+      'getPaciente': {
+        method: 'GET',
+        isArray: false
+      }
+    });
+  }
+
+  _createClass(PacientePerfilService, [{
+    key: 'getPaciente',
+    value: function getPaciente(id) {
+      return this.api.getPaciente({ id: id });
+    }
+  }]);
+
+  return PacientePerfilService;
+}();
+
+PacientePerfilService.$inject = ['$resource'];
+
+exports.default = PacientePerfilService;
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _angular = __webpack_require__(3);
+
+var _angular2 = _interopRequireDefault(_angular);
+
+var _pacientesList = __webpack_require__(82);
+
+var _paciente = __webpack_require__(81);
 
 var _paciente2 = _interopRequireDefault(_paciente);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var pacientes = _angular2.default.module('pacientes', []).service('PacienteService', _paciente2.default).component('pacientesList', _pacientesList.PacientesListComponent).component('pacienteDetail', _pacientesDetail.PacientesDetailComponent).config(function ($stateProvider) {
+var pacientes = _angular2.default.module('pacientes', []).service('PacienteService', _paciente2.default).component('pacientesList', _pacientesList.PacientesListComponent).config(function ($stateProvider) {
   $stateProvider.state('listarPacientes', {
     url: '/listarPacientes',
     component: 'pacientesList',
@@ -8229,16 +8503,13 @@ var pacientes = _angular2.default.module('pacientes', []).service('PacienteServi
         return PacienteService.getPacientes();
       }
     }
-  }).state('detailpaciente', {
-    url: '/paciente/:id',
-    component: 'pacienteDetail'
   });
 }).name;
 
 exports.default = pacientes;
 
 /***/ }),
-/* 71 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8253,118 +8524,38 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var PacienteService = function () {
-  function PacienteService($q, $http) {
+  function PacienteService($resource) {
     _classCallCheck(this, PacienteService);
 
-    this.$q = $q;
-    this.$http = $http;
+    this.$resource = $resource;
+    this.urlApiPacientes = 'https://apipodologia.herokuapp.com/service/pacientes';
+    this.urlApiPaciente = 'https://apipodologia.herokuapp.com/service/pacientes/:id';
+    this.urlApiPacienteHistorial = 'https://apipodologia.herokuapp.com/service/pacientes/:id/historial';
+
+    this.api = this.$resource(this.urlApiPacientes, {}, {
+      'getPacientes': {
+        method: 'GET',
+        isArray: true
+      }
+    });
   }
 
   _createClass(PacienteService, [{
     key: 'getPacientes',
     value: function getPacientes() {
-
-      var req = {
-        method: 'GET',
-        url: 'https://apipodologia.herokuapp.com/service/pacientes',
-        headers: {
-          'Accept': 'application/json'
-        }
-      };
-
-      return this.$http(req).then(function (response) {
-        return response.data;
-      });
+      return this.api.getPacientes();
     }
   }]);
 
   return PacienteService;
 }();
 
-PacienteService.$inject = ['$q', '$http'];
+PacienteService.$inject = ['$resource'];
 
 exports.default = PacienteService;
 
 /***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.PacientesDetailComponent = undefined;
-
-var _pacientesDetail = __webpack_require__(73);
-
-var _pacientesDetail2 = _interopRequireDefault(_pacientesDetail);
-
-var _pacientesDetail3 = __webpack_require__(115);
-
-var _pacientesDetail4 = _interopRequireDefault(_pacientesDetail3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var PacientesDetailComponent = exports.PacientesDetailComponent = {
-  templateUrl: _pacientesDetail4.default,
-  controller: _pacientesDetail2.default
-};
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var PacientesDetailController = function () {
-  function PacientesDetailController(PacienteService, toastr) {
-    _classCallCheck(this, PacientesDetailController);
-
-    this.pacienteAgregarService = PacienteService;
-    this.toastr = toastr;
-  }
-
-  _createClass(PacientesDetailController, [{
-    key: '$onChanges',
-    value: function $onChanges(changes) {
-      if (changes.paciente) {
-        this.paciente = Object.assign({}, this.paciente);
-      }
-    }
-  }, {
-    key: 'onSubmit',
-    value: function onSubmit() {
-      var _this = this;
-
-      if (!this.paciente.nombre || !this.paciente.apellido || !this.paciente.dni) return;
-      this.pacienteService.addPaciente(this.paciente).then(function () {
-        _this.toastr.success('termino joya', 'Paciente');
-      }).catch(function (err) {
-        _this.toastr.error(err);
-      });
-    }
-  }]);
-
-  return PacientesDetailController;
-}();
-
-PacientesDetailController.$inject = ['PacienteService', 'toastr'];
-
-exports.default = PacientesDetailController;
-
-/***/ }),
-/* 74 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8375,7 +8566,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.PacientesListComponent = undefined;
 
-var _pacientesList = __webpack_require__(116);
+var _pacientesList = __webpack_require__(128);
 
 var _pacientesList2 = _interopRequireDefault(_pacientesList);
 
@@ -8394,7 +8585,7 @@ var PacientesListComponent = exports.PacientesListComponent = {
 };
 
 /***/ }),
-/* 75 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8408,13 +8599,13 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _speakerItem = __webpack_require__(77);
+var _speakerItem = __webpack_require__(85);
 
-var _speakerList = __webpack_require__(78);
+var _speakerList = __webpack_require__(86);
 
-var _speakerDetail = __webpack_require__(76);
+var _speakerDetail = __webpack_require__(84);
 
-var _speaker = __webpack_require__(80);
+var _speaker = __webpack_require__(88);
 
 var _speaker2 = _interopRequireDefault(_speaker);
 
@@ -8443,7 +8634,7 @@ var speaker = _angular2.default.module('speakers', []).service('SpeakerService',
 exports.default = speaker;
 
 /***/ }),
-/* 76 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8462,7 +8653,7 @@ var SpeakerDetailComponent = exports.SpeakerDetailComponent = {
 };
 
 /***/ }),
-/* 77 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8479,7 +8670,7 @@ var SpeakerItemComponent = exports.SpeakerItemComponent = {
 };
 
 /***/ }),
-/* 78 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8490,7 +8681,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SpeakerListComponent = undefined;
 
-var _speakerList = __webpack_require__(79);
+var _speakerList = __webpack_require__(87);
 
 var _speakerList2 = _interopRequireDefault(_speakerList);
 
@@ -8511,7 +8702,7 @@ var SpeakerListComponent = exports.SpeakerListComponent = {
     */
 
 /***/ }),
-/* 79 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8553,7 +8744,7 @@ var SpeakerListController = function () {
 exports.default = SpeakerListController;
 
 /***/ }),
-/* 80 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8599,7 +8790,7 @@ SpeakerService.$inject = ['$http'];
 exports.default = SpeakerService;
 
 /***/ }),
-/* 81 */
+/* 89 */
 /***/ (function(module, exports) {
 
 /**
@@ -12760,7 +12951,7 @@ angular.module('ngAnimate', [], function initAngularHelpers() {
 
 
 /***/ }),
-/* 82 */
+/* 90 */
 /***/ (function(module, exports) {
 
 /*! 
@@ -13107,7 +13298,863 @@ angular.module('cfp.loadingBar', [])
 
 
 /***/ }),
-/* 83 */
+/* 91 */
+/***/ (function(module, exports) {
+
+/**
+ * @license AngularJS v1.6.3
+ * (c) 2010-2017 Google, Inc. http://angularjs.org
+ * License: MIT
+ */
+(function(window, angular) {'use strict';
+
+var $resourceMinErr = angular.$$minErr('$resource');
+
+// Helper functions and regex to lookup a dotted path on an object
+// stopping at undefined/null.  The path must be composed of ASCII
+// identifiers (just like $parse)
+var MEMBER_NAME_REGEX = /^(\.[a-zA-Z_$@][0-9a-zA-Z_$@]*)+$/;
+
+function isValidDottedPath(path) {
+  return (path != null && path !== '' && path !== 'hasOwnProperty' &&
+      MEMBER_NAME_REGEX.test('.' + path));
+}
+
+function lookupDottedPath(obj, path) {
+  if (!isValidDottedPath(path)) {
+    throw $resourceMinErr('badmember', 'Dotted member path "@{0}" is invalid.', path);
+  }
+  var keys = path.split('.');
+  for (var i = 0, ii = keys.length; i < ii && angular.isDefined(obj); i++) {
+    var key = keys[i];
+    obj = (obj !== null) ? obj[key] : undefined;
+  }
+  return obj;
+}
+
+/**
+ * Create a shallow copy of an object and clear other fields from the destination
+ */
+function shallowClearAndCopy(src, dst) {
+  dst = dst || {};
+
+  angular.forEach(dst, function(value, key) {
+    delete dst[key];
+  });
+
+  for (var key in src) {
+    if (src.hasOwnProperty(key) && !(key.charAt(0) === '$' && key.charAt(1) === '$')) {
+      dst[key] = src[key];
+    }
+  }
+
+  return dst;
+}
+
+/**
+ * @ngdoc module
+ * @name ngResource
+ * @description
+ *
+ * # ngResource
+ *
+ * The `ngResource` module provides interaction support with RESTful services
+ * via the $resource service.
+ *
+ *
+ * <div doc-module-components="ngResource"></div>
+ *
+ * See {@link ngResource.$resourceProvider} and {@link ngResource.$resource} for usage.
+ */
+
+/**
+ * @ngdoc provider
+ * @name $resourceProvider
+ *
+ * @description
+ *
+ * Use `$resourceProvider` to change the default behavior of the {@link ngResource.$resource}
+ * service.
+ *
+ * ## Dependencies
+ * Requires the {@link ngResource } module to be installed.
+ *
+ */
+
+/**
+ * @ngdoc service
+ * @name $resource
+ * @requires $http
+ * @requires ng.$log
+ * @requires $q
+ * @requires ng.$timeout
+ *
+ * @description
+ * A factory which creates a resource object that lets you interact with
+ * [RESTful](http://en.wikipedia.org/wiki/Representational_State_Transfer) server-side data sources.
+ *
+ * The returned resource object has action methods which provide high-level behaviors without
+ * the need to interact with the low level {@link ng.$http $http} service.
+ *
+ * Requires the {@link ngResource `ngResource`} module to be installed.
+ *
+ * By default, trailing slashes will be stripped from the calculated URLs,
+ * which can pose problems with server backends that do not expect that
+ * behavior.  This can be disabled by configuring the `$resourceProvider` like
+ * this:
+ *
+ * ```js
+     app.config(['$resourceProvider', function($resourceProvider) {
+       // Don't strip trailing slashes from calculated URLs
+       $resourceProvider.defaults.stripTrailingSlashes = false;
+     }]);
+ * ```
+ *
+ * @param {string} url A parameterized URL template with parameters prefixed by `:` as in
+ *   `/user/:username`. If you are using a URL with a port number (e.g.
+ *   `http://example.com:8080/api`), it will be respected.
+ *
+ *   If you are using a url with a suffix, just add the suffix, like this:
+ *   `$resource('http://example.com/resource.json')` or `$resource('http://example.com/:id.json')`
+ *   or even `$resource('http://example.com/resource/:resource_id.:format')`
+ *   If the parameter before the suffix is empty, :resource_id in this case, then the `/.` will be
+ *   collapsed down to a single `.`.  If you need this sequence to appear and not collapse then you
+ *   can escape it with `/\.`.
+ *
+ * @param {Object=} paramDefaults Default values for `url` parameters. These can be overridden in
+ *   `actions` methods. If a parameter value is a function, it will be called every time
+ *   a param value needs to be obtained for a request (unless the param was overridden). The function
+ *   will be passed the current data value as an argument.
+ *
+ *   Each key value in the parameter object is first bound to url template if present and then any
+ *   excess keys are appended to the url search query after the `?`.
+ *
+ *   Given a template `/path/:verb` and parameter `{verb:'greet', salutation:'Hello'}` results in
+ *   URL `/path/greet?salutation=Hello`.
+ *
+ *   If the parameter value is prefixed with `@`, then the value for that parameter will be
+ *   extracted from the corresponding property on the `data` object (provided when calling a
+ *   "non-GET" action method).
+ *   For example, if the `defaultParam` object is `{someParam: '@someProp'}` then the value of
+ *   `someParam` will be `data.someProp`.
+ *   Note that the parameter will be ignored, when calling a "GET" action method (i.e. an action
+ *   method that does not accept a request body)
+ *
+ * @param {Object.<Object>=} actions Hash with declaration of custom actions that will be available
+ *   in addition to the default set of resource actions (see below). If a custom action has the same
+ *   key as a default action (e.g. `save`), then the default action will be *overwritten*, and not
+ *   extended.
+ *
+ *   The declaration should be created in the format of {@link ng.$http#usage $http.config}:
+ *
+ *       {action1: {method:?, params:?, isArray:?, headers:?, ...},
+ *        action2: {method:?, params:?, isArray:?, headers:?, ...},
+ *        ...}
+ *
+ *   Where:
+ *
+ *   - **`action`** – {string} – The name of action. This name becomes the name of the method on
+ *     your resource object.
+ *   - **`method`** – {string} – Case insensitive HTTP method (e.g. `GET`, `POST`, `PUT`,
+ *     `DELETE`, `JSONP`, etc).
+ *   - **`params`** – {Object=} – Optional set of pre-bound parameters for this action. If any of
+ *     the parameter value is a function, it will be called every time when a param value needs to
+ *     be obtained for a request (unless the param was overridden). The function will be passed the
+ *     current data value as an argument.
+ *   - **`url`** – {string} – action specific `url` override. The url templating is supported just
+ *     like for the resource-level urls.
+ *   - **`isArray`** – {boolean=} – If true then the returned object for this action is an array,
+ *     see `returns` section.
+ *   - **`transformRequest`** –
+ *     `{function(data, headersGetter)|Array.<function(data, headersGetter)>}` –
+ *     transform function or an array of such functions. The transform function takes the http
+ *     request body and headers and returns its transformed (typically serialized) version.
+ *     By default, transformRequest will contain one function that checks if the request data is
+ *     an object and serializes it using `angular.toJson`. To prevent this behavior, set
+ *     `transformRequest` to an empty array: `transformRequest: []`
+ *   - **`transformResponse`** –
+ *     `{function(data, headersGetter, status)|Array.<function(data, headersGetter, status)>}` –
+ *     transform function or an array of such functions. The transform function takes the http
+ *     response body, headers and status and returns its transformed (typically deserialized)
+ *     version.
+ *     By default, transformResponse will contain one function that checks if the response looks
+ *     like a JSON string and deserializes it using `angular.fromJson`. To prevent this behavior,
+ *     set `transformResponse` to an empty array: `transformResponse: []`
+ *   - **`cache`** – `{boolean|Cache}` – If true, a default $http cache will be used to cache the
+ *     GET request, otherwise if a cache instance built with
+ *     {@link ng.$cacheFactory $cacheFactory} is supplied, this cache will be used for
+ *     caching.
+ *   - **`timeout`** – `{number}` – timeout in milliseconds.<br />
+ *     **Note:** In contrast to {@link ng.$http#usage $http.config}, {@link ng.$q promises} are
+ *     **not** supported in $resource, because the same value would be used for multiple requests.
+ *     If you are looking for a way to cancel requests, you should use the `cancellable` option.
+ *   - **`cancellable`** – `{boolean}` – if set to true, the request made by a "non-instance" call
+ *     will be cancelled (if not already completed) by calling `$cancelRequest()` on the call's
+ *     return value. Calling `$cancelRequest()` for a non-cancellable or an already
+ *     completed/cancelled request will have no effect.<br />
+ *   - **`withCredentials`** - `{boolean}` - whether to set the `withCredentials` flag on the
+ *     XHR object. See
+ *     [requests with credentials](https://developer.mozilla.org/en/http_access_control#section_5)
+ *     for more information.
+ *   - **`responseType`** - `{string}` - see
+ *     [requestType](https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest#responseType).
+ *   - **`interceptor`** - `{Object=}` - The interceptor object has two optional methods -
+ *     `response` and `responseError`. Both `response` and `responseError` interceptors get called
+ *     with `http response` object. See {@link ng.$http $http interceptors}.
+ *
+ * @param {Object} options Hash with custom settings that should extend the
+ *   default `$resourceProvider` behavior.  The supported options are:
+ *
+ *   - **`stripTrailingSlashes`** – {boolean} – If true then the trailing
+ *   slashes from any calculated URL will be stripped. (Defaults to true.)
+ *   - **`cancellable`** – {boolean} – If true, the request made by a "non-instance" call will be
+ *   cancelled (if not already completed) by calling `$cancelRequest()` on the call's return value.
+ *   This can be overwritten per action. (Defaults to false.)
+ *
+ * @returns {Object} A resource "class" object with methods for the default set of resource actions
+ *   optionally extended with custom `actions`. The default set contains these actions:
+ *   ```js
+ *   { 'get':    {method:'GET'},
+ *     'save':   {method:'POST'},
+ *     'query':  {method:'GET', isArray:true},
+ *     'remove': {method:'DELETE'},
+ *     'delete': {method:'DELETE'} };
+ *   ```
+ *
+ *   Calling these methods invoke an {@link ng.$http} with the specified http method,
+ *   destination and parameters. When the data is returned from the server then the object is an
+ *   instance of the resource class. The actions `save`, `remove` and `delete` are available on it
+ *   as  methods with the `$` prefix. This allows you to easily perform CRUD operations (create,
+ *   read, update, delete) on server-side data like this:
+ *   ```js
+ *   var User = $resource('/user/:userId', {userId:'@id'});
+ *   var user = User.get({userId:123}, function() {
+ *     user.abc = true;
+ *     user.$save();
+ *   });
+ *   ```
+ *
+ *   It is important to realize that invoking a $resource object method immediately returns an
+ *   empty reference (object or array depending on `isArray`). Once the data is returned from the
+ *   server the existing reference is populated with the actual data. This is a useful trick since
+ *   usually the resource is assigned to a model which is then rendered by the view. Having an empty
+ *   object results in no rendering, once the data arrives from the server then the object is
+ *   populated with the data and the view automatically re-renders itself showing the new data. This
+ *   means that in most cases one never has to write a callback function for the action methods.
+ *
+ *   The action methods on the class object or instance object can be invoked with the following
+ *   parameters:
+ *
+ *   - HTTP GET "class" actions: `Resource.action([parameters], [success], [error])`
+ *   - non-GET "class" actions: `Resource.action([parameters], postData, [success], [error])`
+ *   - non-GET instance actions:  `instance.$action([parameters], [success], [error])`
+ *
+ *
+ *   Success callback is called with (value (Object|Array), responseHeaders (Function),
+ *   status (number), statusText (string)) arguments, where the value is the populated resource
+ *   instance or collection object. The error callback is called with (httpResponse) argument.
+ *
+ *   Class actions return empty instance (with additional properties below).
+ *   Instance actions return promise of the action.
+ *
+ *   The Resource instances and collections have these additional properties:
+ *
+ *   - `$promise`: the {@link ng.$q promise} of the original server interaction that created this
+ *     instance or collection.
+ *
+ *     On success, the promise is resolved with the same resource instance or collection object,
+ *     updated with data from server. This makes it easy to use in
+ *     {@link ngRoute.$routeProvider resolve section of $routeProvider.when()} to defer view
+ *     rendering until the resource(s) are loaded.
+ *
+ *     On failure, the promise is rejected with the {@link ng.$http http response} object, without
+ *     the `resource` property.
+ *
+ *     If an interceptor object was provided, the promise will instead be resolved with the value
+ *     returned by the interceptor.
+ *
+ *   - `$resolved`: `true` after first server interaction is completed (either with success or
+ *      rejection), `false` before that. Knowing if the Resource has been resolved is useful in
+ *      data-binding.
+ *
+ *   The Resource instances and collections have these additional methods:
+ *
+ *   - `$cancelRequest`: If there is a cancellable, pending request related to the instance or
+ *      collection, calling this method will abort the request.
+ *
+ *   The Resource instances have these additional methods:
+ *
+ *   - `toJSON`: It returns a simple object without any of the extra properties added as part of
+ *     the Resource API. This object can be serialized through {@link angular.toJson} safely
+ *     without attaching Angular-specific fields. Notice that `JSON.stringify` (and
+ *     `angular.toJson`) automatically use this method when serializing a Resource instance
+ *     (see [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#toJSON()_behavior)).
+ *
+ * @example
+ *
+ * # Credit card resource
+ *
+ * ```js
+     // Define CreditCard class
+     var CreditCard = $resource('/user/:userId/card/:cardId',
+      {userId:123, cardId:'@id'}, {
+       charge: {method:'POST', params:{charge:true}}
+      });
+
+     // We can retrieve a collection from the server
+     var cards = CreditCard.query(function() {
+       // GET: /user/123/card
+       // server returns: [ {id:456, number:'1234', name:'Smith'} ];
+
+       var card = cards[0];
+       // each item is an instance of CreditCard
+       expect(card instanceof CreditCard).toEqual(true);
+       card.name = "J. Smith";
+       // non GET methods are mapped onto the instances
+       card.$save();
+       // POST: /user/123/card/456 {id:456, number:'1234', name:'J. Smith'}
+       // server returns: {id:456, number:'1234', name: 'J. Smith'};
+
+       // our custom method is mapped as well.
+       card.$charge({amount:9.99});
+       // POST: /user/123/card/456?amount=9.99&charge=true {id:456, number:'1234', name:'J. Smith'}
+     });
+
+     // we can create an instance as well
+     var newCard = new CreditCard({number:'0123'});
+     newCard.name = "Mike Smith";
+     newCard.$save();
+     // POST: /user/123/card {number:'0123', name:'Mike Smith'}
+     // server returns: {id:789, number:'0123', name: 'Mike Smith'};
+     expect(newCard.id).toEqual(789);
+ * ```
+ *
+ * The object returned from this function execution is a resource "class" which has "static" method
+ * for each action in the definition.
+ *
+ * Calling these methods invoke `$http` on the `url` template with the given `method`, `params` and
+ * `headers`.
+ *
+ * @example
+ *
+ * # User resource
+ *
+ * When the data is returned from the server then the object is an instance of the resource type and
+ * all of the non-GET methods are available with `$` prefix. This allows you to easily support CRUD
+ * operations (create, read, update, delete) on server-side data.
+
+   ```js
+     var User = $resource('/user/:userId', {userId:'@id'});
+     User.get({userId:123}, function(user) {
+       user.abc = true;
+       user.$save();
+     });
+   ```
+ *
+ * It's worth noting that the success callback for `get`, `query` and other methods gets passed
+ * in the response that came from the server as well as $http header getter function, so one
+ * could rewrite the above example and get access to http headers as:
+ *
+   ```js
+     var User = $resource('/user/:userId', {userId:'@id'});
+     User.get({userId:123}, function(user, getResponseHeaders){
+       user.abc = true;
+       user.$save(function(user, putResponseHeaders) {
+         //user => saved user object
+         //putResponseHeaders => $http header getter
+       });
+     });
+   ```
+ *
+ * You can also access the raw `$http` promise via the `$promise` property on the object returned
+ *
+   ```
+     var User = $resource('/user/:userId', {userId:'@id'});
+     User.get({userId:123})
+         .$promise.then(function(user) {
+           $scope.user = user;
+         });
+   ```
+ *
+ * @example
+ *
+ * # Creating a custom 'PUT' request
+ *
+ * In this example we create a custom method on our resource to make a PUT request
+ * ```js
+ *    var app = angular.module('app', ['ngResource', 'ngRoute']);
+ *
+ *    // Some APIs expect a PUT request in the format URL/object/ID
+ *    // Here we are creating an 'update' method
+ *    app.factory('Notes', ['$resource', function($resource) {
+ *    return $resource('/notes/:id', null,
+ *        {
+ *            'update': { method:'PUT' }
+ *        });
+ *    }]);
+ *
+ *    // In our controller we get the ID from the URL using ngRoute and $routeParams
+ *    // We pass in $routeParams and our Notes factory along with $scope
+ *    app.controller('NotesCtrl', ['$scope', '$routeParams', 'Notes',
+                                      function($scope, $routeParams, Notes) {
+ *    // First get a note object from the factory
+ *    var note = Notes.get({ id:$routeParams.id });
+ *    $id = note.id;
+ *
+ *    // Now call update passing in the ID first then the object you are updating
+ *    Notes.update({ id:$id }, note);
+ *
+ *    // This will PUT /notes/ID with the note object in the request payload
+ *    }]);
+ * ```
+ *
+ * @example
+ *
+ * # Cancelling requests
+ *
+ * If an action's configuration specifies that it is cancellable, you can cancel the request related
+ * to an instance or collection (as long as it is a result of a "non-instance" call):
+ *
+   ```js
+     // ...defining the `Hotel` resource...
+     var Hotel = $resource('/api/hotel/:id', {id: '@id'}, {
+       // Let's make the `query()` method cancellable
+       query: {method: 'get', isArray: true, cancellable: true}
+     });
+
+     // ...somewhere in the PlanVacationController...
+     ...
+     this.onDestinationChanged = function onDestinationChanged(destination) {
+       // We don't care about any pending request for hotels
+       // in a different destination any more
+       this.availableHotels.$cancelRequest();
+
+       // Let's query for hotels in '<destination>'
+       // (calls: /api/hotel?location=<destination>)
+       this.availableHotels = Hotel.query({location: destination});
+     };
+   ```
+ *
+ */
+angular.module('ngResource', ['ng']).
+  info({ angularVersion: '1.6.3' }).
+  provider('$resource', function ResourceProvider() {
+    var PROTOCOL_AND_IPV6_REGEX = /^https?:\/\/\[[^\]]*][^/]*/;
+
+    var provider = this;
+
+    /**
+     * @ngdoc property
+     * @name $resourceProvider#defaults
+     * @description
+     * Object containing default options used when creating `$resource` instances.
+     *
+     * The default values satisfy a wide range of usecases, but you may choose to overwrite any of
+     * them to further customize your instances. The available properties are:
+     *
+     * - **stripTrailingSlashes** – `{boolean}` – If true, then the trailing slashes from any
+     *   calculated URL will be stripped.<br />
+     *   (Defaults to true.)
+     * - **cancellable** – `{boolean}` – If true, the request made by a "non-instance" call will be
+     *   cancelled (if not already completed) by calling `$cancelRequest()` on the call's return
+     *   value. For more details, see {@link ngResource.$resource}. This can be overwritten per
+     *   resource class or action.<br />
+     *   (Defaults to false.)
+     * - **actions** - `{Object.<Object>}` - A hash with default actions declarations. Actions are
+     *   high-level methods corresponding to RESTful actions/methods on resources. An action may
+     *   specify what HTTP method to use, what URL to hit, if the return value will be a single
+     *   object or a collection (array) of objects etc. For more details, see
+     *   {@link ngResource.$resource}. The actions can also be enhanced or overwritten per resource
+     *   class.<br />
+     *   The default actions are:
+     *   ```js
+     *   {
+     *     get: {method: 'GET'},
+     *     save: {method: 'POST'},
+     *     query: {method: 'GET', isArray: true},
+     *     remove: {method: 'DELETE'},
+     *     delete: {method: 'DELETE'}
+     *   }
+     *   ```
+     *
+     * #### Example
+     *
+     * For example, you can specify a new `update` action that uses the `PUT` HTTP verb:
+     *
+     * ```js
+     *   angular.
+     *     module('myApp').
+     *     config(['$resourceProvider', function ($resourceProvider) {
+     *       $resourceProvider.defaults.actions.update = {
+     *         method: 'PUT'
+     *       };
+     *     });
+     * ```
+     *
+     * Or you can even overwrite the whole `actions` list and specify your own:
+     *
+     * ```js
+     *   angular.
+     *     module('myApp').
+     *     config(['$resourceProvider', function ($resourceProvider) {
+     *       $resourceProvider.defaults.actions = {
+     *         create: {method: 'POST'},
+     *         get:    {method: 'GET'},
+     *         getAll: {method: 'GET', isArray:true},
+     *         update: {method: 'PUT'},
+     *         delete: {method: 'DELETE'}
+     *       };
+     *     });
+     * ```
+     *
+     */
+    this.defaults = {
+      // Strip slashes by default
+      stripTrailingSlashes: true,
+
+      // Make non-instance requests cancellable (via `$cancelRequest()`)
+      cancellable: false,
+
+      // Default actions configuration
+      actions: {
+        'get': {method: 'GET'},
+        'save': {method: 'POST'},
+        'query': {method: 'GET', isArray: true},
+        'remove': {method: 'DELETE'},
+        'delete': {method: 'DELETE'}
+      }
+    };
+
+    this.$get = ['$http', '$log', '$q', '$timeout', function($http, $log, $q, $timeout) {
+
+      var noop = angular.noop,
+          forEach = angular.forEach,
+          extend = angular.extend,
+          copy = angular.copy,
+          isArray = angular.isArray,
+          isDefined = angular.isDefined,
+          isFunction = angular.isFunction,
+          isNumber = angular.isNumber,
+          encodeUriQuery = angular.$$encodeUriQuery,
+          encodeUriSegment = angular.$$encodeUriSegment;
+
+      function Route(template, defaults) {
+        this.template = template;
+        this.defaults = extend({}, provider.defaults, defaults);
+        this.urlParams = {};
+      }
+
+      Route.prototype = {
+        setUrlParams: function(config, params, actionUrl) {
+          var self = this,
+            url = actionUrl || self.template,
+            val,
+            encodedVal,
+            protocolAndIpv6 = '';
+
+          var urlParams = self.urlParams = Object.create(null);
+          forEach(url.split(/\W/), function(param) {
+            if (param === 'hasOwnProperty') {
+              throw $resourceMinErr('badname', 'hasOwnProperty is not a valid parameter name.');
+            }
+            if (!(new RegExp('^\\d+$').test(param)) && param &&
+              (new RegExp('(^|[^\\\\]):' + param + '(\\W|$)').test(url))) {
+              urlParams[param] = {
+                isQueryParamValue: (new RegExp('\\?.*=:' + param + '(?:\\W|$)')).test(url)
+              };
+            }
+          });
+          url = url.replace(/\\:/g, ':');
+          url = url.replace(PROTOCOL_AND_IPV6_REGEX, function(match) {
+            protocolAndIpv6 = match;
+            return '';
+          });
+
+          params = params || {};
+          forEach(self.urlParams, function(paramInfo, urlParam) {
+            val = params.hasOwnProperty(urlParam) ? params[urlParam] : self.defaults[urlParam];
+            if (isDefined(val) && val !== null) {
+              if (paramInfo.isQueryParamValue) {
+                encodedVal = encodeUriQuery(val, true);
+              } else {
+                encodedVal = encodeUriSegment(val);
+              }
+              url = url.replace(new RegExp(':' + urlParam + '(\\W|$)', 'g'), function(match, p1) {
+                return encodedVal + p1;
+              });
+            } else {
+              url = url.replace(new RegExp('(/?):' + urlParam + '(\\W|$)', 'g'), function(match,
+                  leadingSlashes, tail) {
+                if (tail.charAt(0) === '/') {
+                  return tail;
+                } else {
+                  return leadingSlashes + tail;
+                }
+              });
+            }
+          });
+
+          // strip trailing slashes and set the url (unless this behavior is specifically disabled)
+          if (self.defaults.stripTrailingSlashes) {
+            url = url.replace(/\/+$/, '') || '/';
+          }
+
+          // Collapse `/.` if found in the last URL path segment before the query.
+          // E.g. `http://url.com/id/.format?q=x` becomes `http://url.com/id.format?q=x`.
+          url = url.replace(/\/\.(?=\w+($|\?))/, '.');
+          // Replace escaped `/\.` with `/.`.
+          // (If `\.` comes from a param value, it will be encoded as `%5C.`.)
+          config.url = protocolAndIpv6 + url.replace(/\/(\\|%5C)\./, '/.');
+
+
+          // set params - delegate param encoding to $http
+          forEach(params, function(value, key) {
+            if (!self.urlParams[key]) {
+              config.params = config.params || {};
+              config.params[key] = value;
+            }
+          });
+        }
+      };
+
+
+      function resourceFactory(url, paramDefaults, actions, options) {
+        var route = new Route(url, options);
+
+        actions = extend({}, provider.defaults.actions, actions);
+
+        function extractParams(data, actionParams) {
+          var ids = {};
+          actionParams = extend({}, paramDefaults, actionParams);
+          forEach(actionParams, function(value, key) {
+            if (isFunction(value)) { value = value(data); }
+            ids[key] = value && value.charAt && value.charAt(0) === '@' ?
+              lookupDottedPath(data, value.substr(1)) : value;
+          });
+          return ids;
+        }
+
+        function defaultResponseInterceptor(response) {
+          return response.resource;
+        }
+
+        function Resource(value) {
+          shallowClearAndCopy(value || {}, this);
+        }
+
+        Resource.prototype.toJSON = function() {
+          var data = extend({}, this);
+          delete data.$promise;
+          delete data.$resolved;
+          delete data.$cancelRequest;
+          return data;
+        };
+
+        forEach(actions, function(action, name) {
+          var hasBody = /^(POST|PUT|PATCH)$/i.test(action.method);
+          var numericTimeout = action.timeout;
+          var cancellable = isDefined(action.cancellable) ?
+              action.cancellable : route.defaults.cancellable;
+
+          if (numericTimeout && !isNumber(numericTimeout)) {
+            $log.debug('ngResource:\n' +
+                       '  Only numeric values are allowed as `timeout`.\n' +
+                       '  Promises are not supported in $resource, because the same value would ' +
+                       'be used for multiple requests. If you are looking for a way to cancel ' +
+                       'requests, you should use the `cancellable` option.');
+            delete action.timeout;
+            numericTimeout = null;
+          }
+
+          Resource[name] = function(a1, a2, a3, a4) {
+            var params = {}, data, success, error;
+
+            switch (arguments.length) {
+              case 4:
+                error = a4;
+                success = a3;
+                // falls through
+              case 3:
+              case 2:
+                if (isFunction(a2)) {
+                  if (isFunction(a1)) {
+                    success = a1;
+                    error = a2;
+                    break;
+                  }
+
+                  success = a2;
+                  error = a3;
+                  // falls through
+                } else {
+                  params = a1;
+                  data = a2;
+                  success = a3;
+                  break;
+                }
+                // falls through
+              case 1:
+                if (isFunction(a1)) success = a1;
+                else if (hasBody) data = a1;
+                else params = a1;
+                break;
+              case 0: break;
+              default:
+                throw $resourceMinErr('badargs',
+                  'Expected up to 4 arguments [params, data, success, error], got {0} arguments',
+                  arguments.length);
+            }
+
+            var isInstanceCall = this instanceof Resource;
+            var value = isInstanceCall ? data : (action.isArray ? [] : new Resource(data));
+            var httpConfig = {};
+            var responseInterceptor = action.interceptor && action.interceptor.response ||
+              defaultResponseInterceptor;
+            var responseErrorInterceptor = action.interceptor && action.interceptor.responseError ||
+              undefined;
+            var hasError = !!error;
+            var hasResponseErrorInterceptor = !!responseErrorInterceptor;
+            var timeoutDeferred;
+            var numericTimeoutPromise;
+
+            forEach(action, function(value, key) {
+              switch (key) {
+                default:
+                  httpConfig[key] = copy(value);
+                  break;
+                case 'params':
+                case 'isArray':
+                case 'interceptor':
+                case 'cancellable':
+                  break;
+              }
+            });
+
+            if (!isInstanceCall && cancellable) {
+              timeoutDeferred = $q.defer();
+              httpConfig.timeout = timeoutDeferred.promise;
+
+              if (numericTimeout) {
+                numericTimeoutPromise = $timeout(timeoutDeferred.resolve, numericTimeout);
+              }
+            }
+
+            if (hasBody) httpConfig.data = data;
+            route.setUrlParams(httpConfig,
+              extend({}, extractParams(data, action.params || {}), params),
+              action.url);
+
+            var promise = $http(httpConfig).then(function(response) {
+              var data = response.data;
+
+              if (data) {
+                // Need to convert action.isArray to boolean in case it is undefined
+                if (isArray(data) !== (!!action.isArray)) {
+                  throw $resourceMinErr('badcfg',
+                      'Error in resource configuration for action `{0}`. Expected response to ' +
+                      'contain an {1} but got an {2} (Request: {3} {4})', name, action.isArray ? 'array' : 'object',
+                    isArray(data) ? 'array' : 'object', httpConfig.method, httpConfig.url);
+                }
+                if (action.isArray) {
+                  value.length = 0;
+                  forEach(data, function(item) {
+                    if (typeof item === 'object') {
+                      value.push(new Resource(item));
+                    } else {
+                      // Valid JSON values may be string literals, and these should not be converted
+                      // into objects. These items will not have access to the Resource prototype
+                      // methods, but unfortunately there
+                      value.push(item);
+                    }
+                  });
+                } else {
+                  var promise = value.$promise;     // Save the promise
+                  shallowClearAndCopy(data, value);
+                  value.$promise = promise;         // Restore the promise
+                }
+              }
+              response.resource = value;
+
+              return response;
+            });
+
+            promise = promise['finally'](function() {
+              value.$resolved = true;
+              if (!isInstanceCall && cancellable) {
+                value.$cancelRequest = noop;
+                $timeout.cancel(numericTimeoutPromise);
+                timeoutDeferred = numericTimeoutPromise = httpConfig.timeout = null;
+              }
+            });
+
+            promise = promise.then(
+              function(response) {
+                var value = responseInterceptor(response);
+                (success || noop)(value, response.headers, response.status, response.statusText);
+                return value;
+              },
+              (hasError || hasResponseErrorInterceptor) ?
+                function(response) {
+                  if (hasError && !hasResponseErrorInterceptor) {
+                    // Avoid `Possibly Unhandled Rejection` error,
+                    // but still fulfill the returned promise with a rejection
+                    promise.catch(noop);
+                  }
+                  if (hasError) error(response);
+                  return hasResponseErrorInterceptor ?
+                    responseErrorInterceptor(response) :
+                    $q.reject(response);
+                } :
+                undefined);
+
+            if (!isInstanceCall) {
+              // we are creating instance / collection
+              // - set the initial promise
+              // - return the instance / collection
+              value.$promise = promise;
+              value.$resolved = false;
+              if (cancellable) value.$cancelRequest = cancelRequest;
+
+              return value;
+            }
+
+            // instance call
+            return promise;
+
+            function cancelRequest(value) {
+              promise.catch(noop);
+              timeoutDeferred.resolve(value);
+            }
+          };
+
+
+          Resource.prototype['$' + name] = function(params, success, error) {
+            if (isFunction(params)) {
+              error = success; success = params; params = {};
+            }
+            var result = Resource[name].call(this, params, this, success, error);
+            return result.$promise || result;
+          };
+        });
+
+        Resource.bind = function(additionalParamDefaults) {
+          var extendedParamDefaults = extend({}, paramDefaults, additionalParamDefaults);
+          return resourceFactory(url, extendedParamDefaults, actions, options);
+        };
+
+        return Resource;
+      }
+
+      return resourceFactory;
+    }];
+  });
+
+
+})(window, window.angular);
+
+
+/***/ }),
+/* 92 */
 /***/ (function(module, exports) {
 
 (function() {
@@ -13621,7 +14668,7 @@ angular.module("toastr").run(["$templateCache", function($templateCache) {$templ
 $templateCache.put("directives/toast/toast.html","<div class=\"{{toastClass}} {{toastType}}\" ng-click=\"tapToast()\">\n  <div ng-switch on=\"allowHtml\">\n    <div ng-switch-default ng-if=\"title\" class=\"{{titleClass}}\" aria-label=\"{{title}}\">{{title}}</div>\n    <div ng-switch-default class=\"{{messageClass}}\" aria-label=\"{{message}}\">{{message}}</div>\n    <div ng-switch-when=\"true\" ng-if=\"title\" class=\"{{titleClass}}\" ng-bind-html=\"title\"></div>\n    <div ng-switch-when=\"true\" class=\"{{messageClass}}\" ng-bind-html=\"message\"></div>\n  </div>\n  <progress-bar ng-if=\"progressBar\"></progress-bar>\n</div>\n");}]);
 
 /***/ }),
-/* 84 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14155,7 +15202,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateDirectives.js.map
 
 /***/ }),
-/* 85 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14558,7 +15605,7 @@ angular_1.ng.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
 //# sourceMappingURL=viewDirective.js.map
 
 /***/ }),
-/* 86 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14921,7 +15968,7 @@ var $urlMatcherFactoryProvider;
 //# sourceMappingURL=injectables.js.map
 
 /***/ }),
-/* 87 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15001,7 +16048,7 @@ exports.Ng1LocationServices = Ng1LocationServices;
 //# sourceMappingURL=locationServices.js.map
 
 /***/ }),
-/* 88 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15050,7 +16097,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateFilters.js.map
 
 /***/ }),
-/* 89 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15080,7 +16127,7 @@ exports.getStateHookBuilder = function (hookName) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 90 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15272,7 +16319,7 @@ var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {
 //# sourceMappingURL=templateFactory.js.map
 
 /***/ }),
-/* 91 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15481,7 +16528,7 @@ exports.UrlRouterProvider = UrlRouterProvider;
 //# sourceMappingURL=urlRouterProvider.js.map
 
 /***/ }),
-/* 92 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15509,7 +16556,7 @@ angular_1.ng.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProv
 //# sourceMappingURL=viewScroll.js.map
 
 /***/ }),
-/* 93 */
+/* 102 */
 /***/ (function(module, exports) {
 
 /**
@@ -48859,7 +49906,7 @@ $provide.value("$locale", {
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ }),
-/* 94 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48879,7 +49926,7 @@ __export(__webpack_require__(9));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 95 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48940,7 +49987,7 @@ exports.registerOnEnterHook = function (transitionService) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 96 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48982,7 +50029,7 @@ exports.registerRedirectToHook = function (transitionService) {
 //# sourceMappingURL=redirectTo.js.map
 
 /***/ }),
-/* 97 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49029,7 +50076,7 @@ exports.registerLazyResolveState = function (transitionService) {
 //# sourceMappingURL=resolve.js.map
 
 /***/ }),
-/* 98 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49059,7 +50106,7 @@ exports.registerUpdateUrl = function (transitionService) {
 //# sourceMappingURL=url.js.map
 
 /***/ }),
-/* 99 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49111,7 +50158,7 @@ exports.registerActivateViews = function (transitionService) {
 //# sourceMappingURL=views.js.map
 
 /***/ }),
-/* 100 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49136,7 +50183,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 //# sourceMappingURL=interface.js.map
 
 /***/ }),
-/* 101 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49151,7 +50198,7 @@ __export(__webpack_require__(23));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 102 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49165,7 +50212,7 @@ __export(__webpack_require__(17));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 103 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49180,7 +50227,7 @@ __export(__webpack_require__(18));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 104 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49198,7 +50245,7 @@ __export(__webpack_require__(7));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 105 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49229,7 +50276,7 @@ __export(__webpack_require__(27));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 106 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49245,7 +50292,7 @@ __export(__webpack_require__(45));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 107 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49257,7 +50304,7 @@ __export(__webpack_require__(46));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 108 */
+/* 117 */
 /***/ (function(module, exports) {
 
 var path = '/common/content/content.html';
@@ -49266,7 +50313,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 109 */
+/* 118 */
 /***/ (function(module, exports) {
 
 var path = '/common/footer/footer.html';
@@ -49275,16 +50322,16 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 110 */
+/* 119 */
 /***/ (function(module, exports) {
 
 var path = '/common/header/header.html';
-var html = "<!-- Logo -->\r\n    <a ui-sref=\"home\" class=\"logo\">\r\n      <!-- mini logo for sidebar mini 50x50 pixels -->\r\n      <span class=\"logo-mini\"><b>A</b>LT</span>\r\n      <!-- logo for regular state and mobile devices -->\r\n      <span class=\"logo-lg\"><b>Admin</b>LTE</span>\r\n    </a>\r\n\r\n    <!-- Header Navbar -->\r\n    <nav class=\"navbar navbar-static-top\" role=\"navigation\">\r\n      <!-- Sidebar toggle button-->\r\n      <a href=\"#\" class=\"sidebar-toggle\" data-toggle=\"offcanvas\" role=\"button\">\r\n        <span class=\"sr-only\">Toggle navigation</span>\r\n      </a>\r\n      <!-- Navbar Right Menu -->\r\n      <div class=\"navbar-custom-menu\">\r\n        <ul class=\"nav navbar-nav\">\r\n          <!-- Messages: style can be found in dropdown.less-->\r\n          <li class=\"dropdown messages-menu\">\r\n            <!-- Menu toggle button -->\r\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\r\n              <i class=\"fa fa-envelope-o\"></i>\r\n              <span class=\"label label-success\">4</span>\r\n            </a>\r\n            <ul class=\"dropdown-menu\">\r\n              <li class=\"header\">You have 4 messages</li>\r\n              <li>\r\n                <!-- inner menu: contains the messages -->\r\n                <ul class=\"menu\">\r\n                  <li>\r\n                    <!-- start message -->\r\n                    <a href=\"#\">\r\n                      <div class=\"pull-left\">\r\n                        <!-- User Image -->\r\n                        <img src=\"/img/silueta.jpg\" class=\"img-circle\" alt=\"User Image\">\r\n                      </div>\r\n                      <!-- Message title and timestamp -->\r\n                      <h4>\r\n                        Support Team\r\n                        <small><i class=\"fa fa-clock-o\"></i> 5 mins</small>\r\n                      </h4>\r\n                      <!-- The message -->\r\n                      <p>Why not buy a new awesome theme?</p>\r\n                    </a>\r\n                  </li>\r\n                  <!-- end message -->\r\n                </ul>\r\n                <!-- /.menu -->\r\n              </li>\r\n              <li class=\"footer\"><a href=\"#\">See All Messages</a></li>\r\n            </ul>\r\n          </li>\r\n          <!-- /.messages-menu -->\r\n\r\n          <!-- Notifications Menu -->\r\n          <li class=\"dropdown notifications-menu\">\r\n            <!-- Menu toggle button -->\r\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\r\n              <i class=\"fa fa-bell-o\"></i>\r\n              <span class=\"label label-warning\">10</span>\r\n            </a>\r\n            <ul class=\"dropdown-menu\">\r\n              <li class=\"header\">You have 10 notifications</li>\r\n              <li>\r\n                <!-- Inner Menu: contains the notifications -->\r\n                <ul class=\"menu\">\r\n                  <li>\r\n                    <!-- start notification -->\r\n                    <a href=\"#\">\r\n                      <i class=\"fa fa-users text-aqua\"></i> 5 new members joined today\r\n                    </a>\r\n                  </li>\r\n                  <!-- end notification -->\r\n                </ul>\r\n              </li>\r\n              <li class=\"footer\"><a href=\"#\">View all</a></li>\r\n            </ul>\r\n          </li>\r\n          <!-- Tasks Menu -->\r\n          <li class=\"dropdown tasks-menu\">\r\n            <!-- Menu Toggle Button -->\r\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\r\n              <i class=\"fa fa-flag-o\"></i>\r\n              <span class=\"label label-danger\">9</span>\r\n            </a>\r\n            <ul class=\"dropdown-menu\">\r\n              <li class=\"header\">You have 9 tasks</li>\r\n              <li>\r\n                <!-- Inner menu: contains the tasks -->\r\n                <ul class=\"menu\">\r\n                  <li>\r\n                    <!-- Task item -->\r\n                    <a href=\"#\">\r\n                      <!-- Task title and progress text -->\r\n                      <h3>\r\n                        Design some buttons\r\n                        <small class=\"pull-right\">20%</small>\r\n                      </h3>\r\n                      <!-- The progress bar -->\r\n                      <div class=\"progress xs\">\r\n                        <!-- Change the css width attribute to simulate progress -->\r\n                        <div class=\"progress-bar progress-bar-aqua\" style=\"width: 20%\" role=\"progressbar\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                          <span class=\"sr-only\">20% Complete</span>\r\n                        </div>\r\n                      </div>\r\n                    </a>\r\n                  </li>\r\n                  <!-- end task item -->\r\n                </ul>\r\n              </li>\r\n              <li class=\"footer\">\r\n                <a href=\"#\">View all tasks</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <!-- User Account Menu -->\r\n          <li class=\"dropdown user user-menu\">\r\n            <!-- Menu Toggle Button -->\r\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\r\n              <!-- The user image in the navbar-->\r\n              <!--<img src=\"img/silueta.jpg\" class=\"user-image\" alt=\"User Image\">-->\r\n              <!-- hidden-xs hides the username on small devices so only the image appears. -->\r\n              <span class=\"hidden-xs\">Alexander Pierce</span>\r\n            </a>\r\n            <ul class=\"dropdown-menu\">\r\n              <!-- The user image in the menu -->\r\n              <li class=\"user-header\">\r\n                <!--<img src=\"img/silueta.jpg\" class=\"img-circle\" alt=\"User Image\">-->\r\n\r\n                <p>\r\n                  Alexander Pierce - Web Developer\r\n                  <small>Member since Nov. 2012</small>\r\n                </p>\r\n              </li>\r\n              <!-- Menu Body -->\r\n              <li class=\"user-body\">\r\n                <div class=\"row\">\r\n                  <div class=\"col-xs-4 text-center\">\r\n                    <a href=\"#\">Followers</a>\r\n                  </div>\r\n                  <div class=\"col-xs-4 text-center\">\r\n                    <a href=\"#\">Sales</a>\r\n                  </div>\r\n                  <div class=\"col-xs-4 text-center\">\r\n                    <a href=\"#\">Friends</a>\r\n                  </div>\r\n                </div>\r\n                <!-- /.row -->\r\n              </li>\r\n              <!-- Menu Footer-->\r\n              <li class=\"user-footer\">\r\n                <div class=\"pull-left\">\r\n                  <a href=\"#\" class=\"btn btn-default btn-flat\">Profile</a>\r\n                </div>\r\n                <div class=\"pull-right\">\r\n                  <a href=\"#\" class=\"btn btn-default btn-flat\">Sign out</a>\r\n                </div>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <!-- Control Sidebar Toggle Button -->\r\n          <li>\r\n            <a href=\"#\" data-toggle=\"control-sidebar\"><i class=\"fa fa-gears\"></i></a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </nav>";
+var html = "<!-- Logo -->\r\n    <a ui-sref=\"home\" class=\"logo\">\r\n      <!-- mini logo for sidebar mini 50x50 pixels -->\r\n      <span class=\"logo-mini\"><b>P</b>OD</span>\r\n      <!-- logo for regular state and mobile devices -->\r\n      <span class=\"logo-lg\"><b>Admin</b>Pacientes</span>\r\n    </a>\r\n\r\n    <!-- Header Navbar -->\r\n    <nav class=\"navbar navbar-static-top\" role=\"navigation\">\r\n      <!-- Sidebar toggle button-->\r\n      <a href=\"#\" class=\"sidebar-toggle\" data-toggle=\"offcanvas\" role=\"button\">\r\n        <span class=\"sr-only\">Toggle navigation</span>\r\n      </a>\r\n      <!-- Navbar Right Menu -->\r\n      <div class=\"navbar-custom-menu\">\r\n        <ul class=\"nav navbar-nav\">\r\n          <!-- Messages: style can be found in dropdown.less-->\r\n          <li class=\"dropdown messages-menu\">\r\n            <!-- Menu toggle button -->\r\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\r\n              <i class=\"fa fa-envelope-o\"></i>\r\n              <span class=\"label label-success\">4</span>\r\n            </a>\r\n            <ul class=\"dropdown-menu\">\r\n              <li class=\"header\">You have 4 messages</li>\r\n              <li>\r\n                <!-- inner menu: contains the messages -->\r\n                <ul class=\"menu\">\r\n                  <li>\r\n                    <!-- start message -->\r\n                    <a href=\"#\">\r\n                      <div class=\"pull-left\">\r\n                        <!-- User Image -->\r\n                        <img src=\"/img/silueta.jpg\" class=\"img-circle\" alt=\"User Image\">\r\n                      </div>\r\n                      <!-- Message title and timestamp -->\r\n                      <h4>\r\n                        Support Team\r\n                        <small><i class=\"fa fa-clock-o\"></i> 5 mins</small>\r\n                      </h4>\r\n                      <!-- The message -->\r\n                      <p>Why not buy a new awesome theme?</p>\r\n                    </a>\r\n                  </li>\r\n                  <!-- end message -->\r\n                </ul>\r\n                <!-- /.menu -->\r\n              </li>\r\n              <li class=\"footer\"><a href=\"#\">See All Messages</a></li>\r\n            </ul>\r\n          </li>\r\n          <!-- /.messages-menu -->\r\n\r\n          <!-- Notifications Menu -->\r\n          <li class=\"dropdown notifications-menu\">\r\n            <!-- Menu toggle button -->\r\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\r\n              <i class=\"fa fa-bell-o\"></i>\r\n              <span class=\"label label-warning\">10</span>\r\n            </a>\r\n            <ul class=\"dropdown-menu\">\r\n              <li class=\"header\">You have 10 notifications</li>\r\n              <li>\r\n                <!-- Inner Menu: contains the notifications -->\r\n                <ul class=\"menu\">\r\n                  <li>\r\n                    <!-- start notification -->\r\n                    <a href=\"#\">\r\n                      <i class=\"fa fa-users text-aqua\"></i> 5 new members joined today\r\n                    </a>\r\n                  </li>\r\n                  <!-- end notification -->\r\n                </ul>\r\n              </li>\r\n              <li class=\"footer\"><a href=\"#\">View all</a></li>\r\n            </ul>\r\n          </li>\r\n          <!-- Tasks Menu -->\r\n          <li class=\"dropdown tasks-menu\">\r\n            <!-- Menu Toggle Button -->\r\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\r\n              <i class=\"fa fa-flag-o\"></i>\r\n              <span class=\"label label-danger\">9</span>\r\n            </a>\r\n            <ul class=\"dropdown-menu\">\r\n              <li class=\"header\">You have 9 tasks</li>\r\n              <li>\r\n                <!-- Inner menu: contains the tasks -->\r\n                <ul class=\"menu\">\r\n                  <li>\r\n                    <!-- Task item -->\r\n                    <a href=\"#\">\r\n                      <!-- Task title and progress text -->\r\n                      <h3>\r\n                        Design some buttons\r\n                        <small class=\"pull-right\">20%</small>\r\n                      </h3>\r\n                      <!-- The progress bar -->\r\n                      <div class=\"progress xs\">\r\n                        <!-- Change the css width attribute to simulate progress -->\r\n                        <div class=\"progress-bar progress-bar-aqua\" style=\"width: 20%\" role=\"progressbar\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\">\r\n                          <span class=\"sr-only\">20% Complete</span>\r\n                        </div>\r\n                      </div>\r\n                    </a>\r\n                  </li>\r\n                  <!-- end task item -->\r\n                </ul>\r\n              </li>\r\n              <li class=\"footer\">\r\n                <a href=\"#\">View all tasks</a>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <!-- User Account Menu -->\r\n          <li class=\"dropdown user user-menu\">\r\n            <!-- Menu Toggle Button -->\r\n            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\r\n              <!-- The user image in the navbar-->\r\n              <!--<img src=\"img/silueta.jpg\" class=\"user-image\" alt=\"User Image\">-->\r\n              <!-- hidden-xs hides the username on small devices so only the image appears. -->\r\n              <span class=\"hidden-xs\">Alexander Pierce</span>\r\n            </a>\r\n            <ul class=\"dropdown-menu\">\r\n              <!-- The user image in the menu -->\r\n              <li class=\"user-header\">\r\n                <!--<img src=\"img/silueta.jpg\" class=\"img-circle\" alt=\"User Image\">-->\r\n\r\n                <p>\r\n                  Alexander Pierce - Web Developer\r\n                  <small>Member since Nov. 2012</small>\r\n                </p>\r\n              </li>\r\n              <!-- Menu Body -->\r\n              <li class=\"user-body\">\r\n                <div class=\"row\">\r\n                  <div class=\"col-xs-4 text-center\">\r\n                    <a href=\"#\">Followers</a>\r\n                  </div>\r\n                  <div class=\"col-xs-4 text-center\">\r\n                    <a href=\"#\">Sales</a>\r\n                  </div>\r\n                  <div class=\"col-xs-4 text-center\">\r\n                    <a href=\"#\">Friends</a>\r\n                  </div>\r\n                </div>\r\n                <!-- /.row -->\r\n              </li>\r\n              <!-- Menu Footer-->\r\n              <li class=\"user-footer\">\r\n                <div class=\"pull-left\">\r\n                  <a href=\"#\" class=\"btn btn-default btn-flat\">Profile</a>\r\n                </div>\r\n                <div class=\"pull-right\">\r\n                  <a href=\"#\" class=\"btn btn-default btn-flat\">Sign out</a>\r\n                </div>\r\n              </li>\r\n            </ul>\r\n          </li>\r\n          <!-- Control Sidebar Toggle Button -->\r\n          <li>\r\n            <a href=\"#\" data-toggle=\"control-sidebar\"><i class=\"fa fa-gears\"></i></a>\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </nav>";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 111 */
+/* 120 */
 /***/ (function(module, exports) {
 
 var path = '/common/side-menu/side-menu.html';
@@ -49293,7 +50340,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 112 */
+/* 121 */
 /***/ (function(module, exports) {
 
 var path = '/components/dashboard/dashboard-lastPacient/dashboard-lastPacient.html';
@@ -49302,7 +50349,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 113 */
+/* 122 */
 /***/ (function(module, exports) {
 
 var path = '/components/dashboard/dashboard.html';
@@ -49311,7 +50358,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 114 */
+/* 123 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacienteAgregar/pacienteAgregar.html';
@@ -49320,25 +50367,52 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 115 */
+/* 124 */
 /***/ (function(module, exports) {
 
-var path = '/components/pacientes/pacientes-detail/pacientes-detail.html';
-var html = "";
+var path = '/components/pacientePerfil/pacientePerfil-aboutme/pacientePerfil-aboutme.html';
+var html = "<!-- About Me -->\r\n<div class=\"box box-primary\">\r\n  <div class=\"box-header with-border\">\r\n    <h3 class=\"box-title\">About Me</h3>\r\n  </div>\r\n  <!-- /.box-header -->\r\n  <div class=\"box-body\">\r\n    <!--<strong><i class=\"fa fa-book margin-r-5\"></i> Education</strong>\r\n\r\n    <p class=\"text-muted\">\r\n      B.S. in Computer Science from the University of Tennessee at Knoxville\r\n    </p>\r\n\r\n    <hr>-->\r\n\r\n    <strong><i class=\"fa fa-map-marker margin-r-5\"></i> Domicilio</strong>\r\n\r\n    <p ng-bind=\"$ctrl.paciente.domicilio\" class=\"text-muted\"></p>\r\n\r\n    <hr>\r\n\r\n    <!--<strong><i class=\"fa fa-pencil margin-r-5\"></i> Skills</strong>\r\n\r\n    <p>\r\n      <span class=\"label label-danger\">UI Design</span>\r\n      <span class=\"label label-success\">Coding</span>\r\n      <span class=\"label label-info\">Javascript</span>\r\n      <span class=\"label label-warning\">PHP</span>\r\n      <span class=\"label label-primary\">Node.js</span>\r\n    </p>\r\n\r\n    <hr>-->\r\n\r\n    <strong><i class=\"fa fa-file-text-o margin-r-5\"></i> Notas</strong>\r\n\r\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>\r\n  </div>\r\n  <!-- /.box-body -->\r\n</div>";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 116 */
+/* 125 */
+/***/ (function(module, exports) {
+
+var path = '/components/pacientePerfil/pacientePerfil-profile/pacientePerfil-profile.html';
+var html = "<!-- Profile Image -->\r\n<div class=\"box box-primary\">\r\n  <div class=\"box-body box-profile\">\r\n    <img class=\"profile-user-img img-responsive img-circle\" src=\"/img/user4-128x128.jpg\" alt=\"User profile picture\">\r\n\r\n    <h3 ng-bind=\"$ctrl.paciente.nombre + ' ' + $ctrl.paciente.apellido\" class=\"profile-username text-center\"></h3>\r\n\r\n    <ul class=\"list-group list-group-unbordered\">\r\n      <li class=\"list-group-item\">\r\n        <b>Telefono</b> <span ng-bind=\"$ctrl.paciente.telefono\" class=\"pull-right\"></span>\r\n      </li>\r\n      <li class=\"list-group-item\">\r\n        <b>Email</b> <span ng-bind=\"$ctrl.paciente.mail\" class=\"pull-right\">543</span>\r\n      </li>\r\n    </ul>\r\n\r\n    <a href=\"#\" class=\"btn btn-primary btn-block\"><b>Dar turno</b></a>\r\n  </div>\r\n  <!-- /.box-body -->\r\n</div>";
+window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+module.exports = path;
+
+/***/ }),
+/* 126 */
+/***/ (function(module, exports) {
+
+var path = '/components/pacientePerfil/pacientePerfil-tabs/pacientePerfil-tabs.html';
+var html = "<div class=\"nav-tabs-custom\">\r\n  <ul class=\"nav nav-tabs\">\r\n    <li class=\"active\"><a href=\"#timeline\" data-toggle=\"tab\" aria-expanded=\"false\">Historial</a></li>\r\n    <li><a href=\"#settings\" data-toggle=\"tab\">Configuración</a></li>\r\n  </ul>\r\n  <div class=\"tab-content\">\r\n    <pod-timeline class=\"active tab-pane\" id=\"timeline\"></pod-timeline>\r\n    <pod-setting class=\"tab-pane\" id=\"settings\"></pod-setting>\r\n  </div>\r\n</div>";
+window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+module.exports = path;
+
+/***/ }),
+/* 127 */
+/***/ (function(module, exports) {
+
+var path = '/components/pacientePerfil/pacientePerfil.html';
+var html = "<div class=\"row\"> \r\n  <div class=\"col-md-3\"> \r\n    <pod-boxprofile paciente='$ctrl.paciente'></pod-boxprofile>\r\n    <pod-boxaboutme paciente='$ctrl.paciente'></pod-boxaboutme>\r\n  </div>\r\n  <div class=\"col-md-9\">\r\n    <pod-perfil-tabs></pod-perfil-tabs>\r\n  </div>\r\n</div>";
+window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
+module.exports = path;
+
+/***/ }),
+/* 128 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacientes/pacientes-list/pacientes-list.html';
-var html = "<div class=\"row\">\r\n  <div class=\"col-md-7\">\r\n    <div class=\"box\">\r\n      <div class=\"box-header\">\r\n        <h3 class=\"box-title\">Pacientes</h3>\r\n\r\n        <div class=\"box-tools\">\r\n          <div class=\"input-group input-group-sm\" style=\"width: 150px;\">\r\n            <input ng-model=\"busqueda\" type=\"text\" name=\"table_search\" class=\"form-control pull-right\" placeholder=\"Search\">\r\n\r\n            <div class=\"input-group-btn\">\r\n              <button type=\"submit\" class=\"btn btn-default\"><i class=\"fa fa-search\"></i></button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"box-body table-responsive no-padding\">\r\n        <table class=\"table table-hover\">\r\n          <thead>\r\n            <tr>\r\n              <th style=\"width: 10px;\"></th>\r\n              <th style=\"display: none\">Id</th>\r\n              <th>Nombre</th>\r\n              <th>Apellido</th>\r\n              <th>Domicilio</th>\r\n              <th>Telefono</th>\r\n              <th></th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr ng-repeat=\"paciente in $ctrl.listpacientes| filter:busqueda track by $index\">\r\n              <td><a ng-href=\"{{$state.href(paciente, {'id':paciente._id})}}\" class=\"btn btn-sm btn-info btn-flat\" >VER</td>\r\n              <td style=\"display: none\" ng-bind=\"paciente._id\"></td>\r\n              <td ng-bind=\"paciente.nombre\"></td>\r\n              <td ng-bind=\"paciente.apellido\"></td>\r\n              <td ng-bind=\"paciente.domicilio\"></td>\r\n              <td ng-bind=\"paciente.telefono\"></td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>";
+var html = "<div class=\"row\">\r\n  <div class=\"col-md-7\">\r\n    <div class=\"box\">\r\n      <div class=\"box-header\">\r\n        <h3 class=\"box-title\">Pacientes</h3>\r\n\r\n        <div class=\"box-tools\">\r\n          <div class=\"input-group input-group-sm\" style=\"width: 150px;\">\r\n            <input ng-model=\"busqueda\" type=\"text\" name=\"table_search\" class=\"form-control pull-right\" placeholder=\"Search\">\r\n\r\n            <div class=\"input-group-btn\">\r\n              <button type=\"submit\" class=\"btn btn-default\"><i class=\"fa fa-search\"></i></button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"box-body table-responsive no-padding\">\r\n        <table class=\"table table-hover\">\r\n          <thead>\r\n            <tr>\r\n              <th style=\"width: 10px;\"></th>\r\n              <th style=\"display: none\">Id</th>\r\n              <th>Nombre</th>\r\n              <th>Apellido</th>\r\n              <th>Domicilio</th>\r\n              <th>Telefono</th>\r\n              <th></th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr ng-repeat=\"paciente in $ctrl.listpacientes| filter:busqueda track by $index\">\r\n              <td><a ui-sref=\"perfilpaciente({id: paciente._id})\" class=\"btn btn-sm btn-info btn-flat\" >VER</td>\r\n              <td style=\"display: none\" ng-bind=\"paciente._id\"></td>\r\n              <td ng-bind=\"paciente.nombre\"></td>\r\n              <td ng-bind=\"paciente.apellido\"></td>\r\n              <td ng-bind=\"paciente.domicilio\"></td>\r\n              <td ng-bind=\"paciente.telefono\"></td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 117 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49352,7 +50426,7 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _angularUiRouter = __webpack_require__(53);
+var _angularUiRouter = __webpack_require__(54);
 
 var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 
@@ -49360,13 +50434,17 @@ var _angularLoadingBar = __webpack_require__(51);
 
 var _angularLoadingBar2 = _interopRequireDefault(_angularLoadingBar);
 
-var _angularToastr = __webpack_require__(52);
+var _angularToastr = __webpack_require__(53);
 
 var _angularToastr2 = _interopRequireDefault(_angularToastr);
 
 var _angularAnimate = __webpack_require__(50);
 
 var _angularAnimate2 = _interopRequireDefault(_angularAnimate);
+
+var _angularResource = __webpack_require__(52);
+
+var _angularResource2 = _interopRequireDefault(_angularResource);
 
 var _common = __webpack_require__(48);
 
@@ -49376,7 +50454,7 @@ var _app = __webpack_require__(47);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var root = _angular2.default.module('angularCamp', [_angularUiRouter2.default, _angularAnimate2.default, _angularToastr2.default, _common.CommonModule, _components.ComponentsModule, _angularLoadingBar2.default]).component('acApp', _app.AppComponent);
+var root = _angular2.default.module('angularCamp', [_angularUiRouter2.default, _angularAnimate2.default, _angularResource2.default, _angularToastr2.default, _common.CommonModule, _components.ComponentsModule, _angularLoadingBar2.default]).component('acApp', _app.AppComponent);
 
 document.addEventListener('DOMContentLoaded', function () {
   return _angular2.default.bootstrap(document, ['angularCamp']);
