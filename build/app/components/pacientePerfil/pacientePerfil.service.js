@@ -1,8 +1,8 @@
 class PacientePerfilService {
-  constructor($resource) {
+  constructor($resource, api) {
     this.$resource = $resource;
-    this.urlApiPaciente = 'https://apipodologia.herokuapp.com/service/pacientes/:id';
-    this.urlApiPacienteHistorial = 'https://apipodologia.herokuapp.com/service/pacientes/:id/historial';
+    this.urlApiPaciente = api + '/pacientes/:id';
+    this.urlApiPacienteHistorial = api + '/pacientes/:id/historial';
 
     this.api = this.$resource(
       this.urlApiPaciente,
@@ -20,6 +20,6 @@ class PacientePerfilService {
   }
 }
 
-PacientePerfilService.$inject = ['$resource'];
+PacientePerfilService.$inject = ['$resource', 'api'];
 
 export default PacientePerfilService;

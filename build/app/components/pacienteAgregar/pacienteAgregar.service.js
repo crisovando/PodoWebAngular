@@ -1,33 +1,29 @@
 class PacienteAgregarService {
-  constructor($q, $http) {
-    this.$q = $q;
-    this.$http = $http;
+  constructor($resource, api) {
+    this.urlApiPacientes = api.server + '/pacientes';
+
+    this.PacienteApi = $resource(this.urlApiPacientes, {}, {
+      charge: {
+        method: 'POST',
+        params: {
+          charge: true
+        }
+      }
+    });
   }
 
-  addPaciente( paciente ) {
-    var defered = this.$q.defer();
-    var promise = defered.promise;
+  addPaciente(paciente) {
+    let api = new this.PacienteApi(paciente);
+    //api.nombre = paciente.nombre;
 
-    let req = {
-      method: 'POST',
-      url: 'https://apipodologia.herokuapp.com/service/pacientes',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      data: JSON.stringify(paciente)
-    };
-
-    this.$http(req)
-        .then(function(data) {
-          defered.resolve(data);
-        },function(err) {
-          defered.reject(err);
-        });
-
-    return promise;
+    return new Promise((resolve, reject) => {
+      api.$save();
+      console.log(api);
+      resolve();
+    });
   }
 }
 
-PacienteAgregarService.$inject = ['$q','$http'];
+PacienteAgregarService.$inject = ['$resource', 'api'];
 
 export default PacienteAgregarService;

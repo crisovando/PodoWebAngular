@@ -6,12 +6,13 @@ import angularloadingbar from 'angular-loading-bar';
 import toastr from 'angular-toastr';
 import ngAnimate from 'angular-animate';
 import ngResource from 'angular-resource';
+//import config from 'config';
 
 import { CommonModule } from './common/common.module';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 
-const root = angular  
+const root = angular
   .module('angularCamp', [
     uiRouter,
     ngAnimate,
@@ -21,7 +22,10 @@ const root = angular
     ComponentsModule,
     angularloadingbar
   ])
-  .component('acApp', AppComponent);
+  .component('acApp', AppComponent)
+  .constant('api', {
+    server: 'http://localhost:5000/service'
+  });
 
 document.addEventListener('DOMContentLoaded', () => angular.bootstrap(document, ['angularCamp']));
 
