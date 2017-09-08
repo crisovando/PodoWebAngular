@@ -12,7 +12,7 @@ class PacientFormController {
     if (!this.paciente.nombre || !this.paciente.apellido || !this.paciente.dni) return;
     this.pacienteAgregarService
       .addPaciente(this.paciente)
-      .then((res)=>{
+      .then(()=>{
         this.toastr.success('termino joya', 'Paciente');
       })
       .catch((err) =>{

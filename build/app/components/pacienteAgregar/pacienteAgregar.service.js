@@ -14,11 +14,9 @@ class PacienteAgregarService {
 
   addPaciente(paciente) {
     let api = new this.PacienteApi(paciente);
-    //api.nombre = paciente.nombre;
 
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       api.$save();
-      console.log(api);
       resolve();
     });
   }
