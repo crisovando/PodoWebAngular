@@ -5,7 +5,8 @@ import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 import { ContentModule } from './content/content.module';
 import { SideMenuModule } from './side-menu/side-menu.module';
+import { ModalModule } from './modal/modal.module';
 
 export const CommonModule = angular  
-  .module('app.common', [HeaderModule, FooterModule, ContentModule, SideMenuModule])
+  .module('app.common', [HeaderModule, FooterModule, ContentModule, SideMenuModule, ModalModule])
   .name;

@@ -1,8 +1,8 @@
 class PacientePerfilService {
   constructor($resource, api) {
     this.$resource = $resource;
-    this.urlApiPaciente = api + '/pacientes/:id';
-    this.urlApiPacienteHistorial = api + '/pacientes/:id/historial';
+    this.urlApiPaciente = api.server + '/pacientes/:id';
+    this.urlApiPacienteHistorial = api.server + '/pacientes/:id/historial';
 
     this.api = this.$resource(
       this.urlApiPaciente,
