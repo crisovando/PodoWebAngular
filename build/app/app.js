@@ -6,7 +6,6 @@ import angularloadingbar from 'angular-loading-bar';
 import toastr from 'angular-toastr';
 import ngAnimate from 'angular-animate';
 import ngResource from 'angular-resource';
-//import config from 'config';
 
 import { CommonModule } from './common/common.module';
 import { ComponentsModule } from './components/components.module';

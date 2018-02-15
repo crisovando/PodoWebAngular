@@ -1,7 +1,10 @@
 'use strict';
 import templateUrl from './pacientePerfil-tabs.html';
 
-const PacientePerfilTabsComponent = {  
+const PacientePerfilTabsComponent = {
+  bindings: {
+    paciente: '<'
+  },
   templateUrl
 };
 

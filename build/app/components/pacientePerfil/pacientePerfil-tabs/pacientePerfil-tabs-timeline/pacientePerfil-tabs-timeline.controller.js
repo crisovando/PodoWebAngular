@@ -1,22 +1,17 @@
-import angular from 'angular';
-
 class PacientPerfilTimelineController {
-  constructor(ModalService) {
-    this.ModalService = ModalService;
+  constructor(HistorialAgregarService) {
+    this.HistorialAgregarService = HistorialAgregarService;
   }
 
-  showModal(ev) {
-    const submit = (objeto) => {
-      console.log(objeto);
-    };
-    console.log('objeto');
-    this.ModalService.show({
-      parent: angular.element(document.body),
-      targetEvent: ev
-    },submit);
+  $postLink(){
+    this.HistorialAgregarService
+    .getHistorialMedico(this.paciente._id)
+    .then((res)=> {
+      this.historial = res;
+    }).catch(err => this.toastr.error(err));
   }
 }
 
-PacientPerfilTimelineController.$inject = ['ModalService'];
+PacientPerfilTimelineController.$inject = ['HistorialAgregarService'];
 
 export default PacientPerfilTimelineController;
