@@ -3,7 +3,8 @@ import controller from './pacientePerfil-tabs-timeline.controller';
 
 const PacientePerfilTabsTimelineComponent = {
   bindings: {
-    paciente: '<'
+    paciente: '<',
+    historial: '<'
   },
   templateUrl,
   controller

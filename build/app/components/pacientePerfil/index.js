@@ -20,7 +20,10 @@ const perfilpaciente = angular
         url: '/perfilpaciente/:id',
         component: 'pacientePerfil',
         resolve: {
-          paciente: (PacientePerfilService, $stateParams) => PacientePerfilService.getPaciente($stateParams.id)
+          paciente: (PacientePerfilService, $stateParams) => PacientePerfilService.getPaciente($stateParams.id).$promise,
+          historial: (PacientePerfilService, paciente) => {
+            return PacientePerfilService.getHistorialMedico(paciente._id);
+          }
         }
       });
   })

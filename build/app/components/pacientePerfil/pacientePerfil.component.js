@@ -4,7 +4,8 @@ import templateUrl from './pacientePerfil.html';
 
 const PacientePerfilComponent = {  
   bindings:{
-    paciente: '<'
+    paciente: '<',
+    historial: '<'
   },
   templateUrl
 };

@@ -3,7 +3,8 @@ import templateUrl from './pacientePerfil-tabs.html';
 
 const PacientePerfilTabsComponent = {
   bindings: {
-    paciente: '<'
+    paciente: '<',
+    historial: '<'
   },
   templateUrl
 };
