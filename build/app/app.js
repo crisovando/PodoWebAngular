@@ -6,6 +6,7 @@ import angularloadingbar from 'angular-loading-bar';
 import toastr from 'angular-toastr';
 import ngAnimate from 'angular-animate';
 import ngResource from 'angular-resource';
+import config from '../../config/keys';
 
 import { CommonModule } from './common/common.module';
 import { ComponentsModule } from './components/components.module';
@@ -23,7 +24,7 @@ const root = angular
   ])
   .component('acApp', AppComponent)
   .constant('api', {
-    server: 'http://localhost:5000/service'
+    server: config.apiURI
   });
 
 document.addEventListener('DOMContentLoaded', () => angular.bootstrap(document, ['angularCamp']));
