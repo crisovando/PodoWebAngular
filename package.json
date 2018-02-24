@@ -34,6 +34,7 @@
   },
   "scripts": {
     "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "postinstall": "npm run build",
     "build": "webpack --config ./webpack.prod.config.js --progress --colors",
     "test": " [ -f dist/bundle.js ] ",
     "start": "node ./server/index.js"
