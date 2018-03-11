@@ -1,62 +1,31 @@
-<div style="text-align: end">
-  <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#exampleModal" >CARGAR</button>
+<div style="text-align: end; margin-bottom:10px">
+  <button type="button" class="btn btn-primary btn-md" ng-click="$ctrl.openModal()" >CARGAR</button>
 </div>
 <ul class="timeline timeline-inverse">
-  <!-- timeline time label -->
-  <li class="time-label">
-    <span class="bg-red">
-      10 Feb. 2014
-    </span>
-  </li>
-  <!-- /.timeline-label -->
-  <!-- timeline item -->
   <li ng-repeat="notaClinica in $ctrl.historial track by $index">
     <i class=" fa fa-file-archive-o bg-blue"></i>
 
     <div class="timeline-item">
-      <span class="time">
-        <i class="fa fa-clock-o" ng-bind="notaClinica.fechaCreacion"></i></span>
+      <span class="time"> 
+        <i class="fa fa-clock-o" ng-bind="notaClinica.fechaCreacion | date:'MM/dd/yyyy hh:mm'"></i></span>
 
-        <h3 class="timeline-header"><a href="#" ng-bind="notaClinica.titulo"></a></h3>
-        <div class="timeline-body" ng-bind="notaClinica.observacion"></div>
+        <h3 class="timeline-header">
+          <a href="#" ng-bind="notaClinica.titulo" ng-show="!notaClinica.viewEdicion"></a>
+          <input class="form-control" style="width:80%; height:2em" type="text" ng-show="notaClinica.viewEdicion"
+          ng-model="nota.titulo" ng-value="notaClinica.titulo">
+        </h3>
+        <div class="timeline-body" ng-bind="notaClinica.observacion" ng-show="!notaClinica.viewEdicion"></div>
+        <div class="timeline-body" ng-show="notaClinica.viewEdicion">
+          <textarea class="form-control" ng-model="nota.observacion" ng-value="notaClinica.observacion"></textarea>
+        </div>
         <div class="timeline-footer">
-          <a class="btn btn-primary btn-xs">Editar</a>
-          <a class="btn btn-danger btn-xs">Eliminar</a>
+          <a ng-click="notaClinica.viewEdicion = true" class="btn btn-primary btn-xs" ng-show="!notaClinica.viewEdicion">Editar</a>
+          <a ng-click="$ctrl.eliminar(notaClinica._id)" class="btn btn-danger btn-xs" ng-show="!notaClinica.viewEdicion">Eliminar</a>
+          <a ng-click="notaClinica.viewEdicion = false" class="btn btn-default btn-xs" ng-show="notaClinica.viewEdicion">Cancelar</a>
+          <a ng-click="$ctrl.editar(nota, notaClinica)" class="btn btn-primary btn-xs" ng-show="notaClinica.viewEdicion">Aceptar</a>
         </div>
       </span>
     </div>
-  </li>
-  <li>
-    <i class="fa fa-envelope bg-blue"></i>
-
-    <div class="timeline-item">
-      <span class="time">
-        <i class="fa fa-clock-o"></i> 12:05</span>
-
-      <h3 class="timeline-header">
-        <a href="#">Support Team</a> sent you an email</h3>
-
-      <div class="timeline-body">
-        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity
-        jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle quora plaxo ideeli hulu weebly balihoo...
-      </div>
-      <div class="timeline-footer">
-        <a class="btn btn-primary btn-xs">Editar</a>
-        <a class="btn btn-danger btn-xs">Eliminar</a>
-      </div>
-    </div>
-  </li>
-  <!-- END timeline item -->
-  <!-- timeline item -->
-  
-  <li class="time-label">
-    <span class="bg-green">
-      3 Jan. 2014
-    </span>
-  </li>
-  <!-- /.timeline-label -->
-  <li>
-    <i class="fa fa-clock-o bg-gray"></i>
   </li>
 </ul>
 <pod-timeline-agregar paciente="$ctrl.paciente"></pod-timeline-agregar>

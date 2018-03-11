@@ -1,8 +1,8 @@
 import angular from 'angular';
 
 class PacientPerfilTimelineAgregarController {
-  constructor(HistorialAgregarService, toastr) {
-    this.HistorialAgregarService = HistorialAgregarService;
+  constructor(TimelineService, toastr) {
+    this.TimelineService = TimelineService;
     this.toastr = toastr;
   }
 
@@ -14,10 +14,9 @@ class PacientPerfilTimelineAgregarController {
 
   onSubmit() {
     if (!this.notaClinica.titulo || !this.notaClinica.observacion) return;
-    this.HistorialAgregarService
+    this.TimelineService
       .addNotaClinica(this.paciente._id, this.notaClinica)
       .then(()=>{
-        this.toastr.success('termino joya', 'Paciente');
         angular.element('#exampleModal').modal('hide');
       })
       .catch((err) =>{
@@ -26,6 +25,6 @@ class PacientPerfilTimelineAgregarController {
   }
 }
 
-PacientPerfilTimelineAgregarController.$inject = ['HistorialAgregarService', 'toastr'];
+PacientPerfilTimelineAgregarController.$inject = ['TimelineService', 'toastr'];
 
 export default PacientPerfilTimelineAgregarController;
