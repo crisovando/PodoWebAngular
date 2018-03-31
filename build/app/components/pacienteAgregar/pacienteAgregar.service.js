@@ -1,24 +1,13 @@
+import axios from 'axios';
+
 class PacienteAgregarService {
   constructor($resource, api) {
     this.urlApiPacientes = api.server + '/pacientes';
-
-    this.PacienteApi = $resource(this.urlApiPacientes, {}, {
-      charge: {
-        method: 'POST',
-        params: {
-          charge: true
-        }
-      }
-    });
   }
 
-  addPaciente(paciente) {
-    let api = new this.PacienteApi(paciente);
-
-    return new Promise((resolve) => {
-      api.$save();
-      resolve();
-    });
+  async addPaciente(paciente) {
+    let res = await axios.post(this.urlApiPacientes, paciente);
+    return res.data;
   }
 }
 
