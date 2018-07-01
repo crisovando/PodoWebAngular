@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 76);
+/******/ 	return __webpack_require__(__webpack_require__.s = 79);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1027,7 +1027,7 @@ exports.pattern = pattern;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(147);
+__webpack_require__(152);
 module.exports = angular;
 
 
@@ -1063,17 +1063,17 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(18));
-__export(__webpack_require__(125));
-__export(__webpack_require__(126));
-__export(__webpack_require__(127));
-__export(__webpack_require__(128));
-__export(__webpack_require__(129));
 __export(__webpack_require__(130));
-__export(__webpack_require__(134));
-__export(__webpack_require__(34));
-__export(__webpack_require__(39));
 __export(__webpack_require__(131));
-__export(__webpack_require__(124));
+__export(__webpack_require__(132));
+__export(__webpack_require__(133));
+__export(__webpack_require__(134));
+__export(__webpack_require__(135));
+__export(__webpack_require__(139));
+__export(__webpack_require__(35));
+__export(__webpack_require__(40));
+__export(__webpack_require__(136));
+__export(__webpack_require__(129));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -1084,7 +1084,7 @@ __export(__webpack_require__(124));
 
 
 var bind = __webpack_require__(66);
-var isBuffer = __webpack_require__(165);
+var isBuffer = __webpack_require__(170);
 
 /*global toString:true*/
 
@@ -2987,7 +2987,7 @@ var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
 var trace_1 = __webpack_require__(8);
 var coreservices_1 = __webpack_require__(4);
-var interface_1 = __webpack_require__(38);
+var interface_1 = __webpack_require__(39);
 var resolvable_1 = __webpack_require__(13);
 var pathFactory_1 = __webpack_require__(19);
 var strings_1 = __webpack_require__(7);
@@ -3200,7 +3200,7 @@ var hof_1 = __webpack_require__(2);
 var interface_1 = __webpack_require__(11); // has or is using
 var transitionHook_1 = __webpack_require__(15);
 var hookRegistry_1 = __webpack_require__(29);
-var hookBuilder_1 = __webpack_require__(45);
+var hookBuilder_1 = __webpack_require__(46);
 var pathFactory_1 = __webpack_require__(19);
 var targetState_1 = __webpack_require__(9);
 var param_1 = __webpack_require__(10);
@@ -5143,21 +5143,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var interface_1 = __webpack_require__(11);
 var transition_1 = __webpack_require__(21);
 var hookRegistry_1 = __webpack_require__(29);
-var coreResolvables_1 = __webpack_require__(115);
-var redirectTo_1 = __webpack_require__(119);
-var onEnterExitRetain_1 = __webpack_require__(118);
-var resolve_1 = __webpack_require__(120);
-var views_1 = __webpack_require__(123);
-var updateGlobals_1 = __webpack_require__(121);
-var url_1 = __webpack_require__(122);
-var lazyLoad_1 = __webpack_require__(35);
-var transitionEventType_1 = __webpack_require__(46);
+var coreResolvables_1 = __webpack_require__(120);
+var redirectTo_1 = __webpack_require__(124);
+var onEnterExitRetain_1 = __webpack_require__(123);
+var resolve_1 = __webpack_require__(125);
+var views_1 = __webpack_require__(128);
+var updateGlobals_1 = __webpack_require__(126);
+var url_1 = __webpack_require__(127);
+var lazyLoad_1 = __webpack_require__(36);
+var transitionEventType_1 = __webpack_require__(47);
 var transitionHook_1 = __webpack_require__(15);
 var predicates_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
-var ignoredTransition_1 = __webpack_require__(116);
-var invalidTransition_1 = __webpack_require__(117);
+var ignoredTransition_1 = __webpack_require__(121);
+var invalidTransition_1 = __webpack_require__(122);
 /**
  * The default [[Transition]] options.
  *
@@ -5395,11 +5395,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var angular_1 = __webpack_require__(12);
 var core_1 = __webpack_require__(5);
 var views_1 = __webpack_require__(32);
-var templateFactory_1 = __webpack_require__(145);
-var stateProvider_1 = __webpack_require__(59);
-var onEnterExitRetain_1 = __webpack_require__(144);
-var locationServices_1 = __webpack_require__(142);
-var urlRouterProvider_1 = __webpack_require__(60);
+var templateFactory_1 = __webpack_require__(150);
+var stateProvider_1 = __webpack_require__(60);
+var onEnterExitRetain_1 = __webpack_require__(149);
+var locationServices_1 = __webpack_require__(147);
+var urlRouterProvider_1 = __webpack_require__(61);
 angular_1.ng.module("ui.router.angular1", []);
 var mod_init = angular_1.ng.module('ui.router.init', []);
 var mod_util = angular_1.ng.module('ui.router.util', ['ng', 'ui.router.init']);
@@ -5614,11 +5614,17 @@ exports.Ng1ViewConfig = Ng1ViewConfig;
 /* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__(153);
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(6);
-var normalizeHeaderName = __webpack_require__(162);
+var normalizeHeaderName = __webpack_require__(167);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -5711,7 +5717,7 @@ module.exports = defaults;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5721,7 +5727,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @coreapi
  * @module core
  */ /** */
-var stateParams_1 = __webpack_require__(37);
+var stateParams_1 = __webpack_require__(38);
 var queue_1 = __webpack_require__(25);
 /**
  * Global router state
@@ -5755,7 +5761,7 @@ exports.UIRouterGlobals = UIRouterGlobals;
 //# sourceMappingURL=globals.js.map
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5858,7 +5864,7 @@ exports.lazyLoadState = lazyLoadState;
 //# sourceMappingURL=lazyLoad.js.map
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6020,7 +6026,7 @@ initDefaultTypes();
 //# sourceMappingURL=paramTypes.js.map
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6070,7 +6076,7 @@ exports.StateParams = StateParams;
 //# sourceMappingURL=stateParams.js.map
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6091,7 +6097,7 @@ exports.resolvePolicies = {
 //# sourceMappingURL=interface.js.map
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6101,16 +6107,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @coreapi
  * @module core
  */ /** */
-var urlMatcherFactory_1 = __webpack_require__(47);
-var urlRouter_1 = __webpack_require__(48);
+var urlMatcherFactory_1 = __webpack_require__(48);
+var urlRouter_1 = __webpack_require__(49);
 var transitionService_1 = __webpack_require__(30);
-var view_1 = __webpack_require__(58);
-var stateRegistry_1 = __webpack_require__(43);
-var stateService_1 = __webpack_require__(44);
-var globals_1 = __webpack_require__(34);
+var view_1 = __webpack_require__(59);
+var stateRegistry_1 = __webpack_require__(44);
+var stateService_1 = __webpack_require__(45);
+var globals_1 = __webpack_require__(35);
 var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
-var urlService_1 = __webpack_require__(50);
+var urlService_1 = __webpack_require__(51);
 var trace_1 = __webpack_require__(8);
 /** @hidden */
 var _routerInstance = 0;
@@ -6281,7 +6287,7 @@ exports.UIRouter = UIRouter;
 //# sourceMappingURL=router.js.map
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6562,7 +6568,7 @@ exports.StateBuilder = StateBuilder;
 //# sourceMappingURL=stateBuilder.js.map
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6631,7 +6637,7 @@ exports.StateMatcher = StateMatcher;
 //# sourceMappingURL=stateMatcher.js.map
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6729,7 +6735,7 @@ exports.StateQueueManager = StateQueueManager;
 //# sourceMappingURL=stateQueueManager.js.map
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6739,9 +6745,9 @@ exports.StateQueueManager = StateQueueManager;
  * @module state
  */ /** for typedoc */
 Object.defineProperty(exports, "__esModule", { value: true });
-var stateMatcher_1 = __webpack_require__(41);
-var stateBuilder_1 = __webpack_require__(40);
-var stateQueueManager_1 = __webpack_require__(42);
+var stateMatcher_1 = __webpack_require__(42);
+var stateBuilder_1 = __webpack_require__(41);
+var stateQueueManager_1 = __webpack_require__(43);
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
 var StateRegistry = (function () {
@@ -6891,7 +6897,7 @@ exports.StateRegistry = StateRegistry;
 //# sourceMappingURL=stateRegistry.js.map
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6914,7 +6920,7 @@ var targetState_1 = __webpack_require__(9);
 var param_1 = __webpack_require__(10);
 var glob_1 = __webpack_require__(17);
 var resolveContext_1 = __webpack_require__(20);
-var lazyLoad_1 = __webpack_require__(35);
+var lazyLoad_1 = __webpack_require__(36);
 var hof_1 = __webpack_require__(2);
 /**
  * Provides state related service functions
@@ -7470,7 +7476,7 @@ exports.StateService = StateService;
 //# sourceMappingURL=stateService.js.map
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7595,7 +7601,7 @@ function tupleSort(reverseDepthSort) {
 //# sourceMappingURL=hookBuilder.js.map
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7629,7 +7635,7 @@ exports.TransitionEventType = TransitionEventType;
 //# sourceMappingURL=transitionEventType.js.map
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7643,7 +7649,7 @@ var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
 var urlMatcher_1 = __webpack_require__(22);
 var param_1 = __webpack_require__(10);
-var paramTypes_1 = __webpack_require__(36);
+var paramTypes_1 = __webpack_require__(37);
 /**
  * Factory for [[UrlMatcher]] instances.
  *
@@ -7762,7 +7768,7 @@ exports.UrlMatcherFactory = UrlMatcherFactory;
 //# sourceMappingURL=urlMatcherFactory.js.map
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7777,7 +7783,7 @@ var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
 var urlMatcher_1 = __webpack_require__(22);
 var hof_1 = __webpack_require__(2);
-var urlRule_1 = __webpack_require__(49);
+var urlRule_1 = __webpack_require__(50);
 var targetState_1 = __webpack_require__(9);
 /** @hidden */
 function appendBasePath(url, isHtml5, absolute, baseHref) {
@@ -8041,7 +8047,7 @@ function getHandlerFn(handler) {
 //# sourceMappingURL=urlRouter.js.map
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8256,7 +8262,7 @@ exports.BaseUrlRule = BaseUrlRule;
 //# sourceMappingURL=urlRule.js.map
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8342,7 +8348,7 @@ exports.UrlService = UrlService;
 //# sourceMappingURL=urlService.js.map
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8395,7 +8401,7 @@ exports.BrowserLocationConfig = BrowserLocationConfig;
 //# sourceMappingURL=browserLocationConfig.js.map
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8442,7 +8448,7 @@ exports.HashLocationService = HashLocationService;
 //# sourceMappingURL=hashLocationService.js.map
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8548,7 +8554,7 @@ exports.$injector = {
 //# sourceMappingURL=injector.js.map
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8579,7 +8585,7 @@ exports.MemoryLocationConfig = MemoryLocationConfig;
 //# sourceMappingURL=memoryLocationConfig.js.map
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8619,7 +8625,7 @@ exports.MemoryLocationService = MemoryLocationService;
 //# sourceMappingURL=memoryLocationService.js.map
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8677,7 +8683,7 @@ exports.PushStateLocationService = PushStateLocationService;
 //# sourceMappingURL=pushStateLocationService.js.map
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8738,7 +8744,7 @@ exports.$q = {
 //# sourceMappingURL=q.js.map
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9027,7 +9033,7 @@ exports.ViewService = ViewService;
 //# sourceMappingURL=view.js.map
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9173,7 +9179,7 @@ exports.StateProvider = StateProvider;
 //# sourceMappingURL=stateProvider.js.map
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9385,12 +9391,6 @@ exports.UrlRouterProvider = UrlRouterProvider;
 //# sourceMappingURL=urlRouterProvider.js.map
 
 /***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(148);
-
-/***/ }),
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9398,12 +9398,12 @@ module.exports = __webpack_require__(148);
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(6);
-var settle = __webpack_require__(154);
-var buildURL = __webpack_require__(157);
-var parseHeaders = __webpack_require__(163);
-var isURLSameOrigin = __webpack_require__(161);
+var settle = __webpack_require__(159);
+var buildURL = __webpack_require__(162);
+var parseHeaders = __webpack_require__(168);
+var isURLSameOrigin = __webpack_require__(166);
 var createError = __webpack_require__(65);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(156);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(161);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -9500,7 +9500,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(159);
+      var cookies = __webpack_require__(164);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -9623,7 +9623,7 @@ module.exports = function isCancel(value) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(153);
+var enhanceError = __webpack_require__(158);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -9661,6 +9661,88 @@ module.exports = function bind(fn, thisArg) {
 
 /***/ }),
 /* 67 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9675,7 +9757,7 @@ var AppComponent = exports.AppComponent = {
 };
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9690,15 +9772,15 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _header = __webpack_require__(82);
+var _header = __webpack_require__(85);
 
-var _footer = __webpack_require__(80);
+var _footer = __webpack_require__(83);
 
-var _content = __webpack_require__(78);
+var _content = __webpack_require__(81);
 
-var _sideMenu = __webpack_require__(87);
+var _sideMenu = __webpack_require__(90);
 
-var _modal = __webpack_require__(84);
+var _modal = __webpack_require__(87);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9706,7 +9788,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var CommonModule = exports.CommonModule = _angular2.default.module('app.common', [_header.HeaderModule, _footer.FooterModule, _content.ContentModule, _sideMenu.SideMenuModule, _modal.ModalModule]).name;
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9721,19 +9803,19 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _dashboard = __webpack_require__(92);
+var _dashboard = __webpack_require__(95);
 
 var _dashboard2 = _interopRequireDefault(_dashboard);
 
-var _pacienteAgregar = __webpack_require__(93);
+var _pacienteAgregar = __webpack_require__(96);
 
 var _pacienteAgregar2 = _interopRequireDefault(_pacienteAgregar);
 
-var _pacientes = __webpack_require__(110);
+var _pacientes = __webpack_require__(113);
 
 var _pacientes2 = _interopRequireDefault(_pacientes);
 
-var _pacientePerfil = __webpack_require__(97);
+var _pacientePerfil = __webpack_require__(100);
 
 var _pacientePerfil2 = _interopRequireDefault(_pacientePerfil);
 
@@ -9742,7 +9824,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var ComponentsModule = exports.ComponentsModule = _angular2.default.module('app.components', [_dashboard2.default, _pacienteAgregar2.default, _pacientes2.default, _pacientePerfil2.default]).name;
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9750,47 +9832,47 @@ var ComponentsModule = exports.ComponentsModule = _angular2.default.module('app.
 
 // key.js - figure out what set of credentials to return
 if (process.env.NODE_ENV == 'production') {
-  module.exports = __webpack_require__(114);
+  module.exports = __webpack_require__(117);
 } else {
-  module.exports = __webpack_require__(113);
+  module.exports = __webpack_require__(116);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(135);
-module.exports = 'ngAnimate';
-
 
 /***/ }),
 /* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(136);
-module.exports = 'angular-loading-bar';
+__webpack_require__(140);
+module.exports = 'ngAnimate';
 
 
 /***/ }),
 /* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(137);
-module.exports = 'ngResource';
+__webpack_require__(141);
+module.exports = 'angular-loading-bar';
 
 
 /***/ }),
 /* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(138);
+__webpack_require__(142);
+module.exports = 'ngResource';
+
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(143);
 module.exports = 'toastr';
 
 
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9808,18 +9890,582 @@ exports.core = core;
 __export(__webpack_require__(5));
 __export(__webpack_require__(31));
 __export(__webpack_require__(32));
-__export(__webpack_require__(59));
 __export(__webpack_require__(60));
-__webpack_require__(141);
-__webpack_require__(139);
-__webpack_require__(143);
-__webpack_require__(140);
+__export(__webpack_require__(61));
 __webpack_require__(146);
+__webpack_require__(144);
+__webpack_require__(148);
+__webpack_require__(145);
+__webpack_require__(151);
 exports.default = "ui.router";
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 76 */
+/* 77 */
+/***/ (function(module, exports) {
+
+/**
+ * Easy to use Wizard library for Angular JS
+ * @version v1.1.1 - 2017-06-07 * @link https://github.com/mgonto/angular-wizard
+ * @author Martin Gontovnikas <martin@gon.to>
+ * @license MIT License, http://www.opensource.org/licenses/MIT
+ */
+angular.module('templates-angularwizard', ['step.html', 'wizard.html']);
+
+angular.module("step.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("step.html",
+    "<section ng-show=\"selected\" ng-class=\"{current: selected, done: completed}\" class=\"step\" ng-transclude>\n" +
+    "</section>");
+}]);
+
+angular.module("wizard.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("wizard.html",
+    "<div>\n" +
+    "    <h2 ng-show=\"selectedStep.wzHeadingTitle != ''\">{{ selectedStep.wzHeadingTitle }}</h2>\n" +
+    "\n" +
+    "    <div class=\"steps\" ng-if=\"indicatorsPosition === 'bottom'\" ng-transclude></div>\n" +
+    "    <ul class=\"steps-indicator steps-{{getEnabledSteps().length}}\" ng-if=\"!hideIndicators\">\n" +
+    "      <li ng-class=\"{default: !step.completed && !step.selected, current: step.selected && !step.completed, done: step.completed && !step.selected, editing: step.selected && step.completed}\" ng-repeat=\"step in getEnabledSteps()\">\n" +
+    "        <a ng-click=\"goTo(step)\">{{step.title || step.wzTitle}}</a>\n" +
+    "      </li>\n" +
+    "    </ul>\n" +
+    "    <div class=\"steps\" ng-if=\"indicatorsPosition === 'top'\" ng-transclude></div>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module('mgo-angular-wizard', ['templates-angularwizard']);
+
+angular.module('mgo-angular-wizard').directive('wzStep', function() {
+    return {
+        restrict: 'EA',
+        replace: true,
+        transclude: true,
+        scope: {
+            wzTitle: '@',
+            wzHeadingTitle: '@',
+            canenter : '=',
+            canexit : '=',
+            disabled: '@?wzDisabled',
+            description: '@',
+            wzData: '=',
+            wzOrder: '@?'
+        },
+        require: '^wizard',
+        templateUrl: function(element, attributes) {
+          return attributes.template || "step.html";
+        },
+        link: function ($scope, $element, $attrs, wizard) {
+            $attrs.$observe('wzTitle', function (value) {
+                $scope.title = $scope.wzTitle;
+            });
+            $scope.title = $scope.wzTitle;
+            wizard.addStep($scope);
+            $scope.$on('$destroy', function(){
+                wizard.removeStep($scope);
+            });
+        }
+    };
+});
+
+//wizard directive
+angular.module('mgo-angular-wizard').directive('wizard', function() {
+    return {
+        restrict: 'EA',
+        replace: true,
+        transclude: true,
+        scope: {
+            currentStep: '=',
+            onCancel: '&',
+            onFinish: '&',
+            hideIndicators: '=',
+            editMode: '=',
+            name: '@',
+            indicatorsPosition: '@?'
+        },
+        templateUrl: function(element, attributes) {
+            return attributes.template || "wizard.html";
+        },
+
+        //controller for wizard directive, treat this just like an angular controller
+        controller: ['$scope', '$element', '$log', 'WizardHandler', '$q', '$timeout', function ($scope, $element, $log, WizardHandler, $q, $timeout) {
+            //setting default step position if none declared.
+            if ($scope.indicatorsPosition == undefined) {
+                $scope.indicatorsPosition = 'bottom';
+            }
+            //this variable allows directive to load without having to pass any step validation
+            var firstRun = true;
+            //creating instance of wizard, passing this as second argument allows access to functions attached to this via Service
+            WizardHandler.addWizard($scope.name || WizardHandler.defaultName, this);
+
+            $scope.$on('$destroy', function() {
+                WizardHandler.removeWizard($scope.name || WizardHandler.defaultName);
+            });
+
+            //steps array where all the scopes of each step are added
+            $scope.steps = [];
+
+            var stepIdx = function(step) {
+                var idx = 0;
+                var res = -1;
+                angular.forEach($scope.getEnabledSteps(), function(currStep) {
+                  if (currStep === step) {
+                    res = idx;
+                  }
+                  idx++;
+                });
+                return res;
+            };
+
+            var stepByTitle = function(titleToFind) {
+              var foundStep = null;
+              angular.forEach($scope.getEnabledSteps(), function(step) {
+                if (step.wzTitle === titleToFind) {
+                  foundStep = step;
+                }
+              });
+              return foundStep;
+            };
+
+
+            //update completed state for each step based on the editMode and current step number
+            var handleEditModeChange = function() {
+                var editMode = $scope.editMode;
+                if (angular.isUndefined(editMode) || (editMode === null)) return;
+
+                //Set completed for all steps to the value of editMode
+                angular.forEach($scope.steps, function (step) {
+                    step.completed = editMode;
+                });
+
+                //If editMode is false, set ONLY ENABLED steps with index lower then completedIndex to completed
+                if (!editMode) {
+                    var completedStepsIndex = $scope.currentStepNumber() - 1;
+                    angular.forEach($scope.getEnabledSteps(), function(step, stepIndex) {
+                        if(stepIndex < completedStepsIndex) {
+                            step.completed = true;
+                        }
+                    });
+                }
+            };
+
+            //access to context object for step validation
+            $scope.context = {};
+
+            //watching changes to currentStep
+            $scope.$watch('currentStep', function(step) {
+                //checking to make sure currentStep is truthy value
+                if (!step) return;
+                //setting stepTitle equal to current step title or default title
+                var stepTitle = $scope.selectedStep.wzTitle;
+                if ($scope.selectedStep && stepTitle !== $scope.currentStep) {
+                    //invoking goTo() with step title as argument
+                    $scope.goTo(stepByTitle($scope.currentStep));
+                }
+            });
+
+            //watching steps array length and editMode value, if edit module is undefined or null the nothing is done
+            //if edit mode is truthy, then all steps are marked as completed
+            $scope.$watch('[editMode, steps.length]', function() {
+                handleEditModeChange();
+            }, true);
+
+            //called each time step directive is loaded
+            this.addStep = function(step) {
+                var wzOrder = (step.wzOrder >= 0 && !$scope.steps[step.wzOrder]) ? step.wzOrder : $scope.steps.length;
+                //adding the scope of directive onto step array
+                $scope.steps[wzOrder] = step;
+                //if this step is the new first then goTo it
+                if ($scope.getEnabledSteps()[0] === step) {
+                    //goTo first step
+                    $scope.goTo($scope.getEnabledSteps()[0]);
+                }
+            };
+
+            //called each time step directive is destroyed
+            this.removeStep = function (step) {
+                var index = $scope.steps.indexOf(step);
+                if (index > 0) {
+                    $scope.steps.splice(index, 1);
+                }
+            };
+
+            this.context = $scope.context;
+
+            $scope.getStepNumber = function(step) {
+                return stepIdx(step) + 1;
+            };
+
+            $scope.goTo = function(step) {
+                //if this is the first time the wizard is loading it bi-passes step validation
+                if(firstRun){
+                    //deselect all steps so you can set fresh below
+                    unselectAll();
+                    $scope.selectedStep = step;
+                    //making sure current step is not undefined
+                    if (!angular.isUndefined($scope.currentStep)) {
+                        $scope.currentStep = step.wzTitle;
+                    }
+                    //setting selected step to argument passed into goTo()
+                    step.selected = true;
+                    //emit event upwards with data on goTo() invoktion
+                    $scope.$emit('wizard:stepChanged', {step: step, index: stepIdx(step)});
+                    //setting variable to false so all other step changes must pass validation
+                    firstRun = false;
+                } else {
+                    //createing variables to capture current state that goTo() was invoked from and allow booleans
+                    var thisStep;
+                    //getting data for step you are transitioning out of
+                    if($scope.currentStepNumber() > 0){
+                        thisStep = $scope.currentStepNumber() - 1;
+                    } else if ($scope.currentStepNumber() === 0){
+                        thisStep = 0;
+                    }
+                    //$log.log('steps[thisStep] Data: ', $scope.getEnabledSteps()[thisStep].canexit);
+                    $q.all([canExitStep($scope.getEnabledSteps()[thisStep], step), canEnterStep(step)]).then(function(data) {
+                        if(data[0] && data[1]){
+                            //deselect all steps so you can set fresh below
+                            unselectAll();
+
+                            //$log.log('value for canExit argument: ', $scope.currentStep.canexit);
+                            $scope.selectedStep = step;
+                            //making sure current step is not undefined
+                            if(!angular.isUndefined($scope.currentStep)){
+                                $scope.currentStep = step.wzTitle;
+                            }
+                            //setting selected step to argument passed into goTo()
+                            step.selected = true;
+                            //emit event upwards with data on goTo() invoktion
+                            $scope.$emit('wizard:stepChanged', {step: step, index: stepIdx(step)});
+                            //$log.log('current step number: ', $scope.currentStepNumber());
+                        } else {
+                            $scope.$emit('wizard:stepChangeFailed', {step: step, index: _.indexOf($scope.getEnabledSteps(), step)});
+                        }
+                    });
+                }
+            };
+
+            function canEnterStep(step) {
+                var defer;
+                var canEnter;
+                //If no validation function is provided, allow the user to enter the step
+                if(step.canenter === undefined){
+                    return true;
+                }
+                //If canenter is a boolean value instead of a function, return the value
+                if(typeof step.canenter === 'boolean'){
+                    return step.canenter;
+                }
+                //If canenter is a string instead of a function, evaluate the function
+                if(typeof step.canenter === 'string'){
+                    var splitFunction = step.canenter.split('(');
+                    canEnter = eval('$scope.$parent.' + splitFunction[0] + '($scope.context' + splitFunction[1])
+                } else {
+                    canEnter = step.canenter($scope.context);
+                }
+                //Check to see if the canenter function is a promise which needs to be returned
+                if(angular.isFunction(canEnter.then)){
+                    defer = $q.defer();
+                    canEnter.then(function(response){
+                        defer.resolve(response);
+                    });
+                    return defer.promise;
+                } else {
+                    return canEnter === true;
+                }
+            }
+
+            function canExitStep(step, stepTo) {
+                var defer;
+                var canExit;
+                //Exiting the step should be allowed if no validation function was provided or if the user is moving backwards
+                if(typeof(step.canexit) === 'undefined' || $scope.getStepNumber(stepTo) < $scope.currentStepNumber()){
+                    return true;
+                }
+                //If canexit is a boolean value instead of a function, return the value
+                if(typeof step.canexit === 'boolean'){
+                    return step.canexit;
+                }
+                //If canenter is a string instead of a function, evaluate the function
+                if(typeof step.canexit === 'string'){
+                    var splitFunction = step.canexit.split('(');
+                    canExit = eval('$scope.$parent.' + splitFunction[0] + '($scope.context' + splitFunction[1])
+                } else {
+                    canExit = step.canexit($scope.context);
+                }
+                //Check to see if the canexit function is a promise which needs to be returned
+                if(angular.isFunction(canExit.then)){
+                    defer = $q.defer();
+                    canExit.then(function(response){
+                        defer.resolve(response);
+                    });
+                    return defer.promise;
+                } else {
+                    return canExit === true;
+                }
+            }
+
+            $scope.currentStepNumber = function() {
+                //retreive current step number
+                return stepIdx($scope.selectedStep) + 1;
+            };
+
+            $scope.getEnabledSteps = function() {
+                return $scope.steps.filter(function(step){
+                    return step && step.disabled !== 'true';
+                });
+            };
+
+            //unSelect All Steps
+            function unselectAll() {
+                //traverse steps array and set each "selected" property to false
+                angular.forEach($scope.getEnabledSteps(), function (step) {
+                    step.selected = false;
+                });
+                //set selectedStep variable to null
+                $scope.selectedStep = null;
+            }
+
+            //ALL METHODS ATTACHED TO this ARE ACCESSIBLE VIA WizardHandler.wizard().methodName()
+
+            this.currentStepTitle = function(){
+                return $scope.selectedStep.wzTitle;
+            };
+
+            this.currentStepDescription = function(){
+                return $scope.selectedStep.description;
+            };
+
+            this.currentStep = function(){
+                return $scope.selectedStep;
+            };
+
+            this.totalStepCount = function() {
+                return $scope.getEnabledSteps().length;
+            };
+
+            //Access to enabled steps from outside
+            this.getEnabledSteps = function(){
+                return $scope.getEnabledSteps();
+            };
+
+            //Access to current step number from outside
+            this.currentStepNumber = function(){
+                return $scope.currentStepNumber();
+            };
+            //method used for next button within step
+            this.next = function(callback) {
+                var enabledSteps = $scope.getEnabledSteps();
+                //setting variable equal to step  you were on when next() was invoked
+                var index = stepIdx($scope.selectedStep);
+                //checking to see if callback is a function
+                if(angular.isFunction(callback)){
+                   if(callback()){
+                        if (index === enabledSteps.length - 1) {
+                            this.finish();
+                        } else {
+                            //invoking goTo() with step number next in line
+                            $scope.goTo(enabledSteps[index + 1]);
+                        }
+                   } else {
+                        return;
+                   }
+                }
+                if (!callback) {
+                    //completed property set on scope which is used to add class/remove class from progress bar
+                    $scope.selectedStep.completed = true;
+                }
+                //checking to see if this is the last step.  If it is next behaves the same as finish()
+                if (index === enabledSteps.length - 1) {
+                    this.finish();
+                } else {
+                    //invoking goTo() with step number next in line
+                    $scope.goTo(enabledSteps[index + 1]);
+                }
+
+            };
+
+            //used to traverse to any step, step number placed as argument
+            this.goTo = function(step) {
+                //wrapped inside $timeout so newly enabled steps are included.
+                $timeout(function() {
+                    var enabledSteps = $scope.getEnabledSteps();
+                    var stepTo;
+                    //checking that step is a Number
+                    if (angular.isNumber(step)) {
+                        stepTo = enabledSteps[step];
+                    } else {
+                        //finding the step associated with the title entered as goTo argument
+                        stepTo = stepByTitle(step);
+                    }
+                    //going to step
+                    $scope.goTo(stepTo);
+                });
+            };
+
+            //calls finish() which calls onFinish() which is declared on an attribute and linked to controller via wizard directive.
+            this.finish = function() {
+                if ($scope.onFinish) {
+                    $scope.onFinish();
+                }
+            };
+
+            this.previous = function() {
+                //getting index of current step
+                var index = stepIdx($scope.selectedStep);
+                //ensuring you aren't trying to go back from the first step
+                if (index === 0) {
+                    throw new Error("Can't go back. It's already in step 0");
+                } else {
+                    //go back one step from current step
+                    $scope.goTo($scope.getEnabledSteps()[index - 1]);
+                }
+            };
+
+            //cancel is alias for previous.
+            this.cancel = function() {
+            	if ($scope.onCancel) {
+                    //onCancel is linked to controller via wizard directive:
+                    $scope.onCancel();
+                } else {
+                    //getting index of current step
+                    var index = stepIdx($scope.selectedStep);
+                    //ensuring you aren't trying to go back from the first step
+                    if (index === 0) {
+                        throw new Error("Can't go back. It's already in step 0");
+                    } else {
+                        //go back one step from current step
+                        $scope.goTo($scope.getEnabledSteps()[0]);
+                    }                	
+                }
+            };
+
+            //reset
+            this.reset = function(){
+                //traverse steps array and set each "completed" property to false
+                angular.forEach($scope.getEnabledSteps(), function (step) {
+                    step.completed = false;
+                });
+                //go to first step
+                this.goTo(0);
+            };
+
+            //change edit mode
+            this.setEditMode = function(mode) {
+                $scope.editMode = mode;
+                handleEditModeChange();
+            };
+        }]
+    };
+});
+
+function wizardButtonDirective(action) {
+    angular.module('mgo-angular-wizard')
+        .directive(action, function() {
+            return {
+                restrict: 'A',
+                replace: false,
+                require: '^wizard',
+                link: function($scope, $element, $attrs, wizard) {
+
+                    $element.on("click", function(e) {
+                        e.preventDefault();
+                        $scope.$apply(function() {
+                            $scope.$eval($attrs[action]);
+                            wizard[action.replace("wz", "").toLowerCase()]();
+                        });
+                    });
+                }
+            };
+        });
+}
+
+wizardButtonDirective('wzNext');
+wizardButtonDirective('wzPrevious');
+wizardButtonDirective('wzFinish');
+wizardButtonDirective('wzCancel');
+wizardButtonDirective('wzReset');
+
+angular.module('mgo-angular-wizard').factory('WizardHandler', function() {
+   var service = {};
+   
+   var wizards = {};
+   
+   service.defaultName = "defaultWizard";
+   
+   service.addWizard = function(name, wizard) {
+       wizards[name] = wizard;
+   };
+   
+   service.removeWizard = function(name) {
+       delete wizards[name];
+   };
+   
+   service.wizard = function(name) {
+       var nameToUse = name;
+       if (!name) {
+           nameToUse = service.defaultName;
+       }
+       
+       return wizards[nameToUse];
+   };
+   
+   return service;
+});
+
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(119);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(171)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/sass-loader/lib/loader.js?sourceMap!./style.scss", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js?sourceMap!../../node_modules/sass-loader/lib/loader.js?sourceMap!./style.scss");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9833,39 +10479,43 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _angularUiRouter = __webpack_require__(75);
+var _angularUiRouter = __webpack_require__(76);
 
 var _angularUiRouter2 = _interopRequireDefault(_angularUiRouter);
 
-var _angularLoadingBar = __webpack_require__(72);
+var _angularLoadingBar = __webpack_require__(73);
 
 var _angularLoadingBar2 = _interopRequireDefault(_angularLoadingBar);
 
-var _angularToastr = __webpack_require__(74);
+var _angularToastr = __webpack_require__(75);
 
 var _angularToastr2 = _interopRequireDefault(_angularToastr);
 
-var _angularAnimate = __webpack_require__(71);
+var _angularAnimate = __webpack_require__(72);
 
 var _angularAnimate2 = _interopRequireDefault(_angularAnimate);
 
-var _angularResource = __webpack_require__(73);
+var _angularResource = __webpack_require__(74);
 
 var _angularResource2 = _interopRequireDefault(_angularResource);
 
-var _keys = __webpack_require__(70);
+var _keys = __webpack_require__(71);
 
 var _keys2 = _interopRequireDefault(_keys);
 
-var _common = __webpack_require__(68);
+__webpack_require__(77);
 
-var _components = __webpack_require__(69);
+__webpack_require__(78);
 
-var _app = __webpack_require__(67);
+var _common = __webpack_require__(69);
+
+var _components = __webpack_require__(70);
+
+var _app = __webpack_require__(68);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var root = _angular2.default.module('angularCamp', [_angularUiRouter2.default, _angularAnimate2.default, _angularResource2.default, _angularToastr2.default, _common.CommonModule, _components.ComponentsModule, _angularLoadingBar2.default]).component('acApp', _app.AppComponent).constant('api', {
+var root = _angular2.default.module('angularCamp', [_angularUiRouter2.default, _angularAnimate2.default, _angularResource2.default, _angularToastr2.default, _common.CommonModule, _components.ComponentsModule, _angularLoadingBar2.default, 'mgo-angular-wizard']).component('acApp', _app.AppComponent).constant('api', {
   server: _keys2.default.apiURI
 });
 
@@ -9876,7 +10526,7 @@ document.addEventListener('DOMContentLoaded', function () {
 exports.default = root;
 
 /***/ }),
-/* 77 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9887,7 +10537,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ContentComponent = undefined;
 
-var _content = __webpack_require__(166);
+var _content = __webpack_require__(173);
 
 var _content2 = _interopRequireDefault(_content);
 
@@ -9898,7 +10548,7 @@ var ContentComponent = exports.ContentComponent = {
 };
 
 /***/ }),
-/* 78 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9913,14 +10563,14 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _content = __webpack_require__(77);
+var _content = __webpack_require__(80);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var ContentModule = exports.ContentModule = _angular2.default.module('content', []).component('content', _content.ContentComponent).name;
 
 /***/ }),
-/* 79 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9931,7 +10581,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.FooterComponent = undefined;
 
-var _footer = __webpack_require__(167);
+var _footer = __webpack_require__(174);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -9942,7 +10592,7 @@ var FooterComponent = exports.FooterComponent = {
 };
 
 /***/ }),
-/* 80 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9957,14 +10607,14 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _footer = __webpack_require__(79);
+var _footer = __webpack_require__(82);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var FooterModule = exports.FooterModule = _angular2.default.module('footer', []).component('footer', _footer.FooterComponent).name;
 
 /***/ }),
-/* 81 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9975,7 +10625,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.HeaderComponent = undefined;
 
-var _header = __webpack_require__(168);
+var _header = __webpack_require__(175);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -9989,7 +10639,7 @@ var HeaderComponent = exports.HeaderComponent = {
 };
 
 /***/ }),
-/* 82 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10004,14 +10654,14 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _header = __webpack_require__(81);
+var _header = __webpack_require__(84);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var HeaderModule = exports.HeaderModule = _angular2.default.module('header', []).component('header', _header.HeaderComponent).name;
 
 /***/ }),
-/* 83 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10022,7 +10672,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ModalComponent = undefined;
 
-var _modal = __webpack_require__(169);
+var _modal = __webpack_require__(176);
 
 var _modal2 = _interopRequireDefault(_modal);
 
@@ -10033,7 +10683,7 @@ var ModalComponent = exports.ModalComponent = {
 };
 
 /***/ }),
-/* 84 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10048,9 +10698,9 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _modal = __webpack_require__(83);
+var _modal = __webpack_require__(86);
 
-var _modal2 = __webpack_require__(85);
+var _modal2 = __webpack_require__(88);
 
 var _modal3 = _interopRequireDefault(_modal2);
 
@@ -10059,7 +10709,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var ModalModule = exports.ModalModule = _angular2.default.module('modal', []).service('ModalService', _modal3.default).component('modal', _modal.ModalComponent).name;
 
 /***/ }),
-/* 85 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10083,7 +10733,7 @@ ModalService.$inject = ['$http'];
 exports.default = ModalService;
 
 /***/ }),
-/* 86 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10094,7 +10744,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SideMenuComponent = undefined;
 
-var _sideMenu = __webpack_require__(170);
+var _sideMenu = __webpack_require__(177);
 
 var _sideMenu2 = _interopRequireDefault(_sideMenu);
 
@@ -10105,7 +10755,7 @@ var SideMenuComponent = exports.SideMenuComponent = {
 };
 
 /***/ }),
-/* 87 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10120,14 +10770,14 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _sideMenu = __webpack_require__(86);
+var _sideMenu = __webpack_require__(89);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SideMenuModule = exports.SideMenuModule = _angular2.default.module('sideMenu', []).component('sideMenu', _sideMenu.SideMenuComponent).name;
 
 /***/ }),
-/* 88 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10137,7 +10787,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _dashboardLastPacient = __webpack_require__(171);
+var _dashboardLastPacient = __webpack_require__(178);
 
 var _dashboardLastPacient2 = _interopRequireDefault(_dashboardLastPacient);
 
@@ -10153,7 +10803,7 @@ var LastPacientComponent = {
 exports.default = LastPacientComponent;
 
 /***/ }),
-/* 89 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10167,7 +10817,7 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _dashboardLastPacient = __webpack_require__(88);
+var _dashboardLastPacient = __webpack_require__(91);
 
 var _dashboardLastPacient2 = _interopRequireDefault(_dashboardLastPacient);
 
@@ -10178,7 +10828,7 @@ var DashboardLastPacient = _angular2.default.module('lastPacient', []).component
 exports.default = DashboardLastPacient;
 
 /***/ }),
-/* 90 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10188,11 +10838,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _dashboard = __webpack_require__(172);
+var _dashboard = __webpack_require__(179);
 
 var _dashboard2 = _interopRequireDefault(_dashboard);
 
-var _dashboard3 = __webpack_require__(91);
+var _dashboard3 = __webpack_require__(94);
 
 var _dashboard4 = _interopRequireDefault(_dashboard3);
 
@@ -10209,7 +10859,7 @@ var DashboardComponent = {
 exports.default = DashboardComponent;
 
 /***/ }),
-/* 91 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10263,7 +10913,7 @@ DashboardController.$inject = ['$http'];
 exports.default = DashboardController;
 
 /***/ }),
-/* 92 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10277,11 +10927,11 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _dashboard = __webpack_require__(90);
+var _dashboard = __webpack_require__(93);
 
 var _dashboard2 = _interopRequireDefault(_dashboard);
 
-var _dashboardLastPacient = __webpack_require__(89);
+var _dashboardLastPacient = __webpack_require__(92);
 
 var _dashboardLastPacient2 = _interopRequireDefault(_dashboardLastPacient);
 
@@ -10300,7 +10950,7 @@ var dashboard = _angular2.default.module('dashboard', [_dashboardLastPacient2.de
 exports.default = dashboard;
 
 /***/ }),
-/* 93 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10314,11 +10964,11 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _pacienteAgregar = __webpack_require__(94);
+var _pacienteAgregar = __webpack_require__(97);
 
 var _pacienteAgregar2 = _interopRequireDefault(_pacienteAgregar);
 
-var _pacienteAgregar3 = __webpack_require__(96);
+var _pacienteAgregar3 = __webpack_require__(99);
 
 var _pacienteAgregar4 = _interopRequireDefault(_pacienteAgregar3);
 
@@ -10335,7 +10985,7 @@ var pacienteAgregar = _angular2.default.module('pacienteAgregar', []).component(
 exports.default = pacienteAgregar;
 
 /***/ }),
-/* 94 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10345,11 +10995,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pacienteAgregar = __webpack_require__(95);
+var _pacienteAgregar = __webpack_require__(98);
 
 var _pacienteAgregar2 = _interopRequireDefault(_pacienteAgregar);
 
-var _pacienteAgregar3 = __webpack_require__(173);
+var _pacienteAgregar3 = __webpack_require__(180);
 
 var _pacienteAgregar4 = _interopRequireDefault(_pacienteAgregar3);
 
@@ -10363,7 +11013,7 @@ var PacienteAgregarComponent = {
 exports.default = PacienteAgregarComponent;
 
 /***/ }),
-/* 95 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10375,6 +11025,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _angular = __webpack_require__(3);
+
+var _angular2 = _interopRequireDefault(_angular);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var PacientFormController = function () {
@@ -10383,21 +11039,32 @@ var PacientFormController = function () {
 
     this.pacienteAgregarService = PacienteAgregarService;
     this.toastr = toastr;
+    this.disabled = 'true';
   }
 
   _createClass(PacientFormController, [{
     key: '$onChanges',
     value: function $onChanges(changes) {
+      _angular2.default.element('.datepicker').datepicker({
+        autoclose: true,
+        format: 'dd/mm/yyyy',
+        language: 'es'
+      });
       if (changes.paciente) {
         this.paciente = Object.assign({}, this.paciente);
       }
+    }
+  }, {
+    key: 'exitValidation',
+    value: function exitValidation(context) {
+      var valid = this.wzData && this.wzData.nombre && this.wzData.apellido && this.wzData.dni;
+      return valid;
     }
   }, {
     key: 'onSubmit',
     value: function onSubmit() {
       var _this = this;
 
-      if (!this.paciente.nombre || !this.paciente.apellido || !this.paciente.dni) return;
       this.pacienteAgregarService.addPaciente(this.paciente).then(function () {
         _this.toastr.success('termino joya', 'Paciente');
       }).catch(function (err) {
@@ -10415,7 +11082,7 @@ PacientFormController.$inject = ['PacienteAgregarService', 'toastr'];
 exports.default = PacientFormController;
 
 /***/ }),
-/* 96 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10427,6 +11094,12 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _axios = __webpack_require__(33);
+
+var _axios2 = _interopRequireDefault(_axios);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var PacienteAgregarService = function () {
@@ -10434,26 +11107,13 @@ var PacienteAgregarService = function () {
     _classCallCheck(this, PacienteAgregarService);
 
     this.urlApiPacientes = api.server + '/pacientes';
-
-    this.PacienteApi = $resource(this.urlApiPacientes, {}, {
-      charge: {
-        method: 'POST',
-        params: {
-          charge: true
-        }
-      }
-    });
   }
 
   _createClass(PacienteAgregarService, [{
     key: 'addPaciente',
-    value: function addPaciente(paciente) {
-      var api = new this.PacienteApi(paciente);
-
-      return new Promise(function (resolve) {
-        api.$save();
-        resolve();
-      });
+    value: async function addPaciente(paciente) {
+      var res = await _axios2.default.post(this.urlApiPacientes, paciente);
+      return res.data;
     }
   }]);
 
@@ -10465,7 +11125,7 @@ PacienteAgregarService.$inject = ['$resource', 'api'];
 exports.default = PacienteAgregarService;
 
 /***/ }),
-/* 97 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10479,23 +11139,23 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _pacientePerfil = __webpack_require__(108);
+var _pacientePerfil = __webpack_require__(111);
 
 var _pacientePerfil2 = _interopRequireDefault(_pacientePerfil);
 
-var _pacientePerfilProfile = __webpack_require__(99);
+var _pacientePerfilProfile = __webpack_require__(102);
 
 var _pacientePerfilProfile2 = _interopRequireDefault(_pacientePerfilProfile);
 
-var _pacientePerfilAboutme = __webpack_require__(98);
+var _pacientePerfilAboutme = __webpack_require__(101);
 
 var _pacientePerfilAboutme2 = _interopRequireDefault(_pacientePerfilAboutme);
 
-var _pacientePerfilTabs = __webpack_require__(100);
+var _pacientePerfilTabs = __webpack_require__(103);
 
 var _pacientePerfilTabs2 = _interopRequireDefault(_pacientePerfilTabs);
 
-var _pacientePerfil3 = __webpack_require__(109);
+var _pacientePerfil3 = __webpack_require__(112);
 
 var _pacientePerfil4 = _interopRequireDefault(_pacientePerfil3);
 
@@ -10519,7 +11179,7 @@ var perfilpaciente = _angular2.default.module('perfilpaciente', [_pacientePerfil
 exports.default = perfilpaciente;
 
 /***/ }),
-/* 98 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10529,7 +11189,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pacientePerfilAboutme = __webpack_require__(174);
+var _pacientePerfilAboutme = __webpack_require__(181);
 
 var _pacientePerfilAboutme2 = _interopRequireDefault(_pacientePerfilAboutme);
 
@@ -10545,7 +11205,7 @@ var PacientePerfilAboutMeComponent = {
 exports.default = PacientePerfilAboutMeComponent;
 
 /***/ }),
-/* 99 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10555,7 +11215,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pacientePerfilProfile = __webpack_require__(175);
+var _pacientePerfilProfile = __webpack_require__(182);
 
 var _pacientePerfilProfile2 = _interopRequireDefault(_pacientePerfilProfile);
 
@@ -10571,7 +11231,7 @@ var PacientePerfilProfileComponent = {
 exports.default = PacientePerfilProfileComponent;
 
 /***/ }),
-/* 100 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10585,34 +11245,34 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _pacientePerfilTabs = __webpack_require__(107);
+var _pacientePerfilTabs = __webpack_require__(110);
 
 var _pacientePerfilTabs2 = _interopRequireDefault(_pacientePerfilTabs);
 
-var _pacientePerfilTabsTimeline = __webpack_require__(104);
+var _pacientePerfilTabsTimeline = __webpack_require__(107);
 
 var _pacientePerfilTabsTimeline2 = _interopRequireDefault(_pacientePerfilTabsTimeline);
 
-var _pacientePerfilTabsTimelineAgregar = __webpack_require__(102);
+var _pacientePerfilTabsTimelineAgregar = __webpack_require__(105);
 
 var _pacientePerfilTabsTimelineAgregar2 = _interopRequireDefault(_pacientePerfilTabsTimelineAgregar);
 
-var _pacientePerfilTabsSetting = __webpack_require__(101);
+var _pacientePerfilTabsSetting = __webpack_require__(104);
 
 var _pacientePerfilTabsSetting2 = _interopRequireDefault(_pacientePerfilTabsSetting);
 
-var _pacientePerfilTabsTimeline3 = __webpack_require__(106);
+var _pacientePerfilTabsTimeline3 = __webpack_require__(109);
 
 var _pacientePerfilTabsTimeline4 = _interopRequireDefault(_pacientePerfilTabsTimeline3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var pacienteperfiltabs = _angular2.default.module('pacienteperfiltabs', []).service('HistorialAgregarService', _pacientePerfilTabsTimeline4.default).component('podPerfilTabs', _pacientePerfilTabs2.default).component('podTimeline', _pacientePerfilTabsTimeline2.default).component('podSetting', _pacientePerfilTabsSetting2.default).component('podTimelineAgregar', _pacientePerfilTabsTimelineAgregar2.default).name;
+var pacienteperfiltabs = _angular2.default.module('pacienteperfiltabs', []).service('TimelineService', _pacientePerfilTabsTimeline4.default).component('podPerfilTabs', _pacientePerfilTabs2.default).component('podTimeline', _pacientePerfilTabsTimeline2.default).component('podSetting', _pacientePerfilTabsSetting2.default).component('podTimelineAgregar', _pacientePerfilTabsTimelineAgregar2.default).name;
 
 exports.default = pacienteperfiltabs;
 
 /***/ }),
-/* 101 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10622,7 +11282,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pacientePerfilTabsSetting = __webpack_require__(176);
+var _pacientePerfilTabsSetting = __webpack_require__(183);
 
 var _pacientePerfilTabsSetting2 = _interopRequireDefault(_pacientePerfilTabsSetting);
 
@@ -10635,7 +11295,7 @@ var PacientePerfilTabsSettingComponent = {
 exports.default = PacientePerfilTabsSettingComponent;
 
 /***/ }),
-/* 102 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10645,11 +11305,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pacientePerfilTabsTimelineAgregar = __webpack_require__(177);
+var _pacientePerfilTabsTimelineAgregar = __webpack_require__(184);
 
 var _pacientePerfilTabsTimelineAgregar2 = _interopRequireDefault(_pacientePerfilTabsTimelineAgregar);
 
-var _pacientePerfilTabsTimelineAgregar3 = __webpack_require__(103);
+var _pacientePerfilTabsTimelineAgregar3 = __webpack_require__(106);
 
 var _pacientePerfilTabsTimelineAgregar4 = _interopRequireDefault(_pacientePerfilTabsTimelineAgregar3);
 
@@ -10666,7 +11326,7 @@ var PacientePerfilTabsTimelineComponentAgregar = {
 exports.default = PacientePerfilTabsTimelineComponentAgregar;
 
 /***/ }),
-/* 103 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10687,10 +11347,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var PacientPerfilTimelineAgregarController = function () {
-  function PacientPerfilTimelineAgregarController(HistorialAgregarService, toastr) {
+  function PacientPerfilTimelineAgregarController(TimelineService, toastr) {
     _classCallCheck(this, PacientPerfilTimelineAgregarController);
 
-    this.HistorialAgregarService = HistorialAgregarService;
+    this.TimelineService = TimelineService;
     this.toastr = toastr;
   }
 
@@ -10707,8 +11367,7 @@ var PacientPerfilTimelineAgregarController = function () {
       var _this = this;
 
       if (!this.notaClinica.titulo || !this.notaClinica.observacion) return;
-      this.HistorialAgregarService.addNotaClinica(this.paciente._id, this.notaClinica).then(function () {
-        _this.toastr.success('termino joya', 'Paciente');
+      this.TimelineService.addNotaClinica(this.paciente._id, this.notaClinica).then(function () {
         _angular2.default.element('#exampleModal').modal('hide');
       }).catch(function (err) {
         _this.toastr.error(err);
@@ -10719,12 +11378,12 @@ var PacientPerfilTimelineAgregarController = function () {
   return PacientPerfilTimelineAgregarController;
 }();
 
-PacientPerfilTimelineAgregarController.$inject = ['HistorialAgregarService', 'toastr'];
+PacientPerfilTimelineAgregarController.$inject = ['TimelineService', 'toastr'];
 
 exports.default = PacientPerfilTimelineAgregarController;
 
 /***/ }),
-/* 104 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10734,11 +11393,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pacientePerfilTabsTimeline = __webpack_require__(178);
+var _pacientePerfilTabsTimeline = __webpack_require__(185);
 
 var _pacientePerfilTabsTimeline2 = _interopRequireDefault(_pacientePerfilTabsTimeline);
 
-var _pacientePerfilTabsTimeline3 = __webpack_require__(105);
+var _pacientePerfilTabsTimeline3 = __webpack_require__(108);
 
 var _pacientePerfilTabsTimeline4 = _interopRequireDefault(_pacientePerfilTabsTimeline3);
 
@@ -10756,7 +11415,7 @@ var PacientePerfilTabsTimelineComponent = {
 exports.default = PacientePerfilTabsTimelineComponent;
 
 /***/ }),
-/* 105 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10768,29 +11427,78 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _angular = __webpack_require__(3);
+
+var _angular2 = _interopRequireDefault(_angular);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var PacientPerfilTimelineController = function () {
-  function PacientPerfilTimelineController(HistorialAgregarService) {
+  function PacientPerfilTimelineController(TimelineService, PacientePerfilService, toastr, $scope) {
     _classCallCheck(this, PacientPerfilTimelineController);
 
-    this.HistorialAgregarService = HistorialAgregarService;
+    this.TimelineService = TimelineService;
+    this.PacientePerfilService = PacientePerfilService;
+    this.toastr = toastr;
+    this.$scope = $scope;
   }
 
   _createClass(PacientPerfilTimelineController, [{
-    key: '$onInit',
-    value: function $onInit() {}
+    key: 'openModal',
+    value: function openModal() {
+      var self = this;
+      _angular2.default.element('#exampleModal').modal('show');
+
+      _angular2.default.element('#exampleModal').on('hidden.bs.modal', function () {
+        self.PacientePerfilService.getHistorialMedico(self.paciente._id).then(function (res) {
+          self.$scope.$apply(function () {
+            self.historial = res;
+          });
+        });
+      });
+    }
+  }, {
+    key: 'eliminar',
+    value: function eliminar(historialId) {
+      var _this = this;
+
+      var self = this;
+      this.TimelineService.delNotaClinica(this.paciente._id, historialId).then(function () {
+        self.$scope.$apply(function () {
+          self.historial = self.historial.filter(function (h) {
+            return h._id != historialId;
+          });
+        });
+      }).catch(function (err) {
+        _this.toastr.error(err);
+      });
+    }
+  }, {
+    key: 'editar',
+    value: function editar(nota, notaClinica) {
+      var _this2 = this;
+
+      var registro = Object.assign(notaClinica, nota);
+      this.TimelineService.editNotaClinica(this.paciente._id, registro).then(function () {
+        notaClinica = registro;
+        notaClinica.viewEdicion = false;
+      }).catch(function (err) {
+        _this2.toastr.error(err);
+      });
+    }
   }]);
 
   return PacientPerfilTimelineController;
 }();
 
-PacientPerfilTimelineController.$inject = ['HistorialAgregarService'];
+PacientPerfilTimelineController.$inject = ['TimelineService', 'PacientePerfilService', 'toastr', '$scope'];
 
 exports.default = PacientPerfilTimelineController;
 
 /***/ }),
-/* 106 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10802,7 +11510,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _axios = __webpack_require__(61);
+var _axios = __webpack_require__(33);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -10814,7 +11522,7 @@ var HistorialAgregarService = function () {
   function HistorialAgregarService(api) {
     _classCallCheck(this, HistorialAgregarService);
 
-    this.urlApiHistorial = api.server + '/pacientes';
+    this.urlApi = api.server + '/pacientes';
   }
 
   _createClass(HistorialAgregarService, [{
@@ -10823,7 +11531,33 @@ var HistorialAgregarService = function () {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
-        _axios2.default.post(_this.urlApiHistorial + '/' + idPaciente + '/historial', notaClinica).then(function (response) {
+        _axios2.default.post(_this.urlApi + '/' + idPaciente + '/historial', notaClinica).then(function (response) {
+          resolve(response);
+        }).catch(function (err) {
+          return reject(err);
+        });
+      });
+    }
+  }, {
+    key: 'delNotaClinica',
+    value: function delNotaClinica(idPaciente, idHistorial) {
+      var _this2 = this;
+
+      return new Promise(function (resolve, reject) {
+        _axios2.default.delete(_this2.urlApi + '/' + idPaciente + '/historial/' + idHistorial).then(function (response) {
+          resolve(response);
+        }).catch(function (err) {
+          return reject(err);
+        });
+      });
+    }
+  }, {
+    key: 'editNotaClinica',
+    value: function editNotaClinica(idPaciente, notaClinica) {
+      var _this3 = this;
+
+      return new Promise(function (resolve, reject) {
+        _axios2.default.patch(_this3.urlApi + '/' + idPaciente + '/historial/' + notaClinica._id, notaClinica).then(function (response) {
           resolve(response);
         }).catch(function (err) {
           return reject(err);
@@ -10840,7 +11574,7 @@ HistorialAgregarService.$inject = ['api'];
 exports.default = HistorialAgregarService;
 
 /***/ }),
-/* 107 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10850,7 +11584,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pacientePerfilTabs = __webpack_require__(179);
+var _pacientePerfilTabs = __webpack_require__(186);
 
 var _pacientePerfilTabs2 = _interopRequireDefault(_pacientePerfilTabs);
 
@@ -10867,7 +11601,7 @@ var PacientePerfilTabsComponent = {
 exports.default = PacientePerfilTabsComponent;
 
 /***/ }),
-/* 108 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10877,7 +11611,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _pacientePerfil = __webpack_require__(180);
+var _pacientePerfil = __webpack_require__(187);
 
 var _pacientePerfil2 = _interopRequireDefault(_pacientePerfil);
 
@@ -10894,7 +11628,7 @@ var PacientePerfilComponent = {
 exports.default = PacientePerfilComponent;
 
 /***/ }),
-/* 109 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10906,7 +11640,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _axios = __webpack_require__(61);
+var _axios = __webpack_require__(33);
 
 var _axios2 = _interopRequireDefault(_axios);
 
@@ -10958,7 +11692,7 @@ PacientePerfilService.$inject = ['$resource', 'api'];
 exports.default = PacientePerfilService;
 
 /***/ }),
-/* 110 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10972,9 +11706,9 @@ var _angular = __webpack_require__(3);
 
 var _angular2 = _interopRequireDefault(_angular);
 
-var _pacientesList = __webpack_require__(112);
+var _pacientesList = __webpack_require__(115);
 
-var _paciente = __webpack_require__(111);
+var _paciente = __webpack_require__(114);
 
 var _paciente2 = _interopRequireDefault(_paciente);
 
@@ -10995,7 +11729,7 @@ var pacientes = _angular2.default.module('pacientes', []).service('PacienteServi
 exports.default = pacientes;
 
 /***/ }),
-/* 111 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11040,7 +11774,7 @@ PacienteService.$inject = ['$resource', 'api'];
 exports.default = PacienteService;
 
 /***/ }),
-/* 112 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11051,7 +11785,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.PacientesListComponent = undefined;
 
-var _pacientesList = __webpack_require__(181);
+var _pacientesList = __webpack_require__(188);
 
 var _pacientesList2 = _interopRequireDefault(_pacientesList);
 
@@ -11070,7 +11804,7 @@ var PacientesListComponent = exports.PacientesListComponent = {
 };
 
 /***/ }),
-/* 113 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11081,7 +11815,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 114 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11093,7 +11827,35 @@ module.exports = {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(24)))
 
 /***/ }),
-/* 115 */
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(67)(true);
+// imports
+
+
+// module
+exports.push([module.i, ".steps-indicator {\n  /* ---- steps quantity ---- */\n  right: 0;\n  bottom: 0;\n  left: 0;\n  margin: 0;\n  padding: 20px 0 0 0;\n  height: 30px;\n  list-style: none;\n  /* --- http://www.paulirish.com/2012/box-sizing-border-box-ftw/ ---- */\n}\n.steps-indicator:before {\n  background-color: #e6e6e6;\n  content: '';\n  position: absolute;\n  height: 1px;\n}\n.steps-indicator.steps-2:before {\n  left: calc(100% / 2 / 2);\n  right: calc(100% / 2 / 2);\n}\n.steps-indicator.steps-3:before {\n  left: calc(100% / 3 / 2);\n  right: calc(100% / 3 / 2);\n}\n.steps-indicator.steps-4:before {\n  left: calc(100% / 4 / 2);\n  right: calc(100% / 4 / 2);\n}\n.steps-indicator.steps-5:before {\n  left: calc(100% / 5 / 2);\n  right: calc(100% / 5 / 2);\n}\n.steps-indicator.steps-6:before {\n  left: calc(100% / 6 / 2);\n  right: calc(100% / 6 / 2);\n}\n.steps-indicator.steps-7:before {\n  left: calc(100% / 7 / 2);\n  right: calc(100% / 7 / 2);\n}\n.steps-indicator.steps-8:before {\n  left: calc(100% / 8 / 2);\n  right: calc(100% / 8 / 2);\n}\n.steps-indicator.steps-9:before {\n  left: calc(100% / 9 / 2);\n  right: calc(100% / 9 / 2);\n}\n.steps-indicator.steps-10:before {\n  left: calc(100% / 10 / 2);\n  right: calc(100% / 10 / 2);\n}\n.steps-indicator * {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n.steps-indicator li {\n  position: relative;\n  float: left;\n  margin: 0;\n  padding: 0;\n  padding-top: 10px;\n  text-align: center;\n  line-height: 15px;\n}\n.steps-indicator li a {\n  color: #808080;\n  text-decoration: none;\n  text-transform: uppercase;\n  font-weight: bold;\n  transition: 0.25s;\n  cursor: pointer;\n}\n.steps-indicator li a:before {\n  position: absolute;\n  top: -7px;\n  left: calc(50% - 7px);\n  width: 14px;\n  height: 14px;\n  border-radius: 100%;\n  background-color: #e6e6e6;\n  content: '';\n  transition: 0.25s;\n}\n.steps-indicator li a:hover {\n  color: #4d4d4d;\n}\n.steps-indicator.steps-2 li {\n  width: calc(100% / 2);\n}\n.steps-indicator.steps-3 li {\n  width: calc(100% / 3);\n}\n.steps-indicator.steps-4 li {\n  width: calc(100% / 4);\n}\n.steps-indicator.steps-5 li {\n  width: calc(100% / 5);\n}\n.steps-indicator.steps-6 li {\n  width: calc(100% / 6);\n}\n.steps-indicator.steps-7 li {\n  width: calc(100% / 7);\n}\n.steps-indicator.steps-8 li {\n  width: calc(100% / 8);\n}\n.steps-indicator.steps-9 li {\n  width: calc(100% / 9);\n}\n.steps-indicator.steps-10 li {\n  width: calc(100% / 10);\n}\n.steps-indicator.steps-11 li {\n  width: calc(100% / 11);\n}\n.steps-indicator li.default {\n  pointer-events: none;\n}\n.steps-indicator li.default a:hover {\n  color: #808080;\n}\n.steps-indicator li.current,\n.steps-indicator li.editing {\n  pointer-events: none;\n}\n.steps-indicator li.current a:before {\n  background-color: #808080;\n}\n.steps-indicator li.done a:before {\n  background-color: #339933;\n}\n.steps-indicator li.editing a:before {\n  background-color: #ff0000;\n}\n", "", {"version":3,"sources":["C:/languages/node.js/podologia/podowebangular/node_modules/angular-wizard/dist/angular-wizard.css"],"names":[],"mappings":"AAAA;EACE,8BAA8B;EAC9B,SAAS;EACT,UAAU;EACV,QAAQ;EACR,UAAU;EACV,oBAAoB;EACpB,aAAa;EACb,iBAAiB;EACjB,uEAAuE;CACxE;AACD;EACE,0BAA0B;EAC1B,YAAY;EACZ,mBAAmB;EACnB,YAAY;CACb;AACD;EACE,yBAAyB;EACzB,0BAA0B;CAC3B;AACD;EACE,yBAAyB;EACzB,0BAA0B;CAC3B;AACD;EACE,yBAAyB;EACzB,0BAA0B;CAC3B;AACD;EACE,yBAAyB;EACzB,0BAA0B;CAC3B;AACD;EACE,yBAAyB;EACzB,0BAA0B;CAC3B;AACD;EACE,yBAAyB;EACzB,0BAA0B;CAC3B;AACD;EACE,yBAAyB;EACzB,0BAA0B;CAC3B;AACD;EACE,yBAAyB;EACzB,0BAA0B;CAC3B;AACD;EACE,0BAA0B;EAC1B,2BAA2B;CAC5B;AACD;EACE,+BAA+B;EAC/B,4BAA4B;EAC5B,uBAAuB;CACxB;AACD;EACE,mBAAmB;EACnB,YAAY;EACZ,UAAU;EACV,WAAW;EACX,kBAAkB;EAClB,mBAAmB;EACnB,kBAAkB;CACnB;AACD;EACE,eAAe;EACf,sBAAsB;EACtB,0BAA0B;EAC1B,kBAAkB;EAClB,kBAAkB;EAClB,gBAAgB;CACjB;AACD;EACE,mBAAmB;EACnB,UAAU;EACV,sBAAsB;EACtB,YAAY;EACZ,aAAa;EACb,oBAAoB;EACpB,0BAA0B;EAC1B,YAAY;EACZ,kBAAkB;CACnB;AACD;EACE,eAAe;CAChB;AACD;EACE,sBAAsB;CACvB;AACD;EACE,sBAAsB;CACvB;AACD;EACE,sBAAsB;CACvB;AACD;EACE,sBAAsB;CACvB;AACD;EACE,sBAAsB;CACvB;AACD;EACE,sBAAsB;CACvB;AACD;EACE,sBAAsB;CACvB;AACD;EACE,sBAAsB;CACvB;AACD;EACE,uBAAuB;CACxB;AACD;EACE,uBAAuB;CACxB;AACD;EACE,qBAAqB;CACtB;AACD;EACE,eAAe;CAChB;AACD;;EAEE,qBAAqB;CACtB;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,0BAA0B;CAC3B;AACD;EACE,0BAA0B;CAC3B","file":"angular-wizard.css","sourcesContent":[".steps-indicator {\n  /* ---- steps quantity ---- */\n  right: 0;\n  bottom: 0;\n  left: 0;\n  margin: 0;\n  padding: 20px 0 0 0;\n  height: 30px;\n  list-style: none;\n  /* --- http://www.paulirish.com/2012/box-sizing-border-box-ftw/ ---- */\n}\n.steps-indicator:before {\n  background-color: #e6e6e6;\n  content: '';\n  position: absolute;\n  height: 1px;\n}\n.steps-indicator.steps-2:before {\n  left: calc(100% / 2 / 2);\n  right: calc(100% / 2 / 2);\n}\n.steps-indicator.steps-3:before {\n  left: calc(100% / 3 / 2);\n  right: calc(100% / 3 / 2);\n}\n.steps-indicator.steps-4:before {\n  left: calc(100% / 4 / 2);\n  right: calc(100% / 4 / 2);\n}\n.steps-indicator.steps-5:before {\n  left: calc(100% / 5 / 2);\n  right: calc(100% / 5 / 2);\n}\n.steps-indicator.steps-6:before {\n  left: calc(100% / 6 / 2);\n  right: calc(100% / 6 / 2);\n}\n.steps-indicator.steps-7:before {\n  left: calc(100% / 7 / 2);\n  right: calc(100% / 7 / 2);\n}\n.steps-indicator.steps-8:before {\n  left: calc(100% / 8 / 2);\n  right: calc(100% / 8 / 2);\n}\n.steps-indicator.steps-9:before {\n  left: calc(100% / 9 / 2);\n  right: calc(100% / 9 / 2);\n}\n.steps-indicator.steps-10:before {\n  left: calc(100% / 10 / 2);\n  right: calc(100% / 10 / 2);\n}\n.steps-indicator * {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n.steps-indicator li {\n  position: relative;\n  float: left;\n  margin: 0;\n  padding: 0;\n  padding-top: 10px;\n  text-align: center;\n  line-height: 15px;\n}\n.steps-indicator li a {\n  color: #808080;\n  text-decoration: none;\n  text-transform: uppercase;\n  font-weight: bold;\n  transition: 0.25s;\n  cursor: pointer;\n}\n.steps-indicator li a:before {\n  position: absolute;\n  top: -7px;\n  left: calc(50% - 7px);\n  width: 14px;\n  height: 14px;\n  border-radius: 100%;\n  background-color: #e6e6e6;\n  content: '';\n  transition: 0.25s;\n}\n.steps-indicator li a:hover {\n  color: #4d4d4d;\n}\n.steps-indicator.steps-2 li {\n  width: calc(100% / 2);\n}\n.steps-indicator.steps-3 li {\n  width: calc(100% / 3);\n}\n.steps-indicator.steps-4 li {\n  width: calc(100% / 4);\n}\n.steps-indicator.steps-5 li {\n  width: calc(100% / 5);\n}\n.steps-indicator.steps-6 li {\n  width: calc(100% / 6);\n}\n.steps-indicator.steps-7 li {\n  width: calc(100% / 7);\n}\n.steps-indicator.steps-8 li {\n  width: calc(100% / 8);\n}\n.steps-indicator.steps-9 li {\n  width: calc(100% / 9);\n}\n.steps-indicator.steps-10 li {\n  width: calc(100% / 10);\n}\n.steps-indicator.steps-11 li {\n  width: calc(100% / 11);\n}\n.steps-indicator li.default {\n  pointer-events: none;\n}\n.steps-indicator li.default a:hover {\n  color: #808080;\n}\n.steps-indicator li.current,\n.steps-indicator li.editing {\n  pointer-events: none;\n}\n.steps-indicator li.current a:before {\n  background-color: #808080;\n}\n.steps-indicator li.done a:before {\n  background-color: #339933;\n}\n.steps-indicator li.editing a:before {\n  background-color: #ff0000;\n}\n"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 119 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(67)(true);
+// imports
+exports.i(__webpack_require__(118), "");
+
+// module
+exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"style.scss","sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11101,7 +11863,7 @@ module.exports = {
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @module hooks */ /** */
 var transition_1 = __webpack_require__(21);
-var router_1 = __webpack_require__(39);
+var router_1 = __webpack_require__(40);
 function addCoreResolvables(trans) {
     trans.addResolvable({ token: router_1.UIRouter, deps: [], resolveFn: function () { return trans.router; }, data: trans.router }, "");
     trans.addResolvable({ token: transition_1.Transition, deps: [], resolveFn: function () { return trans; }, data: trans }, "");
@@ -11117,7 +11879,7 @@ exports.registerAddCoreResolvables = function (transitionService) {
 //# sourceMappingURL=coreResolvables.js.map
 
 /***/ }),
-/* 116 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11154,7 +11916,7 @@ exports.registerIgnoredTransitionHook = function (transitionService) {
 //# sourceMappingURL=ignoredTransition.js.map
 
 /***/ }),
-/* 117 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11179,7 +11941,7 @@ exports.registerInvalidTransitionHook = function (transitionService) {
 //# sourceMappingURL=invalidTransition.js.map
 
 /***/ }),
-/* 118 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11242,7 +12004,7 @@ exports.registerOnEnterHook = function (transitionService) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 119 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11285,7 +12047,7 @@ exports.registerRedirectToHook = function (transitionService) {
 //# sourceMappingURL=redirectTo.js.map
 
 /***/ }),
-/* 120 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11334,7 +12096,7 @@ exports.registerLazyResolveState = function (transitionService) {
 //# sourceMappingURL=resolve.js.map
 
 /***/ }),
-/* 121 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11375,7 +12137,7 @@ exports.registerUpdateGlobalState = function (transitionService) {
 //# sourceMappingURL=updateGlobals.js.map
 
 /***/ }),
-/* 122 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11406,7 +12168,7 @@ exports.registerUpdateUrl = function (transitionService) {
 //# sourceMappingURL=url.js.map
 
 /***/ }),
-/* 123 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11459,7 +12221,7 @@ exports.registerActivateViews = function (transitionService) {
 //# sourceMappingURL=views.js.map
 
 /***/ }),
-/* 124 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11486,7 +12248,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 //# sourceMappingURL=interface.js.map
 
 /***/ }),
-/* 125 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11496,13 +12258,13 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(10));
-__export(__webpack_require__(36));
 __export(__webpack_require__(37));
+__export(__webpack_require__(38));
 __export(__webpack_require__(26));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 126 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11517,7 +12279,7 @@ __export(__webpack_require__(19));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 127 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11527,13 +12289,13 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @module resolve */ /** for typedoc */
-__export(__webpack_require__(38));
+__export(__webpack_require__(39));
 __export(__webpack_require__(13));
 __export(__webpack_require__(20));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 128 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11542,17 +12304,17 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(40));
-__export(__webpack_require__(28));
 __export(__webpack_require__(41));
+__export(__webpack_require__(28));
 __export(__webpack_require__(42));
 __export(__webpack_require__(43));
 __export(__webpack_require__(44));
+__export(__webpack_require__(45));
 __export(__webpack_require__(9));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 129 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11576,17 +12338,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module transition
  */ /** for typedoc */
 __export(__webpack_require__(11));
-__export(__webpack_require__(45));
+__export(__webpack_require__(46));
 __export(__webpack_require__(29));
 __export(__webpack_require__(14));
 __export(__webpack_require__(21));
 __export(__webpack_require__(15));
-__export(__webpack_require__(46));
+__export(__webpack_require__(47));
 __export(__webpack_require__(30));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 130 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11596,14 +12358,14 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(22));
-__export(__webpack_require__(47));
 __export(__webpack_require__(48));
 __export(__webpack_require__(49));
 __export(__webpack_require__(50));
+__export(__webpack_require__(51));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 131 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11617,11 +12379,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-__export(__webpack_require__(132));
+__export(__webpack_require__(137));
 //# sourceMappingURL=vanilla.js.map
 
 /***/ }),
-/* 132 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11630,20 +12392,20 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(57));
-__export(__webpack_require__(53));
-__export(__webpack_require__(23));
-__export(__webpack_require__(52));
-__export(__webpack_require__(55));
-__export(__webpack_require__(56));
+__export(__webpack_require__(58));
 __export(__webpack_require__(54));
-__export(__webpack_require__(51));
+__export(__webpack_require__(23));
+__export(__webpack_require__(53));
+__export(__webpack_require__(56));
+__export(__webpack_require__(57));
+__export(__webpack_require__(55));
+__export(__webpack_require__(52));
 __export(__webpack_require__(16));
-__export(__webpack_require__(133));
+__export(__webpack_require__(138));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 133 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11654,14 +12416,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-var browserLocationConfig_1 = __webpack_require__(51);
-var hashLocationService_1 = __webpack_require__(52);
+var browserLocationConfig_1 = __webpack_require__(52);
+var hashLocationService_1 = __webpack_require__(53);
 var utils_1 = __webpack_require__(16);
-var pushStateLocationService_1 = __webpack_require__(56);
-var memoryLocationService_1 = __webpack_require__(55);
-var memoryLocationConfig_1 = __webpack_require__(54);
-var injector_1 = __webpack_require__(53);
-var q_1 = __webpack_require__(57);
+var pushStateLocationService_1 = __webpack_require__(57);
+var memoryLocationService_1 = __webpack_require__(56);
+var memoryLocationConfig_1 = __webpack_require__(55);
+var injector_1 = __webpack_require__(54);
+var q_1 = __webpack_require__(58);
 var coreservices_1 = __webpack_require__(4);
 function servicesPlugin(router) {
     coreservices_1.services.$injector = injector_1.$injector;
@@ -11678,7 +12440,7 @@ exports.memoryLocationPlugin = utils_1.locationPluginFactory("vanilla.memoryLoca
 //# sourceMappingURL=plugins.js.map
 
 /***/ }),
-/* 134 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11687,11 +12449,11 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(58));
+__export(__webpack_require__(59));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 135 */
+/* 140 */
 /***/ (function(module, exports) {
 
 /**
@@ -15851,7 +16613,7 @@ angular.module('ngAnimate', [], function initAngularHelpers() {
 
 
 /***/ }),
-/* 136 */
+/* 141 */
 /***/ (function(module, exports) {
 
 /*! 
@@ -16198,7 +16960,7 @@ angular.module('cfp.loadingBar', [])
 
 
 /***/ }),
-/* 137 */
+/* 142 */
 /***/ (function(module, exports) {
 
 /**
@@ -17062,7 +17824,7 @@ angular.module('ngResource', ['ng']).
 
 
 /***/ }),
-/* 138 */
+/* 143 */
 /***/ (function(module, exports) {
 
 (function() {
@@ -17576,7 +18338,7 @@ angular.module("toastr").run(["$templateCache", function($templateCache) {$templ
 $templateCache.put("directives/toast/toast.html","<div class=\"{{toastClass}} {{toastType}}\" ng-click=\"tapToast()\">\n  <div ng-switch on=\"allowHtml\">\n    <div ng-switch-default ng-if=\"title\" class=\"{{titleClass}}\" aria-label=\"{{title}}\">{{title}}</div>\n    <div ng-switch-default class=\"{{messageClass}}\" aria-label=\"{{message}}\">{{message}}</div>\n    <div ng-switch-when=\"true\" ng-if=\"title\" class=\"{{titleClass}}\" ng-bind-html=\"title\"></div>\n    <div ng-switch-when=\"true\" class=\"{{messageClass}}\" ng-bind-html=\"message\"></div>\n  </div>\n  <progress-bar ng-if=\"progressBar\"></progress-bar>\n</div>\n");}]);
 
 /***/ }),
-/* 139 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18153,7 +18915,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateDirectives.js.map
 
 /***/ }),
-/* 140 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18449,7 +19211,7 @@ angular_1.ng.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
 //# sourceMappingURL=viewDirective.js.map
 
 /***/ }),
-/* 141 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18823,7 +19585,7 @@ var $urlMatcherFactoryProvider;
 //# sourceMappingURL=injectables.js.map
 
 /***/ }),
-/* 142 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18904,7 +19666,7 @@ exports.Ng1LocationServices = Ng1LocationServices;
 //# sourceMappingURL=locationServices.js.map
 
 /***/ }),
-/* 143 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18956,7 +19718,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateFilters.js.map
 
 /***/ }),
-/* 144 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18987,7 +19749,7 @@ exports.getStateHookBuilder = function (hookName) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 145 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19187,7 +19949,7 @@ var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {
 //# sourceMappingURL=templateFactory.js.map
 
 /***/ }),
-/* 146 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19216,7 +19978,7 @@ angular_1.ng.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProv
 //# sourceMappingURL=viewScroll.js.map
 
 /***/ }),
-/* 147 */
+/* 152 */
 /***/ (function(module, exports) {
 
 /**
@@ -53052,7 +53814,7 @@ $provide.value("$locale", {
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
 
 /***/ }),
-/* 148 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53060,8 +53822,8 @@ $provide.value("$locale", {
 
 var utils = __webpack_require__(6);
 var bind = __webpack_require__(66);
-var Axios = __webpack_require__(150);
-var defaults = __webpack_require__(33);
+var Axios = __webpack_require__(155);
+var defaults = __webpack_require__(34);
 
 /**
  * Create an instance of Axios
@@ -53095,14 +53857,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(63);
-axios.CancelToken = __webpack_require__(149);
+axios.CancelToken = __webpack_require__(154);
 axios.isCancel = __webpack_require__(64);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(164);
+axios.spread = __webpack_require__(169);
 
 module.exports = axios;
 
@@ -53111,7 +53873,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 149 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53175,16 +53937,16 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 150 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(33);
+var defaults = __webpack_require__(34);
 var utils = __webpack_require__(6);
-var InterceptorManager = __webpack_require__(151);
-var dispatchRequest = __webpack_require__(152);
+var InterceptorManager = __webpack_require__(156);
+var dispatchRequest = __webpack_require__(157);
 
 /**
  * Create a new instance of Axios
@@ -53261,7 +54023,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 151 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53320,18 +54082,18 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 152 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(6);
-var transformData = __webpack_require__(155);
+var transformData = __webpack_require__(160);
 var isCancel = __webpack_require__(64);
-var defaults = __webpack_require__(33);
-var isAbsoluteURL = __webpack_require__(160);
-var combineURLs = __webpack_require__(158);
+var defaults = __webpack_require__(34);
+var isAbsoluteURL = __webpack_require__(165);
+var combineURLs = __webpack_require__(163);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -53413,7 +54175,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 153 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53441,7 +54203,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 154 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53474,7 +54236,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 155 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53501,7 +54263,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 156 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53544,7 +54306,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 157 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53619,7 +54381,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 158 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53640,7 +54402,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 159 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53700,7 +54462,7 @@ module.exports = (
 
 
 /***/ }),
-/* 160 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53721,7 +54483,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 161 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53796,7 +54558,7 @@ module.exports = (
 
 
 /***/ }),
-/* 162 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53815,7 +54577,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 163 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53875,7 +54637,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 164 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53909,7 +54671,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 165 */
+/* 170 */
 /***/ (function(module, exports) {
 
 /*!
@@ -53936,16 +54698,493 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 166 */
+/* 171 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target) {
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
+})();
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(172);
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertInto + " " + options.insertAt.before);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	options.attrs.type = "text/css";
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	options.attrs.type = "text/css";
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = options.transform(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+/* 172 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+/* 173 */
 /***/ (function(module, exports) {
 
 var path = '/common/content/content.html';
-var html = "<div class=\"content-wrapper\" style=\"min-height: 916px;\">\r\n  <section class=\"content-header\">\r\n    <h1>\r\n      Dashboard\r\n      <small>Version 2.0</small>\r\n    </h1>\r\n    <!--<div ncy-breadcrumb></div>-->\r\n  </section>\r\n  <section class=\"content\">\r\n    <div ui-view></div>    \r\n  </section>\r\n</div>";
+var html = "<div class=\"content-wrapper\" style=\"min-height: 916px;\">\r\n  <section class=\"content-header\">\r\n    <div ncy-breadcrumb></div>\r\n  </section>\r\n  <section class=\"content\">\r\n    <div ui-view></div>    \r\n  </section>\r\n</div>";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 167 */
+/* 174 */
 /***/ (function(module, exports) {
 
 var path = '/common/footer/footer.html';
@@ -53954,7 +55193,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 168 */
+/* 175 */
 /***/ (function(module, exports) {
 
 var path = '/common/header/header.html';
@@ -53963,7 +55202,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 169 */
+/* 176 */
 /***/ (function(module, exports) {
 
 var path = '/common/modal/modal.html';
@@ -53972,16 +55211,16 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 170 */
+/* 177 */
 /***/ (function(module, exports) {
 
 var path = '/common/side-menu/side-menu.html';
-var html = "<aside class=\"main-sidebar\">\r\n  <!-- sidebar: style can be found in sidebar.less -->\r\n  <section class=\"sidebar\" style=\"height: auto;\">\r\n    <!-- Sidebar user panel -->\r\n    <div class=\"user-panel\">\r\n      <div class=\"pull-left image\">\r\n        <img src=\"/img/silueta.jpg\" class=\"img-circle\" alt=\"User Image\">\r\n      </div>\r\n      <div class=\"pull-left info\">\r\n        <p>Alexander Pierce</p>\r\n        <a href=\"#\"><i class=\"fa fa-circle text-success\"></i> Online</a>\r\n      </div>\r\n    </div>\r\n    <!-- search form -->\r\n    <form action=\"#\" method=\"get\" class=\"sidebar-form\">\r\n      <div class=\"input-group\">\r\n        <input type=\"text\" name=\"q\" class=\"form-control\" placeholder=\"Search...\">\r\n            <span class=\"input-group-btn\">\r\n              <button type=\"submit\" name=\"search\" id=\"search-btn\" class=\"btn btn-flat\"><i class=\"fa fa-search\"></i>\r\n              </button>\r\n            </span>\r\n      </div>\r\n    </form>\r\n    <!-- /.search form -->\r\n    <!-- sidebar menu: : style can be found in sidebar.less -->\r\n    <ul class=\"sidebar-menu\">\r\n      <li class=\"header\">MAIN NAVIGATION</li>\r\n      <li class=\"active treeview\">\r\n        <a ui-sref=\"dashboard\"><i class=\"fa fa-home\"></i> <span>Inicio</span></a>\r\n      </li>\r\n      <li class=\"active treeview\">\r\n        <a href=\"#\">\r\n          <i class=\"fa fa-user\"></i> <span>Adm Pacientes</span>\r\n          <span class=\"pull-right-container\">\r\n            <i class=\"fa fa-angle-left pull-right\"></i>\r\n          </span>\r\n        </a>\r\n        <ul class=\"treeview-menu\">\r\n          <li><a ui-sref=\"listarPacientes\"><i class=\"fa fa-circle-o\"></i> Listar</a></li>\r\n          <li><a ui-sref=\"addPaciente\"><i class=\"fa fa-circle-o\"></i> Agregar</a></li>\r\n        </ul>\r\n      </li>\r\n    </ul>\r\n  </section>\r\n  <!-- /.sidebar -->\r\n</aside>";
+var html = "<aside class=\"main-sidebar\">\r\n  <!-- sidebar: style can be found in sidebar.less -->\r\n  <section class=\"sidebar\" style=\"height: auto;\">\r\n    <!-- Sidebar user panel -->\r\n    <div class=\"user-panel\">\r\n      <div class=\"pull-left image\">\r\n        <img src=\"/img/silueta.jpg\" class=\"img-circle\" alt=\"User Image\">\r\n      </div>\r\n      <div class=\"pull-left info\">\r\n        <p>Alexander Pierce</p>\r\n      </div>\r\n    </div>\r\n    <!-- search form -->\r\n    <form action=\"#\" method=\"get\" class=\"sidebar-form\">\r\n      <div class=\"input-group\">\r\n        <input type=\"text\" name=\"q\" class=\"form-control\" placeholder=\"Search...\">\r\n            <span class=\"input-group-btn\">\r\n              <button type=\"submit\" name=\"search\" id=\"search-btn\" class=\"btn btn-flat\"><i class=\"fa fa-search\"></i>\r\n              </button>\r\n            </span>\r\n      </div>\r\n    </form>\r\n    <!-- /.search form -->\r\n    <!-- sidebar menu: : style can be found in sidebar.less -->\r\n    <ul class=\"sidebar-menu\">\r\n      <li class=\"header\">MAIN NAVIGATION</li>\r\n      <li class=\"active treeview\">\r\n        <a ui-sref=\"dashboard\"><i class=\"fa fa-home\"></i> <span>Inicio</span></a>\r\n      </li>\r\n      <li class=\"active treeview\">\r\n        <a href=\"#\">\r\n          <i class=\"fa fa-user\"></i> <span>Adm Pacientes</span>\r\n          <span class=\"pull-right-container\">\r\n            <i class=\"fa fa-angle-left pull-right\"></i>\r\n          </span>\r\n        </a>\r\n        <ul class=\"treeview-menu\">\r\n          <li><a ui-sref=\"listarPacientes\"><i class=\"fa fa-circle-o\"></i> Listar</a></li>\r\n          <li><a ui-sref=\"addPaciente\"><i class=\"fa fa-circle-o\"></i> Agregar</a></li>\r\n        </ul>\r\n      </li>\r\n    </ul>\r\n  </section>\r\n  <!-- /.sidebar -->\r\n</aside>";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 171 */
+/* 178 */
 /***/ (function(module, exports) {
 
 var path = '/components/dashboard/dashboard-lastPacient/dashboard-lastPacient.html';
@@ -53990,7 +55229,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 172 */
+/* 179 */
 /***/ (function(module, exports) {
 
 var path = '/components/dashboard/dashboard.html';
@@ -53999,16 +55238,16 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 173 */
+/* 180 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacienteAgregar/pacienteAgregar.html';
-var html = "<div class=\"row\">\r\n  <div class=\"col-md-12\">\r\n    <div class=\"box box-info\">\r\n      <div class=\"box-header with-border\">\r\n        <h3 class=\"box-title\">Alta Paciente</h3>\r\n      </div>\r\n      <!-- /.box-header -->\r\n      <!-- form start -->\r\n      <form name=\"addPacienteForm\" ng-submit=\"$ctrl.onSubmit();\" class=\"form-horizontal\">\r\n        <div class=\"box-body\">\r\n          <div class=\"form-group\">\r\n            <label for=\"inputName\" class=\"col-sm-2 control-label\">Nombre</label>\r\n\r\n            <div class=\"col-sm-10\">\r\n              <input ng-model=\"$ctrl.paciente.nombre\" type=\"text\" class=\"form-control\" id=\"inputName\" placeholder=\"Nombre\">\r\n            </div>\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"inputApellido\" class=\"col-sm-2 control-label\">Apellido</label>\r\n\r\n            <div class=\"col-sm-10\">\r\n              <input ng-model=\"$ctrl.paciente.apellido\" type=\"text\" class=\"form-control\" id=\"inputApellido\" placeholder=\"Apellido\">\r\n            </div>\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"inputDni\" class=\"col-sm-2 control-label\">Dni</label>\r\n\r\n            <div class=\"col-sm-10\">\r\n              <input ng-model=\"$ctrl.paciente.dni\" type=\"number\" class=\"form-control\" id=\"inputDni\" placeholder=\"DNI\">\r\n            </div>\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"inputDomicilio\" class=\"col-sm-2 control-label\">Domicilio</label>\r\n            \r\n            <div class=\"col-sm-10\">\r\n              <input ng-model=\"$ctrl.paciente.domicilio\" type=\"text\" class=\"form-control\" id=\"inputDomicilio\" placeholder=\"Domicilio\">\r\n            </div>\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"inputTelefono\" class=\"col-sm-2 control-label\">Telefono</label>\r\n\r\n            <div class=\"col-sm-10\">\r\n              <input ng-model=\"$ctrl.paciente.telefono\" type=\"number\" class=\"form-control\" id=\"inputTelefono\" placeholder=\"Telefono\">\r\n            </div>\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"inputEmail3\" class=\"col-sm-2 control-label\">Email</label>\r\n\r\n            <div class=\"col-sm-10\">\r\n              <input ng-model=\"$ctrl.paciente.mail\" type=\"email\" class=\"form-control\" id=\"inputEmail3\" placeholder=\"Email\">\r\n            </div>\r\n          </div>\r\n          <div class=\"form-group\">\r\n            <label for=\"inputFile\" class=\"col-sm-2 control-label\">Foto de perfil</label>\r\n            <div class=\"col-sm-10\">\r\n              <input ng-model=\"$ctrl.paciente.fotoPerfil\" id=\"inputFile\" type=\"file\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <!-- /.box-body -->\r\n        <div class=\"box-footer\">\r\n          <button type=\"submit\" class=\"btn btn-default\">Cancel</button>\r\n          <button type=\"submit\" class=\"btn btn-info pull-right\">Guardar</button>\r\n        </div>\r\n        <!-- /.box-footer -->\r\n      </form>\r\n    </div>\r\n  </div>\r\n</div>";
+var html = "<div class=\"row\">\r\n  <div class=\"col-sm-12\">\r\n    <h1>Alta Paciente</h1>\r\n    <!-- form start -->\r\n    <form name=\"addPacienteForm\" class=\"form-horizontal\">\r\n      <wizard on-finish=\"$ctrl.onSubmit()\" on-cancel=\"cancelledWizard()\">\r\n        <wz-step wz-title=\"PASO 1\" wz-disabled=\"{{disabled}}\" wz-data=\"$ctrl.paciente\" canexit=\"$ctrl.exitValidation\">\r\n          <div class=\"box box-info\">\r\n            <div class=\"box-header with-border\">\r\n              <h3 class=\"box-title\">Datos personales</h3>\r\n              <span class=\"box-title\" ng-bind=\"$ctrl.description\"></span>\r\n              <input type=\"submit\" class=\"btn btn-info pull-right\" wz-next value=\"Siguiente\" />\r\n            </div>\r\n            <div class=\"box-body\">\r\n              <div class=\"col-sm-6\">\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputName\" class=\"col-sm-2 control-label\">Nombre</label>\r\n\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.nombre\" type=\"text\" class=\"form-control\" id=\"inputName\" placeholder=\"Nombre\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputApellido\" class=\"col-sm-2 control-label\">Apellido</label>\r\n\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.apellido\" type=\"text\" class=\"form-control\" id=\"inputApellido\" placeholder=\"Apellido\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputDni\" class=\"col-sm-2 control-label\">Dni</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.dni\" type=\"number\" class=\"form-control\" id=\"inputDni\" placeholder=\"DNI\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputEdad\" class=\"col-sm-2 control-label\">Edad</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.edad\" type=\"number\" class=\"form-control\" id=\"inputEdad\" placeholder=\"Edad\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputFechaNacimiento\" class=\"col-sm-2 control-label\">Fecha de Nacimiento</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <div class=\"input-group input-group-xs date\">\r\n                      <div class=\"input-group-addon\">\r\n                        <i class=\"fa fa-calendar\"></i>\r\n                      </div>\r\n                      <input ng-model=\"$ctrl.paciente.fecNacimiento\" class=\"form-control datepicker\" type=\"text\">\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-sm-2 control-label\">Primera visita</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <div class=\"input-group input-group-xs date\">\r\n                      <div class=\"input-group-addon\">\r\n                        <i class=\"fa fa-calendar\"></i>\r\n                      </div>\r\n                      <input ng-model=\"$ctrl.paciente.primeraVisita\" class=\"form-control datepicker\" type=\"datetime\">\r\n                    </div>\r\n                  </div>\r\n                  <!-- /.input group -->\r\n                </div>\r\n              </div>\r\n              <div class=\"col-sm-6\">\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputDomicilio\" class=\"col-sm-2 control-label\">Dirección</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.domicilio\" type=\"text\" class=\"form-control\" id=\"inputDomicilio\" placeholder=\"Domicilio\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputBarrio\" class=\"col-sm-2 control-label\">Barrio</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.barrio\" type=\"text\" class=\"form-control\" id=\"inputBarrio\" placeholder=\"Barrio\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputTelefono\" class=\"col-sm-2 control-label\">Teléfono</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.telefono\" type=\"tel\" class=\"form-control\" id=\"inputTelefono\" placeholder=\"Telefono\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputCelular\" class=\"col-sm-2 control-label\">Celular</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.celular\" type=\"tel\" class=\"form-control\" id=\"inputCelular\" placeholder=\"Celular\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputOcupacion\" class=\"col-sm-2 control-label\">Ocupación</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.ocupacion\" type=\"text\" class=\"form-control\" id=\"inputOcupacion\" placeholder=\"Ocupacion\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </wz-step>\r\n        <wz-step wz-title=\"PASO 2\">\r\n          <div class=\"box box-info\">\r\n            <div class=\"box-header with-border\">\r\n              <h3 class=\"box-title\">Antecedentes Clínicos</h3>\r\n              <input type=\"submit\" class=\"btn btn-info pull-right\" wz-next value=\"Guardar\" />\r\n              <input type=\"button\" class=\"btn btn-info pull-right\" wz-previous value=\"Atras\" />\r\n            </div>\r\n            <div class=\"box-body\">\r\n              <div class=\"col-sm-6\">\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputAlergia\" class=\"col-sm-2 control-label\">Alergia</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.alergia\" type=\"text\" class=\"form-control\" id=\"inputAlergia\" placeholder=\"alergia\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-inline col-sm-12\">\r\n                  <div>\r\n                    <label class=\"col-sm-2\"></label>\r\n                    <div class=\"col-sm-10\">\r\n                      <div class=\"col-sm-4\">\r\n                        <div class=\"checkbox\">\r\n                          <label>\r\n                            <input ng-model=\"$ctrl.paciente.diabete\" type=\"checkbox\"> Diabete\r\n                          </label>\r\n                        </div>\r\n                      </div>\r\n                      <div class=\"col-sm-4\">\r\n                        <div class=\"checkbox\">\r\n                          <label>\r\n                            <input ng-model=\"$ctrl.paciente.sensTactil\" type=\"checkbox\"> Sensibilidad Táctil\r\n                          </label>\r\n                        </div>\r\n                      </div>\r\n                      <div class=\"col-sm-4\">\r\n                        <div class=\"checkbox\">\r\n                          <label>\r\n                            <input ng-model=\"$ctrl.paciente.vacAntitetanica\" type=\"checkbox\">Vacuna Antitétanica\r\n                          </label>\r\n                        </div>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputPresion\" class=\"col-sm-2 control-label\">Presión</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.presion\" type=\"number\" class=\"form-control\" id=\"inputPresion\" placeholder=\"Presión\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputEstatura\" class=\"col-sm-2 control-label\">Estatura</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.estatura\" step=\"0.01\" type=\"number\" class=\"form-control\" id=\"inputEstatura\" placeholder=\"Estatura\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputPeso\" class=\"col-sm-2 control-label\">Peso</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.peso\" step=\"0.01\" type=\"number\" class=\"form-control\" id=\"inputPeso\" placeholder=\"Peso\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputTipoCalzado\" class=\"col-sm-2 control-label\">Tipo de Calzado</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.tipoCalzado\" type=\"text\" class=\"form-control\" id=\"inputTipoCalzado\" placeholder=\"Tipo de calzado\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label for=\"inputCalzadoNro\" class=\"col-sm-2 control-label\">Tipo de Calzado</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.calzadoNro\" type=\"number\" class=\"form-control\" id=\"inputCalzadoNro\" placeholder=\"Calz. N°\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-sm-2 control-label\">Tacón</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.tacon\" type=\"number\" class=\"form-control\" placeholder=\"Tacón\">\r\n                  </div>\r\n                </div>\r\n              </div>\r\n              <div class=\"col-sm-6\">\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-sm-2 control-label\">Varisa</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <select ng-model=\"$ctrl.paciente.varisa\" class=\"form-control\">\r\n                      <option>Izquierda</option>\r\n                      <option>Derecha</option>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-sm-2 control-label\">Valguisa</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <select ng-model=\"$ctrl.paciente.valguisa\" class=\"form-control\">\r\n                      <option>Izquierda</option>\r\n                      <option>Derecha</option>\r\n                    </select>\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-sm-2 control-label\">Pedigrafía</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.pedigrafia\" type=\"text\" class=\"form-control\" placeholder=\"Pedigrafía\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-sm-2 control-label\">Podoscopio</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.podoscopio\" type=\"text\" class=\"form-control\" placeholder=\"Podoscopio\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-sm-2 control-label\">Pie</label>\r\n                  <div class=\"form-inline col-sm-10\">\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.normal\" type=\"checkbox\"> Normal\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.plano\" type=\"checkbox\"> Plano\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.cavo\" type=\"checkbox\"> Cavo\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.varo\" type=\"checkbox\"> Varo\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.pronador\" type=\"checkbox\"> Pronador\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.supinador\" type=\"checkbox\"> Supinador\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.cuadrado\" type=\"checkbox\"> Cuadrado\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.griego\" type=\"checkbox\"> Griego\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.egipcio\" type=\"checkbox\"> Egipcio\r\n                      </label>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-sm-2 control-label\">Lesiones en piel</label>\r\n                  <div class=\"col-sm-10\">\r\n                    <input ng-model=\"$ctrl.paciente.lesionesPiel\" type=\"text\" class=\"form-control\" placeholder=\"Lesiones en piel\">\r\n                  </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                  <label class=\"col-sm-2 control-label\">Dedos</label>\r\n                  <div class=\"form-inline col-sm-10\">\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.garra\" type=\"checkbox\"> En garra\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.martillo\" type=\"checkbox\"> De martillo\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.maza\" type=\"checkbox\"> En maza\r\n                      </label>\r\n                    </div>\r\n                    <div class=\"checkbox\">\r\n                      <label>\r\n                        <input ng-model=\"$ctrl.paciente.halluxValgus\" type=\"checkbox\"> Hallux Valgus\r\n                      </label>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </wz-step>\r\n      </wizard>\r\n    </form>\r\n  </div>\r\n</div>\r\n</div>\r\n";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 174 */
+/* 181 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacientePerfil/pacientePerfil-aboutme/pacientePerfil-aboutme.html';
@@ -54017,7 +55256,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 175 */
+/* 182 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacientePerfil/pacientePerfil-profile/pacientePerfil-profile.html';
@@ -54026,7 +55265,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 176 */
+/* 183 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacientePerfil/pacientePerfil-tabs/pacientePerfil-tabs-setting/pacientePerfil-tabs-setting.html';
@@ -54035,7 +55274,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 177 */
+/* 184 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacientePerfil/pacientePerfil-tabs/pacientePerfil-tabs-timeline/pacientePerfil-tabs-timeline-agregar/pacientePerfil-tabs-timeline-agregar.html';
@@ -54044,25 +55283,25 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 178 */
+/* 185 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacientePerfil/pacientePerfil-tabs/pacientePerfil-tabs-timeline/pacientePerfil-tabs-timeline.html';
-var html = "<div style=\"text-align: end\">\r\n  <button type=\"button\" class=\"btn btn-primary btn-md\" data-toggle=\"modal\" data-target=\"#exampleModal\" >CARGAR</button>\r\n</div>\r\n<ul class=\"timeline timeline-inverse\">\r\n  <!-- timeline time label -->\r\n  <li class=\"time-label\">\r\n    <span class=\"bg-red\">\r\n      10 Feb. 2014\r\n    </span>\r\n  </li>\r\n  <!-- /.timeline-label -->\r\n  <!-- timeline item -->\r\n  <li ng-repeat=\"notaClinica in $ctrl.historial track by $index\">\r\n    <i class=\" fa fa-file-archive-o bg-blue\"></i>\r\n\r\n    <div class=\"timeline-item\">\r\n      <span class=\"time\">\r\n        <i class=\"fa fa-clock-o\" ng-bind=\"notaClinica.fechaCreacion\"></i></span>\r\n\r\n        <h3 class=\"timeline-header\"><a href=\"#\" ng-bind=\"notaClinica.titulo\"></a></h3>\r\n        <div class=\"timeline-body\" ng-bind=\"notaClinica.observacion\"></div>\r\n        <div class=\"timeline-footer\">\r\n          <a class=\"btn btn-primary btn-xs\">Editar</a>\r\n          <a class=\"btn btn-danger btn-xs\">Eliminar</a>\r\n        </div>\r\n      </span>\r\n    </div>\r\n  </li>\r\n  <li>\r\n    <i class=\"fa fa-envelope bg-blue\"></i>\r\n\r\n    <div class=\"timeline-item\">\r\n      <span class=\"time\">\r\n        <i class=\"fa fa-clock-o\"></i> 12:05</span>\r\n\r\n      <h3 class=\"timeline-header\">\r\n        <a href=\"#\">Support Team</a> sent you an email</h3>\r\n\r\n      <div class=\"timeline-body\">\r\n        Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg dopplr jibjab, movity\r\n        jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle quora plaxo ideeli hulu weebly balihoo...\r\n      </div>\r\n      <div class=\"timeline-footer\">\r\n        <a class=\"btn btn-primary btn-xs\">Editar</a>\r\n        <a class=\"btn btn-danger btn-xs\">Eliminar</a>\r\n      </div>\r\n    </div>\r\n  </li>\r\n  <!-- END timeline item -->\r\n  <!-- timeline item -->\r\n  \r\n  <li class=\"time-label\">\r\n    <span class=\"bg-green\">\r\n      3 Jan. 2014\r\n    </span>\r\n  </li>\r\n  <!-- /.timeline-label -->\r\n  <li>\r\n    <i class=\"fa fa-clock-o bg-gray\"></i>\r\n  </li>\r\n</ul>\r\n<pod-timeline-agregar paciente=\"$ctrl.paciente\"></pod-timeline-agregar>";
+var html = "<div style=\"text-align: end; margin-bottom:10px\">\r\n  <button type=\"button\" class=\"btn btn-primary btn-md\" ng-click=\"$ctrl.openModal()\" >CARGAR</button>\r\n</div>\r\n<ul class=\"timeline timeline-inverse\">\r\n  <li ng-repeat=\"notaClinica in $ctrl.historial track by $index\">\r\n    <i class=\" fa fa-file-archive-o bg-blue\"></i>\r\n\r\n    <div class=\"timeline-item\">\r\n      <span class=\"time\"> \r\n        <i class=\"fa fa-clock-o\" ng-bind=\"notaClinica.fechaCreacion | date:'MM/dd/yyyy hh:mm'\"></i></span>\r\n\r\n        <h3 class=\"timeline-header\">\r\n          <a href=\"#\" ng-bind=\"notaClinica.titulo\" ng-show=\"!notaClinica.viewEdicion\"></a>\r\n          <input class=\"form-control\" style=\"width:80%; height:2em\" type=\"text\" ng-show=\"notaClinica.viewEdicion\"\r\n          ng-model=\"nota.titulo\" ng-value=\"notaClinica.titulo\">\r\n        </h3>\r\n        <div class=\"timeline-body\" ng-bind=\"notaClinica.observacion\" ng-show=\"!notaClinica.viewEdicion\"></div>\r\n        <div class=\"timeline-body\" ng-show=\"notaClinica.viewEdicion\">\r\n          <textarea class=\"form-control\" ng-model=\"nota.observacion\" ng-value=\"notaClinica.observacion\"></textarea>\r\n        </div>\r\n        <div class=\"timeline-footer\">\r\n          <a ng-click=\"notaClinica.viewEdicion = true\" class=\"btn btn-primary btn-xs\" ng-show=\"!notaClinica.viewEdicion\">Editar</a>\r\n          <a ng-click=\"$ctrl.eliminar(notaClinica._id)\" class=\"btn btn-danger btn-xs\" ng-show=\"!notaClinica.viewEdicion\">Eliminar</a>\r\n          <a ng-click=\"notaClinica.viewEdicion = false\" class=\"btn btn-default btn-xs\" ng-show=\"notaClinica.viewEdicion\">Cancelar</a>\r\n          <a ng-click=\"$ctrl.editar(nota, notaClinica)\" class=\"btn btn-primary btn-xs\" ng-show=\"notaClinica.viewEdicion\">Aceptar</a>\r\n        </div>\r\n      </span>\r\n    </div>\r\n  </li>\r\n</ul>\r\n<pod-timeline-agregar paciente=\"$ctrl.paciente\"></pod-timeline-agregar>";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 179 */
+/* 186 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacientePerfil/pacientePerfil-tabs/pacientePerfil-tabs.html';
-var html = "<div class=\"nav-tabs-custom\">\r\n  <ul class=\"nav nav-tabs\">\r\n    <li class=\"active\"><a href=\"#timeline\" data-toggle=\"tab\" aria-expanded=\"false\">Historial</a></li>\r\n    <li><a href=\"#settings\" data-toggle=\"tab\">Configuración</a></li>\r\n  </ul>\r\n  <div class=\"tab-content\">\r\n    <pod-timeline class=\"active tab-pane\" id=\"timeline\" paciente=\"$ctrl.paciente\" historial='$ctrl.historial'></pod-timeline>\r\n    <pod-setting class=\"tab-pane\" id=\"settings\"></pod-setting>\r\n  </div>\r\n</div>";
+var html = "<div class=\"nav-tabs-custom\">\r\n  <ul class=\"nav nav-tabs\">\r\n    <li class=\"active\"><a href=\"#timeline\" data-toggle=\"tab\" aria-expanded=\"false\">Historial</a></li>\r\n    <li><a href=\"#settings\" data-toggle=\"tab\">Datos</a></li>\r\n  </ul>\r\n  <div class=\"tab-content\">\r\n    <pod-timeline class=\"active tab-pane\" id=\"timeline\" paciente=\"$ctrl.paciente\" historial='$ctrl.historial'></pod-timeline>\r\n    <pod-setting class=\"tab-pane\" id=\"settings\"></pod-setting>\r\n  </div>\r\n</div>";
 window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, html) }]);
 module.exports = path;
 
 /***/ }),
-/* 180 */
+/* 187 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacientePerfil/pacientePerfil.html';
@@ -54071,7 +55310,7 @@ window.angular.module('ng').run(['$templateCache', function(c) { c.put(path, htm
 module.exports = path;
 
 /***/ }),
-/* 181 */
+/* 188 */
 /***/ (function(module, exports) {
 
 var path = '/components/pacientes/pacientes-list/pacientes-list.html';
@@ -54081,4 +55320,3 @@ module.exports = path;
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=bundle.js.map

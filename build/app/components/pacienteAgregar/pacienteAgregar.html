@@ -2,292 +2,299 @@
   <div class="col-sm-12">
     <h1>Alta Paciente</h1>
     <!-- form start -->
-    <form name="addPacienteForm" ng-submit="$ctrl.onSubmit();" class="form-horizontal">
-      <div class="col-sm-6">
-        <div class="box box-info">
-          <div class="box-header with-border">
-            <h3 class="box-title">Datos personales</h3>
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body">
-            <div class="form-group">
-              <label for="inputName" class="col-sm-2 control-label">Nombre</label>
+    <form name="addPacienteForm" class="form-horizontal">
+      <wizard on-finish="$ctrl.onSubmit()" on-cancel="cancelledWizard()">
+        <wz-step wz-title="PASO 1" wz-disabled="{{disabled}}" wz-data="$ctrl.paciente" canexit="$ctrl.exitValidation">
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Datos personales</h3>
+              <span class="box-title" ng-bind="$ctrl.description"></span>
+              <input type="submit" class="btn btn-info pull-right" wz-next value="Siguiente" />
+            </div>
+            <div class="box-body">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputName" class="col-sm-2 control-label">Nombre</label>
 
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.nombre" type="text" class="form-control" id="inputName" placeholder="Nombre">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputApellido" class="col-sm-2 control-label">Apellido</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.nombre" type="text" class="form-control" id="inputName" placeholder="Nombre">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputApellido" class="col-sm-2 control-label">Apellido</label>
 
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.apellido" type="text" class="form-control" id="inputApellido" placeholder="Apellido">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputDni" class="col-sm-2 control-label">Dni</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.dni" type="number" class="form-control" id="inputDni" placeholder="DNI">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputEdad" class="col-sm-2 control-label">Edad</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.edad" type="number" class="form-control" id="inputEdad" placeholder="Edad">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputFechaNacimiento" class="col-sm-2 control-label">Fecha de Nacimiento</label>
-              <div class="col-sm-10">
-                <div class="input-group input-group-xs date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.apellido" type="text" class="form-control" id="inputApellido" placeholder="Apellido">
                   </div>
-                  <input ng-model="$ctrl.paciente.fecNacimiento" class="form-control datepicker" type="text">
                 </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Primera visita</label>
-              <div class="col-sm-10">
-                <div class="input-group input-group-xs date">
-                  <div class="input-group-addon">
-                    <i class="fa fa-calendar"></i>
+                <div class="form-group">
+                  <label for="inputDni" class="col-sm-2 control-label">Dni</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.dni" type="number" class="form-control" id="inputDni" placeholder="DNI">
                   </div>
-                  <input ng-model="$ctrl.paciente.primeraVisita" class="form-control datepicker" type="datetime">
                 </div>
-              </div>
-              <!-- /.input group -->
-            </div>
-            <div class="form-group">
-              <label for="inputDomicilio" class="col-sm-2 control-label">Dirección</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.domicilio" type="text" class="form-control" id="inputDomicilio" placeholder="Domicilio">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputBarrio" class="col-sm-2 control-label">Barrio</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.barrio" type="text" class="form-control" id="inputBarrio" placeholder="Barrio">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputTelefono" class="col-sm-2 control-label">Teléfono</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.telefono" type="tel" class="form-control" id="inputTelefono" placeholder="Telefono">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputCelular" class="col-sm-2 control-label">Celular</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.celular" type="tel" class="form-control" id="inputCelular" placeholder="Celular">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputOcupacion" class="col-sm-2 control-label">Ocupación</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.ocupacion" type="text" class="form-control" id="inputOcupacion" placeholder="Ocupacion">
-              </div>
-            </div>
-          </div>
-          <!-- /.box-body -->
-          <!-- /.box-footer -->
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="box box-info">
-          <div class="box-header with-border">
-            <h3 class="box-title">Antecedentes clínicos</h3>
-          </div>
-          <div class="box-body">
-            <div class="form-group">
-              <label for="inputAlergia" class="col-sm-2 control-label">Alergia</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.alergia" type="text" class="form-control" id="inputAlergia" placeholder="alergia">
-              </div>
-            </div>
-            <div class="form-inline col-sm-12">
-              <div>
-                <label class="col-sm-2"></label>
-                <div class="col-sm-10">
-                  <div class="col-sm-4">
-                    <div class="checkbox">
-                      <label>
-                        <input ng-model="$ctrl.paciente.diabete" type="checkbox">
-                        Diabete
-                      </label>
-                    </div>
+                <div class="form-group">
+                  <label for="inputEdad" class="col-sm-2 control-label">Edad</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.edad" type="number" class="form-control" id="inputEdad" placeholder="Edad">
                   </div>
-                  <div class="col-sm-4">
-                    <div class="checkbox">
-                      <label>
-                        <input ng-model="$ctrl.paciente.sensTactil" type="checkbox"> Sensibilidad Táctil
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="checkbox">
-                      <label>
-                        <input ng-model="$ctrl.paciente.vacAntitetanica" type="checkbox">Vacuna Antitétanica
-                      </label>
+                </div>
+                <div class="form-group">
+                  <label for="inputFechaNacimiento" class="col-sm-2 control-label">Fecha de Nacimiento</label>
+                  <div class="col-sm-10">
+                    <div class="input-group input-group-xs date">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input ng-model="$ctrl.paciente.fecNacimiento" class="form-control datepicker" type="text">
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputPresion" class="col-sm-2 control-label">Presión</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.presion" type="number" class="form-control" id="inputPresion" placeholder="Presión">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputEstatura" class="col-sm-2 control-label">Estatura</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.estatura" step="0.01" type="number" class="form-control" id="inputEstatura" placeholder="Estatura">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputPeso" class="col-sm-2 control-label">Peso</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.peso" step="0.01" type="number" class="form-control" id="inputPeso" placeholder="Peso">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputTipoCalzado" class="col-sm-2 control-label">Tipo de Calzado</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.tipoCalzado" type="text" class="form-control" id="inputTipoCalzado" placeholder="Tipo de calzado">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputCalzadoNro" class="col-sm-2 control-label">Tipo de Calzado</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.calzadoNro" type="number" class="form-control" id="inputCalzadoNro" placeholder="Calz. N°">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Tacón</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.tacon" type="number" class="form-control" placeholder="Tacón">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Varisa</label>
-              <div class="col-sm-10">
-                <select ng-model="$ctrl.paciente.varisa" class="form-control">
-                  <option>Izquierda</option>
-                  <option>Derecha</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Valguisa</label>
-              <div class="col-sm-10">
-                <select ng-model="$ctrl.paciente.valguisa" class="form-control">
-                  <option>Izquierda</option>
-                  <option>Derecha</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Pedigrafía</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.pedigrafia" type="text" class="form-control" placeholder="Pedigrafía">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Podoscopio</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.podoscopio" type="text" class="form-control" placeholder="Podoscopio">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Pie</label>
-              <div class="form-inline col-sm-10">
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.normal" type="checkbox"> Normal
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.plano" type="checkbox"> Plano
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.cavo" type="checkbox"> Cavo
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.varo" type="checkbox"> Varo
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.pronador" type="checkbox"> Pronador
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.supinador" type="checkbox"> Supinador
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.cuadrado" type="checkbox"> Cuadrado
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.griego" type="checkbox"> Griego
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.egipcio" type="checkbox"> Egipcio
-                  </label>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Primera visita</label>
+                  <div class="col-sm-10">
+                    <div class="input-group input-group-xs date">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input ng-model="$ctrl.paciente.primeraVisita" class="form-control datepicker" type="datetime">
+                    </div>
+                  </div>
+                  <!-- /.input group -->
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Lesiones en piel</label>
-              <div class="col-sm-10">
-                <input ng-model="$ctrl.paciente.lesionesPiel" type="text" class="form-control" placeholder="Lesiones en piel">
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-2 control-label">Dedos</label>
-              <div class="col-sm-10">
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.garra" type="checkbox"> En garra
-                  </label>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputDomicilio" class="col-sm-2 control-label">Dirección</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.domicilio" type="text" class="form-control" id="inputDomicilio" placeholder="Domicilio">
+                  </div>
                 </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.martillo" type="checkbox"> De martillo
-                  </label>
+                <div class="form-group">
+                  <label for="inputBarrio" class="col-sm-2 control-label">Barrio</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.barrio" type="text" class="form-control" id="inputBarrio" placeholder="Barrio">
+                  </div>
                 </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.maza" type="checkbox"> En maza
-                  </label>
+                <div class="form-group">
+                  <label for="inputTelefono" class="col-sm-2 control-label">Teléfono</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.telefono" type="tel" class="form-control" id="inputTelefono" placeholder="Telefono">
+                  </div>
                 </div>
-                <div class="checkbox">
-                  <label>
-                    <input ng-model="$ctrl.paciente.halluxValgus" type="checkbox"> Hallux Valgus
-                  </label>
+                <div class="form-group">
+                  <label for="inputCelular" class="col-sm-2 control-label">Celular</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.celular" type="tel" class="form-control" id="inputCelular" placeholder="Celular">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputOcupacion" class="col-sm-2 control-label">Ocupación</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.ocupacion" type="text" class="form-control" id="inputOcupacion" placeholder="Ocupacion">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="box-footer">
-        <button type="submit" class="btn btn-info pull-right">Guardar</button>
-      </div>
+        </wz-step>
+        <wz-step wz-title="PASO 2">
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Antecedentes Clínicos</h3>
+              <input type="submit" class="btn btn-info pull-right" wz-next value="Guardar" />
+              <input type="button" class="btn btn-info pull-right" wz-previous value="Atras" />
+            </div>
+            <div class="box-body">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="inputAlergia" class="col-sm-2 control-label">Alergia</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.alergia" type="text" class="form-control" id="inputAlergia" placeholder="alergia">
+                  </div>
+                </div>
+                <div class="form-inline col-sm-12">
+                  <div>
+                    <label class="col-sm-2"></label>
+                    <div class="col-sm-10">
+                      <div class="col-sm-4">
+                        <div class="checkbox">
+                          <label>
+                            <input ng-model="$ctrl.paciente.diabete" type="checkbox"> Diabete
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="checkbox">
+                          <label>
+                            <input ng-model="$ctrl.paciente.sensTactil" type="checkbox"> Sensibilidad Táctil
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="checkbox">
+                          <label>
+                            <input ng-model="$ctrl.paciente.vacAntitetanica" type="checkbox">Vacuna Antitétanica
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPresion" class="col-sm-2 control-label">Presión</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.presion" type="number" class="form-control" id="inputPresion" placeholder="Presión">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEstatura" class="col-sm-2 control-label">Estatura</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.estatura" step="0.01" type="number" class="form-control" id="inputEstatura" placeholder="Estatura">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPeso" class="col-sm-2 control-label">Peso</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.peso" step="0.01" type="number" class="form-control" id="inputPeso" placeholder="Peso">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputTipoCalzado" class="col-sm-2 control-label">Tipo de Calzado</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.tipoCalzado" type="text" class="form-control" id="inputTipoCalzado" placeholder="Tipo de calzado">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputCalzadoNro" class="col-sm-2 control-label">Tipo de Calzado</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.calzadoNro" type="number" class="form-control" id="inputCalzadoNro" placeholder="Calz. N°">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Tacón</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.tacon" type="number" class="form-control" placeholder="Tacón">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Varisa</label>
+                  <div class="col-sm-10">
+                    <select ng-model="$ctrl.paciente.varisa" class="form-control">
+                      <option>Izquierda</option>
+                      <option>Derecha</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Valguisa</label>
+                  <div class="col-sm-10">
+                    <select ng-model="$ctrl.paciente.valguisa" class="form-control">
+                      <option>Izquierda</option>
+                      <option>Derecha</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Pedigrafía</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.pedigrafia" type="text" class="form-control" placeholder="Pedigrafía">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Podoscopio</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.podoscopio" type="text" class="form-control" placeholder="Podoscopio">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Pie</label>
+                  <div class="form-inline col-sm-10">
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.normal" type="checkbox"> Normal
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.plano" type="checkbox"> Plano
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.cavo" type="checkbox"> Cavo
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.varo" type="checkbox"> Varo
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.pronador" type="checkbox"> Pronador
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.supinador" type="checkbox"> Supinador
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.cuadrado" type="checkbox"> Cuadrado
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.griego" type="checkbox"> Griego
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.egipcio" type="checkbox"> Egipcio
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Lesiones en piel</label>
+                  <div class="col-sm-10">
+                    <input ng-model="$ctrl.paciente.lesionesPiel" type="text" class="form-control" placeholder="Lesiones en piel">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Dedos</label>
+                  <div class="form-inline col-sm-10">
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.garra" type="checkbox"> En garra
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.martillo" type="checkbox"> De martillo
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.maza" type="checkbox"> En maza
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input ng-model="$ctrl.paciente.halluxValgus" type="checkbox"> Hallux Valgus
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </wz-step>
+      </wizard>
     </form>
   </div>
 </div>

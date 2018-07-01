@@ -7,6 +7,8 @@ import toastr from 'angular-toastr';
 import ngAnimate from 'angular-animate';
 import ngResource from 'angular-resource';
 import config from '../../config/keys';
+import 'angular-wizard';
+import '../scss/style.scss';
 
 import { CommonModule } from './common/common.module';
 import { ComponentsModule } from './components/components.module';
@@ -20,7 +22,8 @@ const root = angular
     toastr,
     CommonModule,
     ComponentsModule,
-    angularloadingbar
+    angularloadingbar,
+    'mgo-angular-wizard'
   ])
   .component('acApp', AppComponent)
   .constant('api', {

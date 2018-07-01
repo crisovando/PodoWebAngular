@@ -1,7 +1,19 @@
-var path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const path = require('path');
+
 module.exports = {
   module: {
     rules: [
+      {
+        test: /\.scss$/,
+        use: [{
+            loader: "style-loader" // creates style nodes from JS strings
+        }, {
+            loader: "css-loader" // translates CSS into CommonJS
+        }, {
+            loader: "sass-loader" // compiles Sass to CSS
+        }]
+      },
       {
         test: /\.js$/,
         enforce: 'pre',
@@ -11,7 +23,6 @@ module.exports = {
         },
       },
       {
-                //IMAGE LOADER
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader:'file-loader'
       },
@@ -22,14 +33,16 @@ module.exports = {
     ]
   },
   context: __dirname,
-  entry: './build/app/app.js',
+  entry: {
+    'app':'./build/app/app.js'
+  },
   output: {
     path: path.join(__dirname, 'server/public'),
     filename: 'bundle.js'
   },
     //watch: true,
   devtool: 'source-map',
-  devServer:{
+  devServer: {
     contentBase: 'server/public'
   }
 };

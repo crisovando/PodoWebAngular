@@ -4,6 +4,7 @@ class PacientFormController {
   constructor(PacienteAgregarService, toastr) {
     this.pacienteAgregarService = PacienteAgregarService;
     this.toastr = toastr;
+    this.disabled = 'true';
   }
   $onChanges(changes) {
     angular.element('.datepicker').datepicker({
@@ -15,8 +16,11 @@ class PacientFormController {
       this.paciente = Object.assign({}, this.paciente);
     }
   }
+  exitValidation(context) {
+    const valid = this.wzData && this.wzData.nombre && this.wzData.apellido && this.wzData.dni;
+    return valid;
+  }
   onSubmit() {
-    if (!this.paciente.nombre || !this.paciente.apellido || !this.paciente.dni) return;
     this.pacienteAgregarService
       .addPaciente(this.paciente)
       .then(()=>{

@@ -4,7 +4,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        loader: 'style-loader!css?sourceMap!sass?sourceMap'
+        loader: 'style-loader!css-loader?sourceMap!sass-loader?sourceMap'
       },
       {
         test: /\.js$/,
