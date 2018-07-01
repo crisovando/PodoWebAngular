@@ -17,6 +17,22 @@
               <label class="control-label">Observacion:</label>
               <textarea ng-model="$ctrl.notaClinica.observacion" class="form-control"></textarea>
             </div>
+            <div class="form-group">
+              <ul style="clear:both" class="listPhotos">
+                  <li class="sel-file ng-scope" ng-repeat="f in $ctrl.notaClinica.files">
+                    <div class="ng-binding">
+                      <img
+                        ngf-thumbnail="!f.$error && f" 
+                        class="thumb"
+                        ngf-resize="{width: 20, height: 20, quality: 0.9}">
+                      <span class="progress ng-hide" ng-show="f.progress >= 0">
+                        <div style="width:50%" class="ng-binding">%</div>
+                      </span>
+                    </div>
+                  </li>
+                  <li><div class="button drop-box" ngf-select ng-model="$ctrl.notaClinica.files" ngf-multiple="true">Imágenes</div></li>
+                </ul>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

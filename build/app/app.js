@@ -9,6 +9,7 @@ import ngResource from 'angular-resource';
 import config from '../../config/keys';
 import 'angular-wizard';
 import '../scss/style.scss';
+import ngFileUpload from 'ng-file-upload';
 
 import { CommonModule } from './common/common.module';
 import { ComponentsModule } from './components/components.module';
@@ -23,7 +24,8 @@ const root = angular
     CommonModule,
     ComponentsModule,
     angularloadingbar,
-    'mgo-angular-wizard'
+    'mgo-angular-wizard',
+    ngFileUpload
   ])
   .component('acApp', AppComponent)
   .constant('api', {
